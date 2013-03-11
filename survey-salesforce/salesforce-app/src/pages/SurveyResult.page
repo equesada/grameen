@@ -1,0 +1,125 @@
+<apex:page controller="SurveyResultController" sidebar="false" tabstyle="SurveyManager__tab">
+    <apex:sectionHeader title="Survey Results" subtitle="{!actualSurveyName}" />
+    <apex:includeScript value="{!$Resource.jquery}"/>
+
+    <style>
+        #tableData {width:auto;margin-top: 18px; !important}
+        #dataSubmissions{border-collapse: collapse;}
+        .surveySelect{float:right;margin-right:15px;}
+        #tableContainer{margin-top:15px;}
+        .surveySelectDiv{float:right;font-size:14px;}
+        .ExportCsvFormDiv{float:left;}
+    </style>
+
+        <div id="tableContainer">
+            <div class="ExportCsvFormDiv">
+            <form id="exportCsvForm" action="/apex/downloadCsv" method="post" target="_self" onsubmit="return IsSelectedCheckbox()">
+                <input type="hidden" id="selectedSurveysAnswerId" name="selectedSurveysAnswerId" value=""/>
+                <input type="submit" name="ExportCsv" value="Export selected answers to CSV" class="btn"/>
+            </form>
+            </div>
+            <apex:form >
+            <div class="surveySelectDiv">
+            <apex:outputLabel value="Jump to another survey:"/>
+            <apex:selectList multiselect="false" value="{!actualSurveyId}" onchange="changeSurveyJs()" id="listOfSurveys" styleClass="surveySelect" size="1">
+                    <apex:selectOptions value="{!surveyItems}"/>
+                </apex:selectList>
+             </div>
+            </apex:form>
+
+            <br/>
+            <apex:pageBlock id="tableData">
+            <apex:form >
+                <table class="list" id="dataSubmissions">
+                    <thead class="rich-table-thead">
+                    <tr class="headerRow">
+                        <td><input type="checkbox" id="selectAllCheckboxes" /></td>
+                        <apex:repeat value="{!columnHeaders}" var="q" id="theRepeat">
+                            <td class="headerRow" scope="col" colspan="1">
+                                <b>{!q.caption}</b>
+                            </td>
+                        </apex:repeat>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <apex:repeat value="{!submissionRows}" var="row" id="repeatRows">
+                        <tr class="dataRow">
+                            <td class="dataCell" colspan="1">
+                                <input type="checkbox" id="{!row.submissionId }" class="checkSurveyAns"/>
+                            </td>
+                            <apex:repeat value="{!row.cells}" var="cell">
+                                <td class="dataCell" colspan="1">
+                                    <apex:outputText value="{0, date, short}" rendered="{!cell.valueType=='DATE'}" >
+                                        <apex:param value="{!cell.dateValue}" />
+                                    </apex:outputText>
+                                    <apex:outputText value="{0,date,short} {0,time,short}" rendered="{!cell.valueType=='DATETIME'}">
+                                        <apex:param value="{!cell.datetimeValue}" />
+                                    </apex:outputText>
+                                    <apex:outputText value="{!cell.stringValue}" rendered="{!cell.valueType=='STRING'}"/>
+                                    <apex:outputText value="{!cell.numericValue}" rendered="{!cell.valueType=='NUMERIC'}"/>
+                                    <apex:outputText value="{!cell.extraContent}" escape="false"/>
+                                </td>
+                            </apex:repeat>
+                        </tr>
+                    </apex:repeat>
+                    </tbody>
+                </table>
+
+        <apex:actionFunction name="changeSurvey" action="{!changeSurvey}" rerender="tableData">
+            <apex:param name="surveyId" id="surveyId" assignTo="{!actualSurveyId}" value=""/>
+        </apex:actionFunction>
+
+    </apex:form>
+    </apex:pageBlock>
+    </div>
+
+    <script language="javascript" type="text/javascript">
+
+        $("tbody>tr.dataRow:even").addClass("even");
+        $("tbody>tr.dataRow:odd").addClass("odd");
+        $("tbody>tr.dataRow:first").addClass("first");
+        $("tbody>tr.dataRow:last").addClass("last");
+        $("tbody>tr.dataRow").hover( function(){ $(this).toggleClass("highlight"); } );
+
+        function changeSurveyJs(){
+            var versionId = $(".surveySelect").val();
+            changeSurvey( versionId );
+        }
+        function changeAllCheckboxes(){
+            var checked = $("#selectAllCheckboxes").is(':checked');
+            $('.checkSurveyAns').attr('checked', checked);
+        }
+
+        function sendSurveysJs(){
+            var mySurveyIds = '';
+            $('.checkSurveyAns:checked').each(function(){
+                mySurveyIds += (mySurveyIds == '' ? '' : ',') + $(this).attr('id');
+            });
+            return mySurveyIds;
+        }
+
+        function IsSelectedCheckbox() {
+            var submissionsId = sendSurveysJs();
+            if (submissionsId != ''){
+                return true;
+            } else {
+                alert('At least one answer must be selected for Export')
+                return false;
+            }
+        }
+
+        $(document).ready(function() {
+            $('#exportCsvForm').submit(function(){
+                $('#selectedSurveysAnswerId').val(sendSurveysJs());
+            });
+            $('#selectAllCheckboxes').change(function(){
+            	changeAllCheckboxes();
+            });
+            $('.checkSurveyAns').change(function(){
+     			$('#selectAllCheckboxes')[0].checked = this.checked && $('.checkSurveyAns:checked').size() == $('.checkSurveyAns').size();
+            });
+        });
+    </script>
+
+</apex:page>

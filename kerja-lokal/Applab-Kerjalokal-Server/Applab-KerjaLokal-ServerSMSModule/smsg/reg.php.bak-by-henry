@@ -1,0 +1,267 @@
+<?php
+	//NOTE : check mdn untuk nomornya pake 0, tapi klo potong pulsa ngga pake 0
+
+	function potong_pulsa($tx_id, $number_mdn, $jobcat_ID, $jobcat_key)
+	{
+			$check_mdn = curl_init();
+			curl_setopt($check_mdn, CURLOPT_URL,            "http://172.27.239.153/grameen/infokerja/check_mdn.php?mdn=$number_mdn&tx_id=$tx_id" );
+			curl_setopt($check_mdn, CURLOPT_CONNECTTIMEOUT, 10);
+			curl_setopt($check_mdn, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($check_mdn, CURLOPT_HEADER, 		0);
+			curl_setopt($check_mdn, CURLOPT_TIMEOUT,        10);
+			$check_mdn = curl_exec($check_mdn);
+			echo $check_mdn."<hr>";
+			
+			//$tarif = ($check_mdn == "pre") ? "1100000000" : "1000000000";
+			$tarif = ($check_mdn == "pre") ? "11" : "10";
+
+			//$status_pulsa = file_get_contents("http://172.27.239.153/grameen/infokerja/potong_pulsa.php?mdn=$number_mdn&tarif=2&pospre=$check_mdn&tx_id=$tx_id");
+			$status_pulsa = curl_init();
+			curl_setopt($status_pulsa, CURLOPT_URL,            "http://172.27.239.153/grameen/infokerja/potong_pulsa2.php?mdn=$number_mdn&tarif=$tarif&pospre=$check_mdn&tx_id=$tx_id&jobcat_ID=$jobcat_ID&jobcat_key=$jobcat_key&app_info=BR_INFOKERJA_112_GRM" );
+			curl_setopt($status_pulsa, CURLOPT_CONNECTTIMEOUT, 10);
+			curl_setopt($status_pulsa, CURLOPT_RETURNTRANSFER, 1);
+			curl_setopt($status_pulsa, CURLOPT_HEADER, 		0);
+			curl_setopt($status_pulsa, CURLOPT_TIMEOUT,        10);
+			$status_pulsa = curl_exec($status_pulsa);
+			echo $status_pulsa."<hr>";
+			//$status_pulsa = potong_pulsa(substr($number_mdn,1), 2, $check_mdn, $tx_id);
+			//$status_pulsa = potong_pulsa(substr($number_mdn,1), 10, $check_mdn, $tx_id, $jobcat_ID, $jobcat_key, $cid);		
+			
+			$cdr = explode("|",$status_pulsa);
+			$status_pulsa1 = $cdr[0] == "1" ? "1" : $status_pulsa;
+			//echo $status_pulsa."<hr>";
+			$log_id = $cdr[1];
+			$mdn  = $number_mdn; 
+			$pospre = ($cdr[3] == 'pos') ? '1':'2';
+			//$tarif = ($cdr[3] == 'pos') ? '10':'11';
+			$billing_status = $cdr[5];
+			$status_code = $cdr[6];
+			$status_code_desc = $cdr[7];
+			//$jobcat_ID = $cdr[8];
+			//$jobcat_key = $cdr[9];
+			
+			
+			//$check_mdn = file_get_contents("http://172.27.239.153/grameen/infokerja/write_cdr.php?mdn=$number_mdn&tx_id=$tx_id");
+			$write_cdr = curl_init();
+			curl_setopt($write_cdr, CURLOPT_URL,            "http://172.27.239.153/grameen/infokerja/write_cdr.php?log_id=$log_id&mdn=$number_mdn&pospre=$pospre&tarif=$tarif&billing_status=$billing_status&status_code=$status_code&service_name=SUBSCRIPTION&status_code_desc=".urlencode($status_code_desc)."&jobcat_ID=$jobcat_ID&jobcat_key=".urlencode($jobcat_key));
+			curl_setopt($write_cdr, CURLOPT_CONNECTTIMEOUT, 10);
+			curl_setopt($write_cdr, CURLOPT_TIMEOUT,        10);
+			$write_cdr = curl_exec($write_cdr);
+			
+			return $status_pulsa1;
+	}
+	
+	$status_pulsa = "";
+	$check_mdn = "";
+	$write_cdr = "";
+	$msg_err = "Cek lagi keywrd pekrjaan: PABRIK,BURUH,KASIR,STAF,SALES,PEMBANTU,PELAYAN,MONTIR,SUPIR,SATPAM,PERAWAT,GURU,KOKI,LAINNYA.Daftar: REG KERJA (pekerjaan) sms ke 818";
+	
+	$reply = ($_GET["message"] == "") ? "" : $_GET["message"]; 
+	date_default_timezone_set("Asia/Jakarta");
+	$tstamp = date("Y-m-d");
+	
+	$reply = substr($reply,10);
+	$reply = strtoupper($reply);		
+	$jobcat_key = $reply;			
+	//echo $reply."<hr>";
+	
+	$sent = CORE_URL."get_subscriber_by_mdn.php?tx_id=$tx_id&mdn=".urlencode($number_mdn0)."";	//CHECK APAKAH NOMOR MDN INI SUDAH ADA APA BELUM
+	//echo str_replace("10.99.1.5", "180.243.231.8", $sent)."<hr>";				
+	//die();
+	$sent = file_get_contents($sent);
+	$sent = json_decode($sent, TRUE);
+	
+	if($sent["totaldata"] != 0)	//JIKA NOMOR MDN SUDAH ADA
+	{
+		$subscriber_id = $sent["subscriber_id"];
+		
+		if ($jobcat_key != "")
+		{
+			$job = CORE_URL."sql.php?sql=";
+			$job .= urlencode("SELECT * FROM jobs_category WHERE jobcat_key='$jobcat_key'");
+			$job = file_get_contents($job);
+			echo $job."<hr>";
+			$job = json_decode($job, TRUE);
+			$jobcat_ID = $job["results"][0]["jobcat_id"];
+			
+			if ($jobcat_ID != "")
+			{
+
+				//CEK APAKAH SUBSCRIBER MASIH BERLANGGANAN JOB CATEGORY YANG DIREQUEST				
+				$sent = CORE_URL."get_rel_subscriber_mdn.php?tx_id=$tx_id&mdn=".urlencode($number_mdn0)."&jobcat_key=".urlencode($reply)."&tstamp=".urlencode($tstamp)."";	
+				
+				//$sent = CORE_URL."get_rel_subscriber_jobcat_by_mdn.php?tx_id=$tx_id&mdn=".urlencode($number_mdn0)."&jobcat_key=".urlencode($jobcat_key)."&status=1";	
+				echo str_replace("10.99.1.5", "180.243.231.8", $sent)."<hr>";				
+				//die();
+				$sent = file_get_contents($sent);
+				$sent = json_decode($sent, TRUE);
+				$totaldata = $sent["totaldata"];	
+				
+				//if($id_rel != NULL)
+				//if($totaldata != 0)		//JIKA DIA SUDAH MENDAFTAR TINGGAL DI UPDATE STATUS=1				
+				if($totaldata == 1)				
+				{
+					$msg = "Saat ini Anda masih terdaftar pada lowongan pekerjaan $jobcat_key.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818";
+					$sendsms = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=+62$number_mdn&message=".urlencode($msg)."&appsid=GRAMEEN&msgid=".time());
+				
+					//$a = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=$number_mdn&message=".urlencode("Anda masih terdaftar pada kategory $jobcat_key")."&appsid=GRAMEEN&msgid=".time());
+				}
+				else
+				{	//JIKA SUDAH TERDAFTAR DI JOB CATEGORYNYA
+					//$check_mdn = file_get_contents("http://172.27.239.153/grameen/infokerja/check_mdn.php?mdn=$number_mdn&tx_id=$tx_id");
+					
+					//$id_rel = $sent["rel_id"];
+					//$mentor_id = $sent["mentor_id"];
+					
+					$status_pulsa1 = potong_pulsa($tx_id, $number_mdn, $jobcat_ID, $jobcat_key);
+					if($status_pulsa1 != "1")
+					{     
+						//$err = 2;
+						$msg = "Langganan info lowongan pekerjaan $jobcat_key tidak berhasil diproses karena pulsa tidak cukup.Silahkan lakukan isi ulang pulsa Esia Anda. CS: 02160908000";
+						$sendsms = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=+62$number_mdn&message=".urlencode($msg)."&appsid=GRAMEEN&msgid=".time());
+						
+					}
+					else
+					{
+						$date_add		= date("Y-m-d H:i:s");
+						$date_send		= $date_add;
+						$date_active	= date("Y-m-d", (time() + 1*86400));
+						$date_expired	= date("Y-m-d", (time() + 7*86400));
+					
+						$json1 = CORE_URL."add_subscriber_jobcat_key.php?tx_id=".urlencode($tx_id)."&subscriber_id=".urlencode($subscriber_id)."";
+						$json1 .= "&jobcat_id=".urlencode($jobcat_ID)."&jobcat_key=".urlencode($jobcat_key)."&date_add=".urlencode($date_add)."";
+						$json1 .= "&date_send=".urlencode($date_send)."&date_active=".urlencode($date_active)."&status=1&date_expired=".urlencode($date_expired)."";
+						//echo str_replace("10.99.1.5", "180.243.231.8", $json1)."<hr>";
+						
+						$json1 = file_get_contents($json1);			
+						$json1 = json_decode($json1, TRUE);	
+						$id_rel = $json1["rel_id"];
+						
+						$msg = "Selamat!Langganan info lowongan pekerjaan $jobcat_key telah aktif.Rp3Rb/mg,1SMS/hr.Stop:UNREG KERJA (pekerjaan) sms ke 818 CS: 02160908000";
+						$sendsms = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=$number_mdn&message=".urlencode($msg)."&appsid=GRAMEEN&msgid=".time());
+						//echo "gagal";
+
+						$json1 = CORE_URL."get_rel_subscriber_jobcat_by_rel_id.php?tx_id=".urlencode($tx_id)."&id=$id_rel";
+						$json1 = file_get_contents($json1);
+						$json1 = json_decode($json1, true);
+						$jobseeker_category_id = $json1["jobcat_id"];
+						$jobseeker_subscriber_id = $json1["subscriber_id"];
+						
+						$json2 = CORE_URL."add_jobsend.php?tx_id=".urlencode($tx_id)."&jobcat_id=$jobseeker_category_id&rel_id=".$id_rel."&date_add=".urlencode(date("Y-m-d"))."&date_send=".urlencode(date("Y-m-d"))."&subscriber_id=$jobseeker_subscriber_id";
+						//echo $json2."<hr>";
+						$json2 = file_get_contents($json2);
+						$json2 = json_decode($json2, true);				
+						$jobsend_id = $json2["jobsend_id"];
+										
+						//$sms_status = "1"; // SEND SMS SUCCESS
+						//if ($sendsms == "OK")
+						{
+							$json3 = BASE_URL."send_sms_by_jobsend_id.php?tx_id=".urlencode($tx_id)."&jobsend_id=$jobsend_id";					
+							$json3 = file_get_contents($json3);					
+						}	
+						
+					}
+					
+					//$a = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=$number_mdn&message=".urlencode("Anda masih terdaftar")."&appsid=GRAMEEN&msgid=".time());
+				}
+			}
+			else
+			{
+				$a = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=$number_mdn&message=".urlencode($msg_err)."&appsid=GRAMEEN&msgid=".time());
+			}
+		}
+		else
+		{
+			$a = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=$number_mdn&message=".urlencode($msg_err)."&appsid=GRAMEEN&msgid=".time());
+		}
+	}		
+	else	//JIKA NOMOR MDN BELUM ADA
+	{
+		if ($jobcat_key != "")
+		{
+			$job = CORE_URL."sql.php?sql=";
+			$job .= urlencode("SELECT * FROM jobs_category WHERE jobcat_key='$jobcat_key'");
+			$job = file_get_contents($job);
+			echo $job."<hr>";
+			$job = json_decode($job, TRUE);
+			$jobcat_ID = $job["results"][0]["jobcat_id"];
+
+			if ($jobcat_ID != "")
+			{
+				$status_pulsa1 = potong_pulsa($tx_id, $number_mdn, $jobcat_ID, $jobcat_key);
+				
+				//$status_pulsa = "1";
+				if($status_pulsa1 != "1")
+				{     
+					//$err = 2;
+					$msg = "Langganan info lowongan pekerjaan $jobcat_key tidak berhasil diproses karena pulsa tidak cukup.Silahkan lakukan isi ulang pulsa Esia Anda. CS: 02160908000";
+					$a = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=+62$number_mdn&message=".urlencode($msg)."&appsid=GRAMEEN&msgid=".time());
+					
+				}else{
+					//ADD SUBSCRIBER
+					$json  = CORE_URL."add_subscriber.php?tx_id=".urlencode($tx_id)."&mentor_id=2&name=".urlencode('SMS')."&loc_id=".urlencode('164586577')."&mdn=$number_mdn0&date_add=".urlencode(date("Y-m-d H:i:s"))."&date_update=".urlencode(date("Y-m-d H:i:s"))."&status=1";            
+					//echo str_replace("10.99.1.5", "180.243.231.8", $json)."<hr>";	
+					//die($json);
+					$json = file_get_contents($json);			
+					$json = json_decode($json, TRUE);	
+					
+					$subscriber_id = $json["subscriber_id"];
+					
+					//CHECK TERLEBIH DAHULU DARI MESSAGENYA, APAKAH JOBCAT TERSEBUT ADA ATAU TIDAK
+					$sent = CORE_URL."get_rel_subscriber_cat_by_jobcat.php?jobcat_key=".urlencode($reply)."";			
+					$sent = file_get_contents($sent);
+					$sent = json_decode($sent, TRUE);
+					//$jobcat_ID = $sent["jobcat_id"];		
+					//$jobcat_key = $sent["jobcat_key"];			
+					$totaldata = $sent["totaldata"];			
+					
+					$date_add		= date("Y-m-d H:i:s");
+					$date_send		= $date_add;
+					$date_active	= date("Y-m-d", (time() + 1*86400));
+					$date_expired	= date("Y-m-d", (time() + 7*86400));
+				
+					$json1 = CORE_URL."add_subscriber_jobcat_key.php?tx_id=".urlencode($tx_id)."&subscriber_id=".urlencode($subscriber_id)."";
+					$json1 .= "&jobcat_id=".urlencode($jobcat_ID)."&jobcat_key=".urlencode($jobcat_key)."&date_add=".urlencode($date_add)."";
+					$json1 .= "&date_send=".urlencode($date_send)."&date_active=".urlencode($date_active)."&status=1&date_expired=".urlencode($date_expired)."";
+					//echo str_replace("10.99.1.5", "180.243.231.8", $json1)."<hr>";
+					
+					$json1 = file_get_contents($json1);			
+					$json1 = json_decode($json1, TRUE);	
+					$id_rel = $json1["rel_id"];
+					
+					$a = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=$number_mdn&message=".urlencode("Selamat!Langganan info lowongan pekerjaan $reply telah aktif.Rp3Rb/mg,1SMS/hr.Stop:UNREG KERJA (pekerjaan) sms ke 818 CS: 02160908000")."&appsid=GRAMEEN&msgid=".time());
+					//echo "gagal";
+
+					$json1 = CORE_URL."get_rel_subscriber_jobcat_by_rel_id.php?tx_id=".urlencode($tx_id)."&id=$id_rel";
+					$json1 = file_get_contents($json1);
+					$json1 = json_decode($json1, true);
+					$jobseeker_category_id = $json1["jobcat_id"];
+					$jobseeker_subscriber_id = $json1["subscriber_id"];
+					
+					$json2 = CORE_URL."add_jobsend.php?tx_id=".urlencode($tx_id)."&jobcat_id=$jobseeker_category_id&rel_id=".$id_rel."&date_add=".urlencode(date("Y-m-d"))."&date_send=".urlencode(date("Y-m-d"))."&subscriber_id=$jobseeker_subscriber_id";
+					//echo $json2."<hr>";
+					$json2 = file_get_contents($json2);
+					$json2 = json_decode($json2, true);				
+					$jobsend_id = $json2["jobsend_id"];
+									
+					//$sms_status = "1"; // SEND SMS SUCCESS
+					//if ($sms_status == "1")
+					{
+						$json3 = BASE_URL."send_sms_by_jobsend_id.php?tx_id=".urlencode($tx_id)."&jobsend_id=$jobsend_id";					
+						$json3 = file_get_contents($json3);					
+					}	
+				}
+			}
+			else
+			{
+				$a = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=$number_mdn&message=".urlencode($msg_err)."&appsid=GRAMEEN&msgid=".time());
+			}
+		}
+		else
+		{
+			$a = file_get_contents("http://10.99.1.5:8085/sendsms.php?msisdn=$number_mdn&message=".urlencode($msg_err)."&appsid=GRAMEEN&msgid=".time());
+		}
+	}
+	
+
+?>

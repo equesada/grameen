@@ -1,0 +1,72 @@
+2012-03-14 09:39:05.69902000 >> 2192738742 SMSG:MO: REG KERJA KOKI 
+2012-03-14 09:39:05.69943200 >> 2192738742 SMSG:Check KERJA keyword. 
+2012-03-14 09:39:05.69953000 >> 2192738742 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-14 09:39:05.70136500 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-14 09:39:05.70301900 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-14 09:39:05.70473300 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-14 09:39:05.70483200 >> 2192738742 SMSG:Check user subscription on registered job category. 
+2012-03-14 09:39:05.71577500 >> 2192738742 SMSG:REG request accepted. 
+2012-03-14 09:40:37.87891800 >> 2192738742 SMSG:MO: KERJA KOKI OK 
+2012-03-14 09:40:37.87956800 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-14 09:40:37.87965500 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-14 09:40:37.88150200 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-14 09:40:37.88159200 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-14 09:40:37.88328300 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-14 09:40:37.88509500 >> 2192738742 SMSG:Check subscription REG-ed by user. 
+2012-03-14 09:40:37.88721700 >> 2192738742 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-03-14 09:40:37.89287900 >> 2192738742 SMSG:Check not-activated-yet subscription validity 
+2012-03-14 09:40:37.89297600 >> 2192738742 SMSG:Not-activated-yet subscription valid. Deduct user balance 
+2012-03-14 09:41:07.89432000 >> 2192738742 SMSG:KERJA OK request rejected. Reason: Charging failed. MT: Langganan info lowongan pekerjaan KOKI tidak berhasil diproses karena pulsa tidak cukup.Silahkan lakukan isi ulang pulsa Esia Anda. CS: 02160908000 
+2012-03-14 09:41:07.89442800 >> 2192738742 SMSG:MT: Langganan info lowongan pekerjaan KOKI tidak berhasil diproses karena pulsa tidak cukup.Silahkan lakukan isi ulang pulsa Esia Anda. CS: 02160908000 
+2012-03-14 09:56:51.14119600 >> 2192738742 SMSG:MO: KERJA 
+2012-03-14 09:56:51.14185700 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-14 09:56:51.14497000 >> 2192738742 SMSG:KERJA request rejected. Reason: Job category is empty 
+2012-03-14 09:56:51.14507200 >> 2192738742 SMSG:MT: Cek lagi keywrd pekrjaan: PABRIK,BURUH,KASIR,STAF,SALES,PEMBANTU,PELAYAN,MONTIR,SUPIR,SATPAM,PERAWAT,GURU,KOKI,LAINNYA.Daftar: REG KERJA (pekerjaan) sms ke 818 
+2012-03-14 09:57:47.30049600 >> 2192738742 SMSG:MO: KERJA TEST 
+2012-03-14 09:57:47.30115200 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-14 09:57:47.30124700 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-14 09:57:47.30590000 >> 2192738742 SMSG:KERJA request rejected. Reason: Invalid job category keyword 
+2012-03-14 09:57:47.30600700 >> 2192738742 SMSG:MT: Cek lagi keywrd pekrjaan: PABRIK,BURUH,KASIR,STAF,SALES,PEMBANTU,PELAYAN,MONTIR,SUPIR,SATPAM,PERAWAT,GURU,KOKI,LAINNYA.Daftar: REG KERJA (pekerjaan) sms ke 818 
+2012-03-14 09:58:26.03408400 >> 2192738742 SMSG:MO: KERJA TEST 
+2012-03-14 09:58:26.03478900 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-14 09:58:26.03488500 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-14 09:58:26.03962700 >> 2192738742 SMSG:KERJA request rejected. Reason: Invalid job category keyword 
+2012-03-14 09:58:26.03973200 >> 2192738742 SMSG:MT: Cek lagi keywrd pekrjaan: PABRIK,BURUH,KASIR,STAF,SALES,PEMBANTU,PELAYAN,MONTIR,SUPIR,SATPAM,PERAWAT,GURU,KOKI,LAINNYA.Daftar: REG KERJA (pekerjaan) sms ke 818 
+2012-03-14 09:59:34.27943200 >> 2192738742 SMSG:MO: KERJA SUPIR TEST 
+2012-03-14 09:59:34.28009100 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-14 09:59:34.28017800 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-14 09:59:34.28213500 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-14 09:59:34.28223000 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-14 09:59:34.28399500 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-14 10:01:29.65837100 >> 2192738742 SMSG:MO: KERJA SUPIR OK 
+2012-03-14 10:01:29.65903700 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-14 10:01:29.65913200 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-14 10:01:29.66101500 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-14 10:01:29.66111300 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-14 10:01:29.66280800 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-14 10:01:29.66464900 >> 2192738742 SMSG:Check subscription REG-ed by user. 
+2012-03-14 10:01:29.66671700 >> 2192738742 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-03-14 10:01:29.67231900 >> 2192738742 SMSG:Check not-activated-yet subscription validity 
+2012-03-14 10:01:29.67241900 >> 2192738742 SMSG:Not-activated-yet subscription valid. Deduct user balance 
+2012-03-14 10:01:59.67366500 >> 2192738742 SMSG:KERJA OK request rejected. Reason: Charging failed. MT: Langganan info lowongan pekerjaan SUPIR tidak berhasil diproses karena pulsa tidak cukup.Silahkan lakukan isi ulang pulsa Esia Anda. CS: 02160908000 
+2012-03-14 10:01:59.67377300 >> 2192738742 SMSG:MT: Langganan info lowongan pekerjaan SUPIR tidak berhasil diproses karena pulsa tidak cukup.Silahkan lakukan isi ulang pulsa Esia Anda. CS: 02160908000 
+2012-03-14 10:14:14.28890600 >> 2192738742 SMSG:MO: KERJA OK 
+2012-03-14 10:14:14.28955900 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-14 10:14:14.28965400 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-14 10:14:14.29458800 >> 2192738742 SMSG:KERJA request rejected. Reason: Invalid job category keyword 
+2012-03-14 10:14:14.29469600 >> 2192738742 SMSG:MT: Cek lagi keywrd pekrjaan: PABRIK,BURUH,KASIR,STAF,SALES,PEMBANTU,PELAYAN,MONTIR,SUPIR,SATPAM,PERAWAT,GURU,KOKI,LAINNYA.Daftar: REG KERJA (pekerjaan) sms ke 818 
+2012-03-14 10:15:35.51128500 >> 2192738742 SMSG:MO: KERJA SUPIR YA 
+2012-03-14 10:15:35.51193100 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-14 10:15:35.51202900 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-14 10:15:35.51381900 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-14 10:15:35.51391700 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-14 10:15:35.51558300 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-14 10:15:35.52943800 >> 2192738742 SMSG:Double Confirmation enabled. Check subscription REG-ed by user. 
+2012-03-14 10:15:35.53431000 >> 2192738742 SMSG:KERJA YA request rejected. Reason: subscription REG-ed by user doesn't exist. 
+2012-03-14 10:15:35.53441400 >> 2192738742 SMSG:MT: Maaf keyword yg Anda masukkan salah.Ketik KERJA INFO sms ke 818 utk pilihan pekerjaan.CS: 02160908000 
+2012-03-14 10:16:49.05153400 >> 2192738742 SMSG:MO: UNREG 
+2012-03-14 10:17:44.87007900 >> 2192738742 SMSG:MO: UNREG KERJA 
+2012-03-14 10:18:42.13315700 >> 2192738742 SMSG:MO: UNREG KERJA 
+2012-03-14 10:19:27.01111600 >> 2192738742 SMSG:MO: UNREG KERJA TEST 
+2012-03-14 10:20:16.36971000 >> 2192738742 SMSG:MO: UNREG KERJA TEST 
+2012-03-14 10:21:08.97465300 >> 2192738742 SMSG:MO: UNREG KERJA SUPIR 

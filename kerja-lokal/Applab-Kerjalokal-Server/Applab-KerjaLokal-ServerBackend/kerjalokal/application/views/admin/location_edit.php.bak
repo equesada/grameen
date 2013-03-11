@@ -1,0 +1,355 @@
+<h3>Set current country</h3>
+<div class="table">
+<?php
+	$country_list["0"] = "--";
+	foreach ($countries as $country)
+	{
+		$country_list[$country["country_id"]] = $country["country_name"];
+	}
+	//echo "<pre>"; print_r($country_list); echo "</pre>";
+	echo form_open(base_url()."admin/master/location/set_country")."\n";
+	echo "<div class=\"row\">\n";
+	echo "<div class=\"cell_key\">".form_label('Country', 'id')."</div>\n";
+	echo "<div class=\"cell_val\">".form_dropdown("id", $country_list, $_SESSION["curr_country"])."</div>\n";
+	echo "</div>\n</div>\n";
+	echo form_submit("submit", "Submit");
+	echo form_close();
+?>
+<hr>
+
+<div class="table">
+	<div class="row">
+		<div class=cell>
+			<h3>Add Country</h3>
+			<div class="table">
+			<?php
+				echo form_open(base_url()."admin/master/location/add_country")."\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country ID', 'id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("id", "" ,"size=40 maxlength=100")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country Name', 'name')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("name", "" ,"size=40 maxlength=100")."</div>\n";
+				echo "</div>\n</div>\n";
+				echo form_submit("submit", "Submit");
+				echo form_close();
+			?>
+		</div>
+		<div class=cell style="width:1px; background-color:#ccc;"></div>
+		<div class=cell style="width:20px;"></div>
+		<div class=cell>
+			<h3>Update / Hide Country</h3>
+			<div class="table">
+			<?php
+				$country_list2["0"] = "--";
+				foreach ($countries as $country)
+				{
+					$country_list2[$country["country_id"]] = $country["country_id"]." - ".$country["country_name"];
+				}
+				echo form_open(base_url()."admin/master/location/update_country")."\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country', 'id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("id", $country_list2, $_SESSION["curr_country"]);
+				echo "&nbsp;&nbsp;".form_checkbox("del", "1")." Hide</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('New Country ID', 'new_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("new_id", "" ,"size=3 maxlength=2")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('New Country Name', 'country_name')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("country_name", "" ,"size=40 maxlength=100")."</div>\n";
+				echo "</div>\n</div>\n";
+				echo form_submit("submit", "Submit");
+				echo form_close();
+			?>
+		</div>
+	</div>
+</div>
+<hr>
+
+
+<div class="table">
+	<div class="row">
+		<div class=cell>
+			<h3>Add Province</h3>
+			<div class="table">
+			<?php
+				//echo "<pre>"; print_r($option); echo "</pre>";
+				echo form_open(base_url()."admin/master/location/add_location")."\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country', 'country_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("country_id", $country_list, $_SESSION["curr_country"])."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Province', 'name')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("name", "" ,"size=40 maxlength=100")."</div>\n";
+				echo "</div>\n</div>\n";
+				echo form_hidden("type", "KOTA");
+				echo form_submit("submit", "Submit");
+				echo form_close();
+			?>
+		</div>
+		<div class=cell style="width:1px; background-color:#ccc;"></div>
+		<div class=cell style="width:20px;"></div>
+		<div class=cell>
+			<h3>Update / Hide Province</h3>
+			<div class="table">
+			<?php
+				$country_list2["0"] = "--";
+				foreach ($countries as $country)
+				{
+					$country_list2[$country["country_id"]] = $country["country_id"]." - ".$country["country_name"];
+				}
+				echo form_open(base_url()."admin/master/location/update_location")."\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country', 'country_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("country_id", $country_list, "", "id=country4")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Province', 'id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("id", array("0"=>"--"), "", "id=city4");
+				echo "&nbsp;&nbsp;".form_checkbox("del")." Hide</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('New Province', 'name')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("name", "" ,"size=40 maxlength=100")."</div>\n";
+				echo "</div>\n</div>\n";
+				echo form_hidden("type", "KOTA");
+				echo form_submit("submit", "Submit");
+				echo form_close();
+			?>
+		</div>
+	</div>
+</div>
+<hr>
+
+<div class="table">
+	<div class="row">
+		<div class=cell>
+			<h3>Add Kotamadya</h3>
+			<div class="table">
+			<?php
+				//echo "<pre>"; print_r($option); echo "</pre>";
+				echo form_open(base_url()."admin/master/location/add_location")."\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country', 'country_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("country_id", $country_list, "", "id=country1")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('City', 'parent_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("parent_id", array("0"=>"--"), "", "id=city1")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kotamadya', 'name')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("name", "" ,"size=40 maxlength=100")."</div>\n";
+				echo "</div>\n</div>\n";
+				echo form_hidden("type", "KOTAMADYA");
+				echo form_submit("submit", "Submit");
+				echo form_close();
+			?>
+		</div>
+		<div class=cell style="width:1px; background-color:#ccc;"></div>
+		<div class=cell style="width:20px;"></div>
+		<div class=cell>
+			<h3>Update / Hide Kotamadya</h3>
+			<div class="table">
+			<?php
+				//echo "<pre>"; print_r($option); echo "</pre>";
+				echo form_open(base_url()."admin/master/location/update_location")."\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country', 'country_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("country_id", $country_list, "", "id=country5")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('City', 'city_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("city_id", array("0"=>"--"), "", "id=city5")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kotamadya', 'id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("id", array("0"=>"--"), "", "id=kotamadya5")."\n";
+				echo "&nbsp;&nbsp;".form_checkbox("del")." Hide</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('New Kotamadya', 'name')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("name", "" ,"size=40 maxlength=100")."</div>\n";
+				echo "</div>\n</div>\n";
+				echo form_hidden("type", "KOTAMADYA");
+				echo form_submit("submit", "Submit");
+				echo form_close();
+			?>
+		</div>
+	</div>
+</div>
+<hr>
+
+<div class="table">
+	<div class="row">
+		<div class=cell>
+			<h3>Add Kecamatan</h3>
+			<div class="table">
+			<?php
+				//echo "<pre>"; print_r($option); echo "</pre>";
+				echo form_open(base_url()."admin/master/location/add_location")."\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country', 'country_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("country_id", $country_list, "", "id=country2")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('City', 'city_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("city_id", array("0"=>"--"), "", "id=city2")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kotamadya', 'parent_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("parent_id", array("0"=>"--"), "", "id=kotamadya2")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kecamatan', 'name')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("name", "" ,"size=40 maxlength=100")."</div>\n";
+				echo "</div>\n</div>\n";
+				echo form_hidden("type", "KECAMATAN");
+				echo form_submit("submit", "Submit");
+				echo form_close();
+			?>
+		</div>
+		<div class=cell style="width:1px; background-color:#ccc;"></div>
+		<div class=cell style="width:20px;"></div>
+		<div class=cell>
+			<h3>Update / Hide Kecamatan</h3>
+			<div class="table">
+			<?php
+				//echo "<pre>"; print_r($option); echo "</pre>";
+				echo form_open(base_url()."admin/master/location/update_location")."\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country', 'country_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("country_id", $country_list, "", "id=country6")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('City', 'city_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("city_id", array("0"=>"--"), "", "id=city6")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kotamadya', 'kotamadya')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("kotamadya", array("0"=>"--"), "", "id=kotamadya6")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kecamatan', 'id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("id", array("0"=>"--"), "", "id=kecamatan6")."\n";
+				echo "&nbsp;&nbsp;".form_checkbox("del")." Hide</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('New Kecamatan', 'name')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("name", "" ,"size=40 maxlength=100")."</div>\n";
+				echo "</div>\n</div>\n";
+				echo form_hidden("type", "KECAMATAN");
+				echo form_submit("submit", "Submit");
+				echo form_close();
+			?>
+		</div>
+	</div>
+</div>
+<hr>
+
+<div class="table">
+	<div class="row">
+		<div class=cell>
+			<h3>Add Kelurahan</h3>
+			<div class="table">
+			<?php
+				//echo "<pre>"; print_r($option); echo "</pre>";
+				echo form_open(base_url()."admin/master/location/add_location")."\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country', 'country_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("country_id", $country_list, "", "id=country7")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('City', 'city_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("city_id", array("0"=>"--"), "", "id=city7")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kotamadya', 'kotamadya')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("kotamadya", array("0"=>"--"), "", "id=kotamadya7")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kecamatan', 'parent_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("parent_id", array("0"=>"--"), "", "id=kecamatan7")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kelurahan', 'name')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("name", "" ,"size=40 maxlength=100")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Zip Code', 'zipcode')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("zipcode", "" ,"size=10 maxlength=10")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\"></div>\n";
+				echo "<div class=\"cell_val\"><div id=\"map_canvas\" style=\"width:300px; height:300px;\"></div>";
+				echo "</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\"></div>\n";
+				echo "<div class=\"cell_val\">".form_input("lat", "" ,"size=20 maxlength=50 id=lat")." ".form_input("lng", "" ,"size=20 maxlength=50 id=lng")."</div>\n";
+				echo "</div>\n";
+				echo "</div>\n";
+				echo form_hidden("type", "KELURAHAN");
+				echo form_submit("submit", "Submit");
+				echo form_close();
+			?>
+		</div>
+		<div class=cell style="width:1px; background-color:#ccc;"></div>
+		<div class=cell style="width:20px;"></div>
+		<div class=cell>
+			<h3>Update / Hide Kelurahan</h3>
+			<div class="table">
+			<?php
+				//echo "<pre>"; print_r($option); echo "</pre>";
+				echo form_open(base_url()."admin/master/location/update_location")."\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Country', 'country_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("country_id", $country_list, "", "id=country8")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('City', 'city_id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("city_id", array("0"=>"--"), "", "id=city8")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kotamadya', 'kotamadya')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("kotamadya", array("0"=>"--"), "", "id=kotamadya8")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kecamatan', 'kecamatan')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("kecamatan", array("0"=>"--"), "", "id=kecamatan8")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('Kelurahan', 'id')."</div>\n";
+				echo "<div class=\"cell_val\">".form_dropdown("id", array("0"=>"--"), "", "id=kelurahan8 onchange=get_location_by_loc_id(this.value)")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('New Kelurahan', 'name')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("name", "" ,"size=40 maxlength=100")."&nbsp;&nbsp;".form_checkbox("del")." Hide</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\">".form_label('New Zip Code', 'zipcode')."</div>\n";
+				echo "<div class=\"cell_val\">".form_input("zipcode", "" ,"size=10 maxlength=10 id=zipcode")."</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\"></div>\n";
+				echo "<div class=\"cell_val\"><div id=\"map_canvas2\" style=\"width:300px; height:300px;\"></div>";
+				echo "</div>\n";
+				echo "</div>\n";
+				echo "<div class=\"row\">\n";
+				echo "<div class=\"cell_key\"></div>\n";
+				echo "<div class=\"cell_val\">".form_input("lat", "" ,"size=20 maxlength=50 id=lat2")." ".form_input("lng", "" ,"size=20 maxlength=50 id=lng2")."</div>\n";
+				echo "</div>\n";
+				echo "</div>\n";
+				echo form_hidden("type", "KELURAHAN");
+				echo form_submit("submit", "Submit");
+				echo form_close();
+			?>
+		</div>
+	</div>
+</div>
+<hr>
+

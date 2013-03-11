@@ -1,0 +1,907 @@
+<?php
+//include_once('json.php');
+
+/**
+* Json Encode (if not available)
+* @param data array
+* @return json string
+**/
+if( !function_exists('json_encode') ) {
+	function json_encode($data) {
+		$json = new Services_JSON();
+		return( $json->encode($data) );
+	}
+}
+
+/**
+* Json Decode (if not available)
+* @param json string, boolean
+* @return data array
+**/
+
+if( !function_exists('json_decode') ) {
+	function json_decode($data, $bool) {
+		if ($bool) {
+			$json = new Services_JSON(SERVICES_JSON_LOOSE_TYPE);
+		} 
+		else {
+			$json = new Services_JSON();
+		}
+		return( $json->decode($data) );
+	}
+}
+
+
+function check_mdn($mdn=0, $tx_id=0)
+{
+	if (in_array('curl', get_loaded_extensions()))
+	{
+		$url = "http://172.16.109.50:7001/BTELNegsoa/Application_Layer/Legacy_System/Proxy_Services/es_rtbms_imsi_query_ps";
+		//$url = "HTTP://172.16.109.50:7001/BTELNEGSOA/APPLICATION_LAYER/LEGACY_SYSTEM/PROXY_SERVICES/ES_RTBMS_IMSI_QUERY_PS?WSDL";
+		$postfields = '<soapenv:Envelope
+						xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+						xmlns:es="http://xmlns.oracle.com/es_rtbms_imsi_query">
+						<soapenv:Header/>
+							<soapenv:Body>
+								<es:es_rtbms_imsi_queryProcessRequest>
+									<es:usr>ocs_reqdebit</es:usr>
+									<es:ip_addr>172.27.239.153</es:ip_addr>
+									<es:min>'.$mdn.'</es:min>
+								</es:es_rtbms_imsi_queryProcessRequest>
+							</soapenv:Body>
+						</soapenv:Envelope>';
+		$soap_do = curl_init();
+		//curl_setopt($soap_do, CURLOPT_URL, $url."?".$postfields );
+		curl_setopt($soap_do, CURLOPT_URL, $url);
+		curl_setopt($soap_do, CURLOPT_CONNECTTIMEOUT, 30);
+		curl_setopt($soap_do, CURLOPT_TIMEOUT, 30);
+		curl_setopt($soap_do, CURLOPT_RETURNTRANSFER, true );
+		curl_setopt($soap_do, CURLOPT_SSL_VERIFYPEER, false);
+		curl_setopt($soap_do, CURLOPT_SSL_VERIFYHOST, false);
+		curl_setopt($soap_do, CURLOPT_POST, true );
+		curl_setopt($soap_do, CURLOPT_POSTFIELDS, $postfields);
+		//curl_setopt($soap_do, CURLOPT_HTTPGET, true);
+		curl_setopt($soap_do, CURLOPT_HTTPHEADER, array('Content-Type: text/xml; charset=utf-8', 'Content-Length: '.strlen($postfields) ));
+		$output = curl_exec($soap_do);
+		if($output === false)
+		{                
+			echo '<h2>cURL error</h2><pre>' . curl_error($soap_do) . '</pre>';
+		}
+		else
+		{
+			$err_msg = substr($output, strpos($output, "<result>")+8);
+			$err_msg = substr($err_msg, 0, strpos($err_msg, "</result>"));
+			//$tarif = 2;
+			
+/*
+			if (strpos($err_msg,"CUST_TYPE=PRE") !== false)
+			{
+ 				$tarif = 3;
+				//$billing_status = potong_pulsa($mdn, $tarif);
+			}
+			else
+			{
+				$tarif = 2;
+				//$billing_status = potong_pulsa($mdn, $tarif);
+			}
+			
+			if ($billing_status == "1")
+			{
+				$billing_status = "0000";
+				$billing_msg = "";
+				$status_code = "900";
+				$status_code_desc = "Success";
+			}
+			else
+			{
+				$billing_status = substr($billing_status,0,strpos($billing_status,"|"));
+				$status_code = "902";
+				$billing_msg = substr($billing_status,strpos($billing_status,"|")+1);
+				$status_code_desc = "User Cancelled";
+			}
+
+			$sql = "INSERT INTO log_charging (tx_id, mdn, date_add, charging_status, charging_msg) VALUES (\"$tx_id\", \"$mdn\", \"".date("Y-m-d H:i:s")."\", \"$billing_status\", \"$billing_msg\")";
+			$sql = str_replace("\r\n","",$sql);
+			$sql = urlencode($sql);
+			$sql = CORE_URL."sql.php?sql=".$sql;
+			$sql = file_get_contents($sql);
+			
+			$sql = "SELECT MAX(log_id) AS log_id FROM log_charging";
+			$sql = str_replace("\r\n","",$sql);
+			$sql = urlencode($sql);
+			$sql = CORE_URL."sql.php?sql=".$sql;
+			$sql = file_get_contents($sql);
+			$log_id = $sql;
+			$log_id = substr($sql, strpos($log_id, "\"log_id\":\"")+10);
+			$log_id = substr($log_id, 0, strpos($log_id, "\""));
+*/
+			//$sql = get_data($sql, true);
+			//$log_id = $sql;
+			
+			//$log_id = $sql["results"][0]+1;
+
+
+			//$log_id = "2";
+			if (strpos($err_msg,"CUST_TYPE=PRE") !== false)
+			{
+				//write_cdr($log_id, $mdn, "2", $tarif, $billing_status, $status_code, $status_code_desc);
+				return "pre";
+			}
+			else
+			{
+				//write_cdr($log_id, $mdn, "1", $tarif, $billing_status, $status_code, $status_code_desc);
+				return "pos";
+			}
+			//return  $mdn."-".$log_id."-".strpos($output, "<result>")."-".$err_msg;
+		}
+	}
+}
+
+
+function potong_pulsa($mdn=0, $tarif=0, $pospre="pre", $tx_id)
+{
+	$result = "";
+	if ($pospre == "pre")
+	{
+		if (in_array('curl', get_loaded_extensions()))
+		{
+			$url = "http://172.16.109.50:7001/BTELNegsoa/Application_Layer/OCS/Proxy_Services/es_ocs_subscriber_deduction_ps";
+			$postfields =  '<soapenv:Envelope 
+							xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+							xmlns:es="http://xmlns.oracle.com/es_ocs_subscriber_deduction"> 
+							   <soapenv:Header/> 
+							   <soapenv:Body> 
+								  <es:es_ocs_subscriber_deductionProcessRequest> 
+									 <es:amount>'.$tarif.'</es:amount> 
+									 <es:dn>'.$mdn.'</es:dn> 
+									 <es:usr>ocs_reqdebit</es:usr>
+									 <es:pwd>oc54321</es:pwd>
+									 <es:ip_addr>172.27.239.153</es:ip_addr>
+									 <es:appinfo>BR_INFOKERJA_112_GRM</es:appinfo>
+								  </es:es_ocs_subscriber_deductionProcessRequest> 
+							   </soapenv:Body> 
+							</soapenv:Envelope>';
+			
+			$soap_do = curl_init();
+			curl_setopt($soap_do, CURLOPT_URL,            $url );
+			curl_setopt($soap_do, CURLOPT_CONNECTTIMEOUT, 10);
+			curl_setopt($soap_do, CURLOPT_TIMEOUT,        10);
+			curl_setopt($soap_do, CURLOPT_RETURNTRANSFER, true );
+			curl_setopt($soap_do, CURLOPT_SSL_VERIFYPEER, false);
+			curl_setopt($soap_do, CURLOPT_SSL_VERIFYHOST, false);
+			curl_setopt($soap_do, CURLOPT_POST,           true );            
+			curl_setopt($soap_do, CURLOPT_POSTFIELDS,     $postfields); 
+			curl_setopt($soap_do, CURLOPT_HTTPHEADER,     array('Content-Type: text/xml; charset=utf-8', 'Content-Length: '.strlen($postfields) ));
+			$output = curl_exec($soap_do);
+			if($output === false)
+			{                
+				echo '<h2>cURL error</h2><pre>' . curl_error($soap_do) . '</pre>';
+			}
+			else
+			{
+				if (strpos($output,"<ret_code>0000</ret_code>") !== false)
+				{
+					$billing_status = "0000";
+					$billing_msg = "";
+					$status_code = "900";
+					$status_code_desc = "Success";
+					$result = 1;
+				}
+				else
+				{
+					$billing_status = substr($billing_status,0,strpos($billing_status,"|"));
+					$status_code = "902";
+					$billing_msg = substr($billing_status,strpos($billing_status,"|")+1);
+					$status_code_desc = "User Cancelled";
+					
+					$billing_status = substr($output, strpos($output, "<ret_code>")+10);
+					$billing_status = substr($billing_status, 0, strpos($billing_status, "</ret_code>"));
+
+					$billing_msg = substr($output, strpos($output, "<ret_desc>")+10);
+					$billing_msg = substr($billing_msg, 0, strpos($billing_msg, "</ret_desc>"));
+
+					$result = $billing_status."|".$billing_msg;
+					//$result = str_replace("_","-",$output);
+				}
+			}
+			curl_close($soap_do);
+		}
+		else
+		{
+			$result = "cURL not supported";
+		}
+	}
+	$sql = "INSERT INTO log_charging (tx_id, mdn, date_add, charging_status, charging_msg, pospre) VALUES (\"$tx_id\", \"$mdn\", \"".date("Y-m-d H:i:s")."\", \"$billing_status\", \"$billing_msg\", \"$pospre\")";
+	$sql = str_replace("\r\n","",$sql);
+	$sql = urlencode($sql);
+	$sql = CORE_URL."sql.php?sql=".$sql;
+	$sql = file_get_contents($sql);
+	
+	$sql = "SELECT MAX(log_id) AS log_id FROM log_charging";
+	$sql = str_replace("\r\n","",$sql);
+	$sql = urlencode($sql);
+	$sql = CORE_URL."sql.php?sql=".$sql;
+	$sql = file_get_contents($sql);
+
+	$log_id = $sql;
+	$log_id = substr($sql, strpos($log_id, "\"log_id\":\"")+10);
+	$log_id = substr($log_id, 0, strpos($log_id, "\""));
+	
+	//if (strpos($err_msg,"CUST_TYPE=PRE") !== false)
+	if ($pospre == "pre")
+		write_cdr($log_id, $mdn, "2", $tarif, $billing_status, $status_code, $status_code_desc);
+	else
+		write_cdr($log_id, $mdn, "1", ($tarif * 1.1), $billing_status, $status_code, $status_code_desc);
+	return $result;
+}
+
+
+function write_cdr($log_id=0, $mdn=0, $pospre=0, $tarif=0, $billing_status=0, $status_code=0, $status_code_desc=0)
+{
+
+	$cdr = array();
+	$cdr[0] = $log_id; //transaction_id
+	$cdr[1] = date("d-m-Y H:i:s"); //date
+	$cdr[2] = $mdn; //min
+	$cdr[3] = $mdn; //mdn
+	//$cdr[4] = get_browser(null, true); //"user_agent"
+	//$cdr[4] = $cdr[4]["browser_name_pattern"];
+	$cdr[4] = $_GET["http_user_agent"];
+	if ($cdr[4] == "") $cdr[4] = "BREW-Applet/0x01007413 (BREW/3.1.5.86; Lang: en)";
+	$cdr[5] = "112"; //"application_id"
+	$cdr[6] = "Info Kerja"; //"application_name"
+	$cdr[7] = "Pay Per Download"; //"service"
+	$cdr[8] = "Pay Per Download"; //"content_id"
+	$cdr[9] = "Pay Per Download"; //"content_name"
+	$cdr[10] = "Grameen"; //"vendor_name"
+	$cdr[11] = "Grameen"; //"sub_vendor_name"
+	$cdr[12] = "Grameen"; //"content_source"
+	$cdr[13] = $pospre; //"package_id"
+	if ($pospre == "1") {
+		$cdr[14] = "POSTPAID"; // "billing_status"
+	}
+	else if ($pospre == "2") {
+		$cdr[14] = $billing_status; // Billing Status
+		/*
+		switch($billing_status) {
+			case "NON_BILLING":
+				$cdr[14] = "NON_BILLING"; // Billing Status
+				break;
+			case "REFUNDED":
+				$cdr[14] = "REFUNDED"; 
+				break;
+			case "NON_REFUNDED":
+				$cdr[14] = "NON_REFUNDED"; 
+				break;
+			default:
+				$cdr[14] = $ercode;  
+				$cdr[14] = "0000";
+			    break;
+		}
+		*/
+	}
+	$cdr[15] = "0"; //"number_of_days"
+	$cdr[16] = $tarif; //"price"
+	$cdr[17] = $status_code; //"status_code"
+	$cdr[18] = $status_code_desc; //"status_code_desc"
+	if ($cdr[18] == "Success")
+		$cdr[19] = "200"; // "http_code"
+	else
+		$cdr[19] = $status_code;
+	$cdr[20] = $pospre; //"customer_type_id"
+	$cdr[21] = $_GET["remote_addr"]; //"ip_address"
+	$cdr[22] = $_GET["imei"]; //"esn"
+	$cdr[23] = $mdn.substr(time(),0,10); //"client_id"
+	$logcontent = implode("|",$cdr)."\n";
+	
+    $filepath = "cdr/";
+	$m = (date("H") * 4) + ceil(date("m")/15);
+	//$m = date("H");
+	//$m = "1";
+
+	if (strlen($m) == 1) $m = "000".$m;
+	if (strlen($m) == 2) $m = "00".$m;
+	if (strlen($m) == 3) $m = "0".$m;
+
+    $filename = date('YmdH').".".$m;
+    $fnamecheck = $filename.".txt";
+    if(file_exists($filepath.$fnamecheck))
+    {
+		if (is_writable($filepath.$fnamecheck)) {
+            if (!$handle = fopen($filepath.$fnamecheck, 'a')) {
+                echo "0";//"Cannot open file ($fnamecheck)";
+                exit;
+            }
+            if (fwrite($handle, $logcontent) === FALSE) {
+                 echo "0";//"Cannot write to file ($fnamecheck)";
+                 exit;
+            }
+            //echo "Success, wrote ($logcontent) to file ($fnamecheck)";
+  	        //echo "Write Log to File ".$fnamecheck." Successful";
+            fclose($handle);
+        } else {
+            echo "0";//"The file $fnamecheck is not writable";
+        }
+	}
+	else
+	{
+	    $int = file_put_contents($filepath.$fnamecheck, $logcontent);
+	}
+
+}
+
+
+function send_sms($mdn="0", $msg="")
+{
+	//$mdn = $_GET["mdn"];
+	//print "<pre>";
+	require_once "smpp.php";
+	$tx=new SMPP('172.27.239.7',5019);
+	//$tx->debug=true;
+	$tx->system_type="WWW";
+	$tx->addr_npi=1;
+	//print "open status: ".$tx->state."\n<hr>";
+	$tx->bindTransmitter("usahaku","usahak4")."<hr>";
+	$tx->sms_source_addr_npi=1;
+	//$tx->sms_source_addr_ton=1;
+	$tx->sms_dest_addr_ton=1;
+	$tx->sms_dest_addr_npi=1;
+	print $tx->sendSMS("818","62".$mdn, $msg)."<hr>";
+	$tx->close();
+	unset($tx);
+	//print "</pre>";
+}
+
+
+
+function db_input_filter($str)
+{
+	 if(get_magic_quotes_gpc()) 
+	 {
+		if(ini_get('magic_quotes_sybase')) 
+		{
+			$str = str_replace("''", "'", $str);			
+		} 
+		else 
+		{
+			$str = stripslashes($str);
+		}
+	} 
+
+	$str = mysql_real_escape_string($str);
+		
+	return $str;
+}
+
+function urlVarToStr($get, $post)
+{
+	$retStr = "";
+	if(sizeof($get)>0)
+	{
+		$retStr .= " _GET : ";
+		$arKey = array_keys($get);
+		for($i=0;$i<sizeof($arKey);++$i)
+		{
+			$retStr .= $arKey[$i]."=".$get[$arKey[$i]].",";
+		}
+		
+		if(strlen($retStr)>7)
+			$retStr = substr($retStr, 0, strlen($retStr)-1);
+	}
+	
+	if(sizeof($post)>0)
+	{
+		$retStr .= " _POST : ";
+		$arKey = array_keys($post);
+		for($i=0;$i<sizeof($arKey);++$i)
+		{
+			$retStr .= $arKey[$i]."=".$get[$arKey[$i]].",";
+		}
+		
+		if(strlen($retStr)>7)
+			$retStr = substr($retStr, 0, strlen($retStr)-1);
+	}
+	
+	return $retStr;
+}
+
+function getNextASID()
+{
+	//global $conn;
+//	
+//	$sql = "SELECT MAX(asid) FROM ".T_AS2ETOS."";
+//	$run = mysql_query($sql);
+//	$data = mysql_fetch_array($run);
+//	if(!$data[0])
+//		$data[0] = 0;
+//		
+//	++$data[0];
+	
+	//return $data[0];
+	return time();
+}
+
+function getNextASRID()
+{
+	global $conn;
+	
+	$sql = "SELECT MAX(asrid) FROM ".T_ETOS2AS."";
+	$run = mysql_query($sql);
+	$data = mysql_fetch_array($run);
+	if(!$data[0])
+		$data[0] = 0;
+		
+	++$data[0];
+	
+	return $data[0];
+}
+
+function getNextAccId()
+{
+	global $conn;
+	
+	$sql = "SELECT MAX(accid) FROM ".T_VPO."";
+	$run = mysql_query($sql);
+	$data = mysql_fetch_array($run);
+	if(!$data[0])
+		$data[0] = 0;
+		
+	++$data[0];
+	
+	return $data[0];
+}
+
+function getNodeId($t_mdn)
+{
+	global $conn;
+	
+	$sql = "SELECT nodeid FROM ".T_VPO." WHERE mdn='".db_input_filter($t_mdn)."'";
+	$run = mysql_query($sql);
+	$data = mysql_fetch_array($run);
+	
+	return $data[0];
+}
+
+function getMerchantPhoneId($t_mdn)
+{
+	global $conn;
+	
+	$sql = "SELECT merchantphoneid FROM ".T_VPO." WHERE mdn='".db_input_filter($t_mdn)."'";
+	$run = mysql_query($sql);
+	$data = mysql_fetch_array($run);
+	
+	return $data[0];
+}
+
+function getCommLevel($nodeid)
+{
+	global $conn;
+	
+	$sql = "SELECT province_name FROM ".P_PROVINCE." WHERE province_id='".db_input_filter($nodeid)."'";
+	$run = mysql_query($sql);
+	$data = mysql_fetch_array($run);
+	
+	return $data[0];
+}
+
+//new function yudha for filter kecamatan
+function getId($id)
+{
+    global $conn;
+	
+	$sql = "SELECT * FROM kecamatan WHERE kota_id='".db_input_filter($id)."'";
+	$run = mysql_query($sql);
+	$data = mysql_fetch_array($run);
+	
+	return $data[0];
+    
+}
+
+
+function validateVPO($t_mdn, $t_pin)
+{
+	global $conn;
+	
+	$sql = "SELECT * FROM ".T_VPO." WHERE mdn='".db_input_filter($t_mdn)."' AND pin='".db_input_filter($t_pin)."'";
+	$run = mysql_query($sql);
+		
+	return mysql_num_rows($run);
+}
+
+function logAs2Etos($asid, $etosrid, $service, $nodeid, $status, $request, $response)
+{
+	global $conn;
+	
+	$time = date("Y-m-d H:i:s");
+	
+	$sql = "INSERT INTO ".T_AS2ETOS." (asid, etosrid, time, service, nodeid, status, request, response) VALUES";
+	$sql .= " ('".db_input_filter($asid)."','".db_input_filter($etosrid)."','".db_input_filter($time)."','".db_input_filter($service)."','".db_input_filter($nodeid)."','".db_input_filter($status)."','".db_input_filter($request)."','".db_input_filter($response)."')";
+	$run = mysql_query($sql);
+}
+
+function logEtos2As($etosid, $asrid, $service, $nodeid, $status, $request, $response)
+{
+	global $conn;
+	
+	$time = date("Y-m-d H:i:s");
+	
+	$sql = "INSERT INTO ".T_ETOS2AS." (etosid, asrid, time, service, nodeid, status, request, response) VALUES";
+	$sql .= " ('".db_input_filter($etosid)."','".db_input_filter($asrid)."','".db_input_filter($time)."','".db_input_filter($service)."','".db_input_filter($nodeid)."','".db_input_filter($status)."','".db_input_filter($request)."','".db_input_filter($response)."')";
+	$run = mysql_query($sql) or die($sql);
+}
+
+
+function logMobile2As($tx_id, $time, $mdn, $lang, $cid, $cmd, $status, $pageidsrc, $pageidreq, $request, $response)
+{
+	global $conn;
+	$time = date("Y-m-d H:i:s");
+	$var = "tx_id=".urlencode($tx_id);
+	$var .= "&time=".urlencode($time);
+	$var .= "&mdn=".urlencode($mdn);
+	$var .= "&lang=".urlencode($lang);
+	$var .= "&cid=".urlencode($cid);
+	$var .= "&cmd=".urlencode($cmd);
+	$var .= "&status=".urlencode($status);
+	$var .= "&pageidsrc=".urlencode($pageidsrc);
+	$var .= "&pageidreq=".urlencode($pageidreq);
+	$var .= "&request=".urlencode($request);
+	$var .= "&response=".urlencode($response);
+	$data = CORE_URL."add_logdms.php?$var";
+	//die($data);
+	$data = get_data($data);
+}
+
+function timestampFromMonth($month, $isEnd=false)//format mmyyyy
+{
+	if(!$month)
+		return false;
+		
+	if(strpos($month,"/")!==FALSE)
+	{
+		$tar = explode("/",$month);
+		$tmon = (string)$tar[0];
+		$tyear = (string)$tar[1];
+		
+		while(strlen($tmon)<2)
+			$tmon = "0".$tmon;
+			
+		while(strlen($tyear)<4)
+			$tyear = "0".$tyear;
+			
+		$month = $tmon.$tyear;
+	}
+	
+	if(strlen($month)!=6)
+		return false;
+	
+	$mon = intval(substr($month, 0, 2));
+	$year = intval(substr($month, 2, 4));
+	if((int)$mon>12 || (int)$mon<1)
+		return false;
+		
+	if((int)$mon<10)$mon = "0".$mon;
+	
+	if($isEnd)
+		return strtotime($year."-".$mon."-".cal_days_in_month(CAL_GREGORIAN, $mon, $year)." 23:59:59");
+	else
+		return strtotime($year."-".$mon."-01 00:00:00");
+}
+
+function timestampFromDate($date, $isEnd=false)//format ddmmyyyy
+{
+	if(!$date)
+		return false;
+		
+	if(strpos($date,"/")!==FALSE)
+	{
+		$tar = explode("/",$date);
+		$tdat = (string)$tar[0];
+		$tmon = (string)$tar[1];
+		$tyear = (string)$tar[2];
+		
+		while(strlen($tdat)<2)
+			$tdat = "0".$tdat;
+			
+		while(strlen($tmon)<2)
+			$tmon = "0".$tmon;
+			
+		while(strlen($tyear)<4)
+			$tyear = "0".$tyear;
+			
+		$date = $tdat.$tmon.$tyear;
+	}
+		
+	if(strlen($date)!=8)
+		return false;
+	
+	$dat = intval(substr($date, 0, 2));
+	$mon = intval(substr($date, 2, 2));
+	$year = intval(substr($date, 4, 4));
+	if((int)$mon>12 || (int)$mon<1 || (int)$dat<1 || (int)$dat>31)
+		return false;
+		
+	if((int)$mon<10)$mon = "0".$mon;
+	if((int)$dat<10)$dat = "0".$dat;
+	
+	if($isEnd)
+		return strtotime($year."-".$mon."-".$dat." 23:59:59");
+	else
+		return strtotime($year."-".$mon."-".$dat." 00:00:00");
+}
+
+function timestampFromYear($year, $isEnd=false)//format yyyy
+{
+	if(!$year)
+		return false;
+		
+	if($isEnd)
+		return strtotime($year."-12-31 23:59:59");
+	else
+		return strtotime($year."-01-31 00:00:00");
+}
+
+
+function getPageIdDetail($pid, $lang="eng")
+{
+	$pageidLen = strlen($pid);
+	$arTemp = explode(chr(13).chr(10), file_get_contents("files/".$lang));
+	if(sizeof($arTemp)<2)
+		$arTemp = explode(chr(10), file_get_contents("files/".$lang));
+		
+	for($i=0;$i<sizeof($arTemp);++$i)
+	{		
+		if(substr((string)$arTemp[$i], 0, $pageidLen)==(string)$pid)
+		{
+			return $arTemp[$i];
+		}
+	}
+	
+	return false;
+}
+
+
+function getErrorMsg( $ecode )
+{
+	$are = array(
+			"e-1"=>"Operator tidak ditemukan",
+			"e-2"=>"Transaksi dalam proses",
+			"e-3"=>"Transaksi dalam proses (-3)",
+			"e-4"=>"Transaksi dalam proses (-4)",
+			"e-99"=>"Operator tidak ditemukan",
+			"e00"=>"Transaksi sukses",
+			"e05"=>"Undefined Error",
+			"e06"=>"Sistem error (O06)",
+			"e07"=>"Sistem error (E07)",
+			"e08"=>"Sistem error (E08)",
+			"e10"=>"No HP tidak ada",
+			"e12"=>"Transaksi salah / pembatalan ditolak",
+			"e13"=>"Nilai salah",
+			"e14"=>"Sistem error (E14)",
+			"e20"=>"Transaksi sukses, pembatalan ditolak",
+			"e21"=>"Sistem error (O21)",
+			"e23"=>"No Hp adalah pasca bayar",
+			"e24"=>"suspend",
+			"e25"=>"No HP Salah",
+			"e30"=>"Timeout",
+			"e40"=>"No HP sudah expired",
+			"e50"=>"Nilai salah",
+			"e68"=>"Sistem error(O68)",
+			"e69"=>"Timeout",
+			"e70"=>"Stock Habis",
+			"e71"=>"Transaksi Overlimit, Mohon coba lagi",
+			"e89"=>"Error komunikasi dengan operator ",
+			"e91"=>"Sistem error (O91)",
+			"e92"=>"Sistem error (O92)",
+			"e95"=>"Sistem error (O95)",
+			"e96"=>"Sistem error (O96)",
+			"e97"=>"Sistem error (O97)",
+			"e99"=>"Sistem error(E99)",
+			"e197"=>"ip not authorized",
+			"e999"=>"Transaksi dalam proses"
+			);
+	
+	return $ecode." : ".$are["e".$ecode];
+}
+
+
+
+/** 
+ * xml2array() will convert the given XML text to an array in the XML structure. 
+ * Link: http://www.bin-co.com/php/scripts/xml2array/ 
+ * Arguments : $contents - The XML text 
+ *                $get_attributes - 1 or 0. If this is 1 the function will get the attributes as well as the tag values - this results in a different array structure in the return value. 
+ *                $priority - Can be 'tag' or 'attribute'. This will change the way the resulting array sturcture. For 'tag', the tags are given more importance.
+ * Return: The parsed XML in an array form. Use print_r() to see the resulting array structure.
+ * Examples: $array =  xml2array(file_get_contents('feed.xml')); 
+ *              $array =  xml2array(file_get_contents('feed.xml', 1, 'attribute'));
+ */ 
+function xml2array($contents, $get_attributes=1, $priority = 'tag') { 
+    if(!$contents) return array(); 
+
+    if(!function_exists('xml_parser_create')) { 
+        //print "'xml_parser_create()' function not found!"; 
+        return array(); 
+    } 
+
+    //Get the XML parser of PHP - PHP must have this module for the parser to work 
+    $parser = xml_parser_create(''); 
+    xml_parser_set_option($parser, XML_OPTION_TARGET_ENCODING, "UTF-8"); # http://minutillo.com/steve/weblog/2004/6/17/php-xml-and-character-encodings-a-tale-of-sadness-rage-and-data-loss 
+    xml_parser_set_option($parser, XML_OPTION_CASE_FOLDING, 0); 
+    xml_parser_set_option($parser, XML_OPTION_SKIP_WHITE, 1); 
+    xml_parse_into_struct($parser, trim($contents), $xml_values); 
+    xml_parser_free($parser); 
+
+    if(!$xml_values) return;//Hmm... 
+
+    //Initializations 
+    $xml_array = array(); 
+    $parents = array(); 
+    $opened_tags = array(); 
+    $arr = array(); 
+
+    $current = &$xml_array; //Refference 
+
+    //Go through the tags. 
+    $repeated_tag_index = array();//Multiple tags with same name will be turned into an array 
+    foreach($xml_values as $data) { 
+        unset($attributes,$value);//Remove existing values, or there will be trouble 
+
+        //This command will extract these variables into the foreach scope 
+        // tag(string), type(string), level(int), attributes(array). 
+        extract($data);//We could use the array by itself, but this cooler. 
+
+        $result = array(); 
+        $attributes_data = array(); 
+         
+        if(isset($value)) { 
+            if($priority == 'tag') $result = $value; 
+            else $result['value'] = $value; //Put the value in a assoc array if we are in the 'Attribute' mode 
+        } 
+
+        //Set the attributes too. 
+        if(isset($attributes) and $get_attributes) { 
+            foreach($attributes as $attr => $val) { 
+                if($priority == 'tag') $attributes_data[$attr] = $val; 
+                else $result['attr'][$attr] = $val; //Set all the attributes in a array called 'attr' 
+            } 
+        } 
+
+        //See tag status and do the needed. 
+        if($type == "open") {//The starting of the tag '<tag>' 
+            $parent[$level-1] = &$current; 
+            if(!is_array($current) or (!in_array($tag, array_keys($current)))) { //Insert New tag 
+                $current[$tag] = $result; 
+                if($attributes_data) $current[$tag. '_attr'] = $attributes_data; 
+                $repeated_tag_index[$tag.'_'.$level] = 1; 
+
+                $current = &$current[$tag]; 
+
+            } else { //There was another element with the same tag name 
+
+                if(isset($current[$tag][0])) {//If there is a 0th element it is already an array 
+                    $current[$tag][$repeated_tag_index[$tag.'_'.$level]] = $result;
+                    $repeated_tag_index[$tag.'_'.$level]++; 
+                } else {//This section will make the value an array if multiple tags with the same name appear together
+                    $current[$tag] = array($current[$tag],$result);//This will combine the existing item and the new item together to make an array 
+                    $repeated_tag_index[$tag.'_'.$level] = 2; 
+                     
+                    if(isset($current[$tag.'_attr'])) { //The attribute of the last(0th) tag must be moved as well 
+                        $current[$tag]['0_attr'] = $current[$tag.'_attr']; 
+                        unset($current[$tag.'_attr']); 
+                    } 
+
+                } 
+                $last_item_index = $repeated_tag_index[$tag.'_'.$level]-1; 
+                $current = &$current[$tag][$last_item_index]; 
+            } 
+
+        } elseif($type == "complete") { //Tags that ends in 1 line '<tag />' 
+            //See if the key is already taken. 
+            if(!isset($current[$tag])) { //New Key 
+                $current[$tag] = $result; 
+                $repeated_tag_index[$tag.'_'.$level] = 1; 
+                if($priority == 'tag' and $attributes_data) $current[$tag. '_attr'] = $attributes_data; 
+
+            } else { //If taken, put all things inside a list(array) 
+                if(isset($current[$tag][0]) and is_array($current[$tag])) {//If it is already an array... 
+
+                    // ...push the new element into that array. 
+                    $current[$tag][$repeated_tag_index[$tag.'_'.$level]] = $result;
+                     
+                    if($priority == 'tag' and $get_attributes and $attributes_data) { 
+                        $current[$tag][$repeated_tag_index[$tag.'_'.$level] . '_attr'] = $attributes_data; 
+                    } 
+                    $repeated_tag_index[$tag.'_'.$level]++; 
+
+                } else { //If it is not an array... 
+                    $current[$tag] = array($current[$tag],$result); //...Make it an array using using the existing value and the new value 
+                    $repeated_tag_index[$tag.'_'.$level] = 1; 
+                    if($priority == 'tag' and $get_attributes) { 
+                        if(isset($current[$tag.'_attr'])) { //The attribute of the last(0th) tag must be moved as well 
+                             
+                            $current[$tag]['0_attr'] = $current[$tag.'_attr']; 
+                            unset($current[$tag.'_attr']); 
+                        } 
+                         
+                        if($attributes_data) { 
+                            $current[$tag][$repeated_tag_index[$tag.'_'.$level] . '_attr'] = $attributes_data; 
+                        } 
+                    } 
+                    $repeated_tag_index[$tag.'_'.$level]++; //0 and 1 index is already taken 
+                } 
+            } 
+
+        } elseif($type == 'close') { //End of tag '</tag>' 
+            $current = &$parent[$level-1]; 
+        } 
+    } 
+     
+    return($xml_array); 
+} 
+
+function getSystemDate()
+{
+	return date("ymdhi");
+} 
+
+function goto121()
+{
+	$arGetKey = array_keys($_GET);
+		
+	$url121 = "http://".$_SERVER["SERVER_NAME"].$_SERVER["PHP_SELF"]."?";
+	for($i=0;$i<sizeof($arGetKey);++$i)
+	{
+		if($arGetKey[$i]=="id")
+			$_GET[$arGetKey[$i]] = "121";
+			
+		$url121 .= "&".$arGetKey[$i]."=".urlencode($_GET[$arGetKey[$i]]);
+	}
+		
+	$ch121 = curl_init($url121);
+	curl_setopt($ch121, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch121, CURLOPT_CONNECTTIMEOUT, 30);
+	$strRet = curl_exec($ch121);
+	
+	return $strRet;	
+}
+
+
+function get_data($data)
+{
+	$data = file_get_contents($data);
+	return json_decode($data, TRUE);
+    //return true;
+}
+
+function get_uuid($param="")
+{
+	
+	$uuid = 
+		//sprintf( '%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
+		sprintf( '%04x%04x%04x%04x%04x%04x%04x%04x',
+		// 32 bits for "time_low"
+		mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff ),
+
+		// 16 bits for "time_mid"
+		mt_rand( 0, 0xffff ),
+
+		// 16 bits for "time_hi_and_version",
+		// four most significant bits holds version number 4
+		mt_rand( 0, 0x0fff ) | 0x4000,
+
+		// 16 bits, 8 bits for "clk_seq_hi_res",
+		// 8 bits for "clk_seq_low",
+		// two most significant bits holds zero and one for variant DCE1.1
+		mt_rand( 0, 0x3fff ) | 0x8000,
+
+		// 48 bits for "node"
+		mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff )
+	);
+	//return ($param == "") ? $uuid : $uuid."_".$param;
+	$uuid = ($param == "") ? $uuid : $uuid."_".$param;
+	$uuid = date("Ym").$uuid;
+	return $uuid;
+	
+}
+
+?>

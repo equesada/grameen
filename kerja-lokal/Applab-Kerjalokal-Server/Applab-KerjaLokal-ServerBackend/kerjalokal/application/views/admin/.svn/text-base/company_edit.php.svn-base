@@ -1,0 +1,138 @@
+<div class='right_section'><b>JOB POST</b></div>
+<div style="display:table; width:100%;">
+	<div class="row">
+		<div class="cell table_head" style="width:50px">ID</div>
+		<div class="cell table_head">Title</div>
+		<div class="cell table_head">Category</div>
+		<div class="cell table_head">Status</div>
+		<div class="cell table_head">Post Date</div>
+		<div class="cell table_head">Location</div>
+		<div class="cell table_head"># sent</div>
+		<div class="cell table_head">Duplicate</div>
+	</div>
+<?php
+
+	//print_r($jobs);
+	foreach ($jobs["results"] as $job)
+	{
+		echo "<div class=\"row\">\n";
+		echo "<div class=\"cell table_cell\">".$job["job_id"]."</div>\n";
+		echo "<div class=\"cell table_cell\"><a href=\"".base_url()."admin/jobpost/edit/".$job["job_id"]."\">". $job["job_title"]."</a></div>\n";
+		echo "<div class=\"cell table_cell\">".$job["jobcat_title"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$job["jobstatus_title"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$job["date_add"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$job["loc_title"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$job["n_send"]."</div>\n";
+		echo "<div class=\"cell table_cell\"><a href=\"".base_url()."admin/jobpost/add/".$job["comp_id"]."/".$job["job_id"]."\">Duplicate</a></div>\n";
+		echo "</div>\n";
+	}
+	
+?>
+</div>
+<br><br>
+
+<div style="display:table; width:100%;">
+<div class='right_section'><b>COMPANY DETAIL</b></div>
+<?php
+	$list_zip["0"] = "--";
+	$list_industry["0"] = "--";
+	
+	$list_province = array("0"=>"--");
+	$list_kotamadya = array("0"=>"--");
+	$list_kecamatan = array("0"=>"--");
+	$list_kelurahan = array("0"=>"--");
+	
+	foreach ($provinces as $a)
+	{ $list_province[$a["loc_id"]] = $a["name"]; }
+	
+	if ($kotamadya != "")
+		foreach ($kotamadyas as $a)
+		{ $list_kotamadya[$a["loc_id"]] = $a["name"]; }
+
+	if ($kecamatan != "")
+		foreach ($kecamatans as $a)
+		{ $list_kecamatan[$a["loc_id"]] = $a["name"]; }
+
+	if ($kelurahan != "")
+		foreach ($kelurahans as $a)
+		{ $list_kelurahan[$a["loc_id"]] = $a["name"]; }
+
+	foreach ($zips as $a)
+	{ $list_zip[$a["loc_id"]] = $a["zipcode"]; }
+
+	foreach ($industries as $a)
+	{ $list_industry[$a["industry_id"]] = $a["industry_title"]; }
+
+	echo form_open($form_submit)."\n";
+	//$this->form_validation->set_message('required', 'Error Message');
+	//$this->form_validation->set_error_delimiters('<div class="error">', '</div>');
+	//echo form_error('name', '<div class="error">', '</div>');
+	echo "<input type='hidden' value='".$comp_id."' name='comp_id' id='comp_id' />";
+	echo "<div class='row'><div class='cell_key'>".form_label('Company', 'name')."</div>\n";
+	echo "<div class='cell_val'>".form_input("name", $name ,"size=40 maxlength=100").form_error('name', '<div class="form_error" style="color:red">', '</div>')."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('Contact Person', 'cp')."</div>\n";
+	echo "<div class='cell_val'>".form_input("cp", $cp ,"size=40 maxlength=100").form_error('cp', '<div class="form_error" style="color:red">', '</div>')."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('Phone', 'tel')."</div>\n";
+	echo "<div class='cell_val'>".form_input("tel", $tel ,"size=40 maxlength=100").form_error('tel', '<div class="form_error" style="color:red">', '</div>')."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('Fax', 'fax')."</div>\n";
+	echo "<div class='cell_val'>".form_input("fax", $fax ,"size=40 maxlength=100")."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('E-mail', 'email')."</div>\n";
+	echo "<div class='cell_val'>".form_input("email", $email ,"size=40 maxlength=100").form_error('email', '<div class="form_error" style="color:red">', '</div>')."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('Industry', 'industry_id')."</div>\n";
+	echo "<div class='cell_val'>".form_dropdown("industry_id", $list_industry, $industry_id).form_error('industry_id', '<div class="form_error" style="color:red">', '</div>')."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('Notes', 'notes')."</div>\n";
+	echo "<div class='cell_val'><textarea name='notes' cols='30' rows='5'>$notes</textarea></div></div>\n";
+	echo "<div class='right_section'><b>LOCATION</b></div>\n"; 
+	$region_list = array(
+		1 => "By city, kotamadya, etc.",
+		2 => "By Zipcode"
+	);
+	echo "<div class='row'><div class='cell_key'>".form_label('Address', 'address1')."</div>\n";
+	echo "<div class='cell_val'>".form_input("address1", $address1 ,"size=40 maxlength=100").form_error('address1', '<div class="form_error" style="color:red">', '</div>')."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'></div>\n";
+	echo "<div class='cell_val'>".form_input("address2", $address2 ,"size=40 maxlength=100").form_error('address2', '<div class="form_error" style="color:red">', '</div>')."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('Region details', 'region')."</div>\n";
+	echo "<div class='cell_val'>".form_dropdown("region", $region_list , $region, "id=region")."</div></div>\n";
+	echo "<div class='by' id='byRegion'>";
+		echo "<div class='row'>";
+			echo "<div class='cell_key'>".form_label('Province', 'province')."</div>\n";
+			echo "<div class='cell_val'>".form_dropdown("province", $list_province , $province, "id=province").form_error("province", "<div class='form_error'>", "</div>")."</div>";
+		echo "</div>\n";
+		echo "<div class='row'>";
+			echo "<div class='cell_key'>".form_label('Kotamadya', 'kotamadya')."</div>\n";
+			echo "<div class='cell_val'>".form_dropdown("kotamadya", $list_kotamadya , $kotamadya, "id=kotamadya").form_error("kotamadya", "<div class='form_error'>", "</div>")."</div>";
+		echo "</div>\n";
+		echo "<div class='row'>";
+			echo "<div class='cell_key'>".form_label('Kecamatan', 'kecamatan')."</div>\n";
+			echo "<div class='cell_val'>".form_dropdown("kecamatan", $list_kecamatan , $kecamatan, "id=kecamatan").form_error("kecamatan", "<div class='form_error'>", "</div>")."</div>";
+		echo "</div>\n";
+		echo "<div class='row'>";
+			echo "<div class='cell_key'>".form_label('Kelurahan', 'kelurahan')."</div>\n";
+			echo "<div class='cell_val'>".form_dropdown("kelurahan", $list_kelurahan , $kelurahan, "id=kelurahan").form_error("kelurahan", "<div class='form_error'>", "</div>")."</div>";
+		echo "</div>\n";		
+	echo "</div>";
+	echo "<div class='by' id='byZip' style='display:none'>";
+		echo "<div class='row'>";
+			echo "<div class='cell_key'>".form_label('Zip', 'zip')."</div>\n";
+			echo "<div class='cell_val'>".form_dropdown("zip", $list_zip , $zip, "id=zip").form_error("zip", "<div class='form_error'>", "</div>")."</div>\n";
+			echo "<input type='hidden' name='hdnZip' id='hdnZip' />";
+		echo "</div>";
+	echo "</div>";
+	
+	echo "<div class='row'><div class='cell_key'>".form_label('Map', 'Map')."</div>\n";
+	
+	echo "<div class='cell_val' id='byMap'>";
+			echo "<input type='text' id='lat' name='lat' /> ";
+			echo "<input type='text' id='lng' name='lng' />";
+			echo form_error("lat", "<div class='form_error'>", "</div>");
+		echo '<div id="map_canvas" class="defaultMap" style="width:300px;height:250px;" ></div>';
+		echo "</div>";
+	echo "</div>";
+
+	echo "<div class='row'><div class='cell_key'><div class='cell_val'>".form_submit("submit", "Submit")."</div></div></div>";
+	    
+    echo form_close();
+    //$this->load->view('admin/jobpost/add');
+    
+?>
+</div>

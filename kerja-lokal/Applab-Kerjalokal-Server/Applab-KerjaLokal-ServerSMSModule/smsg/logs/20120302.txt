@@ -1,0 +1,105 @@
+2012-03-02 14:37:50.31378100 >> 2185403121 SMSG:Check KERJA keyword. 
+2012-03-02 14:37:50.31942700 >> 2185403121 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-02 14:37:50.33093900 >> 2185403121 SMSG:Job category keyword valid. 
+2012-03-02 14:37:50.33447300 >> 2185403121 SMSG:Check MDN Registration. 
+2012-03-02 14:37:50.34561900 >> 2185403121 SMSG:MDN existed. Get subscriber_id 
+2012-03-02 14:37:50.34568800 >> 2185403121 SMSG:Check user subscription on registered job category. 
+2012-03-02 14:37:50.36349200 >> 2185403121 SMSG:REG request rejected. Reason: Active subscription found. 
+2012-03-02 14:37:50.36356000 >> 2185403121 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan SUPIR.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-03-02 15:03:59.11957600 >> 2185403121 SMSG:Check KERJA keyword. 
+2012-03-02 15:03:59.11964200 >> 2185403121 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-02 15:03:59.12147600 >> 2185403121 SMSG:Job category keyword valid. 
+2012-03-02 15:03:59.12304500 >> 2185403121 SMSG:Check MDN Registration. 
+2012-03-02 15:03:59.12472400 >> 2185403121 SMSG:MDN existed. Get subscriber_id 
+2012-03-02 15:03:59.12477900 >> 2185403121 SMSG:Check user subscription on registered job category. 
+2012-03-02 15:03:59.13620000 >> 2185403121 SMSG:REG request rejected. Reason: Active subscription found. 
+2012-03-02 15:03:59.13627000 >> 2185403121 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan SUPIR.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-03-02 15:26:02.33802700 >> 2185403121 SMSG:Check KERJA keyword. 
+2012-03-02 15:26:02.33809000 >> 2185403121 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-02 15:26:02.33996500 >> 2185403121 SMSG:Job category keyword valid. 
+2012-03-02 15:26:02.34160200 >> 2185403121 SMSG:Check MDN Registration. 
+2012-03-02 15:26:02.34331400 >> 2185403121 SMSG:MDN existed. Get subscriber_id 
+2012-03-02 15:26:02.34336800 >> 2185403121 SMSG:Check user subscription on registered job category. 
+2012-03-02 15:26:02.38737500 >> 2185403121 SMSG:REG request accepted. 
+2012-03-02 15:26:02.38744100 >> 2185403121 SMSG:MT: Anda akan mendaftar layanan info pkrjaan PEMBANTU dr PT RUMA.Rp3rb/mg.1sms/hr.Jk setuju balas dg ktik KERJA PEMBANTU OK.CS:02160908000 
+2012-03-02 15:27:43.44941700 >> 2185403121 SMSG:Check Job category not empty. 
+2012-03-02 15:27:43.44953600 >> 2185403121 SMSG:Job category not empty. Check Job category validity. 
+2012-03-02 15:27:43.45163200 >> 2185403121 SMSG:Job category keyword valid. 
+2012-03-02 15:27:43.45173900 >> 2185403121 SMSG:Check MDN Registration. 
+2012-03-02 15:27:43.45363600 >> 2185403121 SMSG:MDN existed. Get subscriber_id 
+2012-03-02 15:27:43.45585400 >> 2185403121 SMSG:Double Confirmation enabled. Check subscription REG-ed by user. 
+2012-03-02 15:27:43.46076800 >> 2185403121 SMSG:KERJA YA request rejected. Reason: subscription REG-ed by user doesn't exist. MT: Maaf keyword yg Anda masukkan salah.Ketik KERJA INFO sms ke 818 utk pilihan pekerjaan.CS: 02160908000 
+2012-03-02 15:27:43.46087900 >> 2185403121 SMSG:MT: Maaf keyword yg Anda masukkan salah.Ketik KERJA INFO sms ke 818 utk pilihan pekerjaan.CS: 02160908000 
+2012-03-02 15:28:56.76728400 >> 2185403121 SMSG:Check Job category not empty. 
+2012-03-02 15:28:56.76738900 >> 2185403121 SMSG:Job category not empty. Check Job category validity. 
+2012-03-02 15:28:56.76930700 >> 2185403121 SMSG:Job category keyword valid. 
+2012-03-02 15:28:56.76941100 >> 2185403121 SMSG:Check MDN Registration. 
+2012-03-02 15:28:56.77376400 >> 2185403121 SMSG:MDN existed. Get subscriber_id 
+2012-03-02 15:28:56.79539800 >> 2185403121 SMSG:Check subscription REG-ed by user. 
+2012-03-02 15:28:56.79772000 >> 2185403121 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-03-02 15:28:56.80534300 >> 2185403121 SMSG:Check not-activated-yet subscription validity 
+2012-03-02 15:28:56.80545500 >> 2185403121 SMSG:Not-activated-yet subscription valid. Deduct user balance 
+2012-03-02 15:28:56.80554900 >> 2185403121 SMSG:KERJA OK request accepted. User balance deducted. 
+2012-03-02 15:28:56.82876100 >> 2185403121 SMSG:MT: Info pkrjaan PEMBANTU aktif s/d 09-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA PEMBANTU YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-03-02 15:28:56.82887400 >> 2185403121 SMSG:Job matching 
+2012-03-02 15:28:56.95620900 >> 2185403121 SMSG:Send instant job to user 
+2012-03-02 15:28:56.95632200 >> 2185403121 SMSG:MT: PT Sinergi Vista Selaras,Office Boy,P/W, Min SMA, Max 25th, Blm Mnkh, Pnglmn, Dom Jkt, hub.Ibu Rini 02129036601 
+2012-03-02 15:28:56.96136500 >> 2185403121 SMSG:DMS: 2012-03-02, Office Boy, PT Sinergi Vista Selaras,P/W, Min SMA, Max 25th, Blm Mnkh, Pnglmn, Dom Jkt, hub.Ibu Rini 02129036601 
+2012-03-02 15:28:56.96845600 >> 2185403121 SMSG:MT: Info pkrjaan PEMBANTU aktif s/d 09-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA PEMBANTU YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-03-02 16:58:55.21202400 >> 2192738742 SMSG:Check KERJA keyword. 
+2012-03-02 16:58:55.21208400 >> 2192738742 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-02 16:58:55.21386400 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-02 16:58:55.21537400 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-02 16:58:55.21706600 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-02 16:58:55.21712000 >> 2192738742 SMSG:Check user subscription on registered job category. 
+2012-03-02 16:58:55.23056400 >> 2192738742 SMSG:REG request accepted. 
+2012-03-02 16:58:55.23063000 >> 2192738742 SMSG:MT: Anda akan mendaftar layanan info pkrjaan GURU dr PT RUMA.Rp3rb/mg.1sms/hr.Jk setuju balas dg ktik KERJA GURU OK.CS:02160908000 
+2012-03-02 16:59:13.95007500 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-02 16:59:13.95018400 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-02 16:59:13.95201200 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-02 16:59:13.95211100 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-02 16:59:13.95378800 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-02 16:59:13.95567500 >> 2192738742 SMSG:Check subscription REG-ed by user. 
+2012-03-02 16:59:13.95777200 >> 2192738742 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-03-02 16:59:13.96327400 >> 2192738742 SMSG:Check not-activated-yet subscription validity 
+2012-03-02 16:59:13.96337800 >> 2192738742 SMSG:Not-activated-yet subscription valid. Deduct user balance 
+2012-03-02 16:59:13.96347200 >> 2192738742 SMSG:KERJA OK request accepted. User balance deducted. 
+2012-03-02 16:59:13.96807000 >> 2192738742 SMSG:MT: Info pkrjaan GURU aktif s/d 09-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA GURU YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-03-02 16:59:13.96817400 >> 2192738742 SMSG:Job matching 
+2012-03-02 16:59:13.98517600 >> 2192738742 SMSG:Send instant job to user 
+2012-03-02 16:59:13.98528900 >> 2192738742 SMSG:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-03-02 16:59:13.98987400 >> 2192738742 SMSG:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-03-02 16:59:13.99627900 >> 2192738742 SMSG:MT: Info pkrjaan GURU aktif s/d 09-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA GURU YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-03-02 17:59:27.74857400 >> 2192738742 SMSG:Check KERJA keyword. 
+2012-03-02 17:59:27.74863500 >> 2192738742 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-02 17:59:27.75048400 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-02 17:59:27.75197500 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-02 17:59:27.75358700 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-02 17:59:27.75364200 >> 2192738742 SMSG:Check user subscription on registered job category. 
+2012-03-02 17:59:27.76699500 >> 2192738742 SMSG:REG request accepted. 
+2012-03-02 17:59:27.76706100 >> 2192738742 SMSG:MT: Anda akan mendaftar layanan info pkrjaan GURU dr PT RUMA.Rp3rb/mg.1sms/hr.Jk setuju balas dg ktik KERJA GURU OK.CS:02160908000 
+2012-03-02 18:00:13.97413000 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-02 18:00:13.97423400 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-02 18:00:13.97607600 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-02 18:00:13.97617500 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-02 18:00:13.97785400 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-02 18:00:13.97966900 >> 2192738742 SMSG:Check subscription REG-ed by user. 
+2012-03-02 18:00:13.98172700 >> 2192738742 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-03-02 18:00:13.99023400 >> 2192738742 SMSG:KERJA request rejected. Reason: Active subscription existed. MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan GURU.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-03-02 18:00:13.99033400 >> 2192738742 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan GURU.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-03-02 18:11:25.12712300 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-02 18:11:25.12723200 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-02 18:11:25.12909800 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-02 18:11:25.12919700 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-02 18:11:25.13086700 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-02 18:11:25.13271000 >> 2192738742 SMSG:Check subscription REG-ed by user. 
+2012-03-02 18:11:25.13476000 >> 2192738742 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-03-02 18:11:25.14038800 >> 2192738742 SMSG:Check not-activated-yet subscription validity 
+2012-03-02 18:11:25.14048500 >> 2192738742 SMSG:Not-activated-yet subscription valid. Deduct user balance 
+2012-03-02 18:11:25.14056900 >> 2192738742 SMSG:KERJA OK request accepted. User balance deducted. 
+2012-03-02 18:11:25.14532200 >> 2192738742 SMSG:MT: Info pkrjaan GURU aktif s/d 09-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA GURU YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-03-02 18:11:25.14542000 >> 2192738742 SMSG:Job matching 
+2012-03-02 18:11:25.17637400 >> 2192738742 SMSG:Send instant job to user 
+2012-03-02 18:11:25.17648400 >> 2192738742 SMSG:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-03-02 18:11:25.18112900 >> 2192738742 SMSG:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-03-02 18:11:25.18732900 >> 2192738742 SMSG:MT: Info pkrjaan GURU aktif s/d 09-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA GURU YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 

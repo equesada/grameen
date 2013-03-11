@@ -1,0 +1,60 @@
+<apex:page controller="LookupTablesController" sidebar="false" action="{!checkLicense}"
+     tabStyle="SurveyManager__tab">
+    <apex:sectionHeader title="{!theSurvey.Name}" subtitle="{!theSurvey.Alias__c}"/>
+    <c:blockOverlay label="Loading..."/>
+    <c:createSurveyHeader styleClassHeader="tertiaryPalette" selected="LOOKUPTABLES" backgroundUnSelected="white" isPPI="{!theSurvey.IsPPI__c}"/>
+
+    
+    <!--
+    ---------------------------------------------------
+     Page code 
+    --------------------------------------------------- -->
+    <apex:pageMessages />
+
+    <apex:pageBlock id="ppiBlock" >
+    
+        <apex:form >
+            <center>
+                <apex:outputLabel for="inputFile">Upload a Poverty Line Table:</apex:outputLabel>
+                <apex:inputFile id="inputFile" value="{!fileBinary}" filename="{!fileName}" />
+                <apex:commandButton action="{!ReadFile}" value="Upload File" id="theButton" style="width:70px;" onclick="blockPage()"/>
+            </center>
+        </apex:form>
+        
+        <apex:repeat var="item" value="{!ppiTables}">
+            <apex:form >
+                <div class="pbTitle bFilter">
+                    <h3>{!item.dataSet.PPITable__r.Name}</h3>&nbsp;&nbsp;
+                    <apex:commandLink value="Delete" onclick="if(!confirm('Are you sure?')) return false; blockPage();" oncomplete="unblockPage()" action="{!deleteDataSet}" rerender="ppiBlock">
+                        <apex:param name="tableToDelete" assignTo="{!selectedTableId}" value="{!item.dataSet.PPITable__r.Id}"/>
+                    </apex:commandLink>
+                </div>
+            </apex:form>
+            
+            <apex:pageBlockTable var="line" value="{!item.lines}">
+
+                <apex:column >
+                    <apex:facet name="header">{!$ObjectType.PPITableLine__c.Fields.From__c.Label}</apex:facet>
+                    <apex:outputField value="{!line.From__c}"/>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">{!$ObjectType.PPITableLine__c.Fields.To__c.Label}</apex:facet>
+                    <apex:outputField value="{!line.To__c}"/>
+                </apex:column>
+
+                <apex:column >
+                    <apex:facet name="header">{!$ObjectType.PPITableLine__c.Fields.Probability__c.Label}</apex:facet>
+                    <apex:outputField value="{!line.Probability__c}"/>
+                </apex:column>
+
+            </apex:pageBlockTable>
+        </apex:repeat>
+    </apex:pageBlock>  
+    
+    <apex:form >
+        <div id="buttons" style="margin:20px 2px;float:right;">
+            <button type="button" onclick="window.location = '{!$Page.SurveyQuestionLogic}?id={!$CurrentPage.parameters.id}'">Continue</button>
+        </div>
+    </apex:form>
+</apex:page>

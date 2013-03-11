@@ -1,0 +1,126 @@
+172.27.239.153 - - [19/Mar/2012:10:33:18 +0700] "GET /infokerja_core/add_logdms.php?tx_id=201203a3cf33ef5622419d927f45a4d0e195ca&time=2012-03-19+10%3A33%3A02&mdn=02
+185403119&lang=1&cid=c55&cmd=&status=&pageidsrc=500&pageidreq=710&request=http%3A%2F%2F172.27.239.153%2Fgrameen%2Finfokerja%2Frequest.php%3Fr%3D5913443%26app%3D6%26
+mdn%3D02185403119%26sid%3D123456%26lang%3D1%26cid%3Dc55%26imei%3D2162190936%26id%3D710%26src%3D500%26cur%3D9999999999%26var0%3DTips%2Bdan%2BTrik_%26http_user_agent%
+3DBREW-Applet%252F0x01007413%2B%2528BREW%252F3.1.5.86%253B%2BDeviceId%253A%2B%2B39051%253B%2BLang%253A%2Bid%2529%26remote_addr%3D10.1.29.214&response=710_1_2_133212
+7981_Tips+dan+Trik__Pilih%7C1_Kembali%7C8_20_Kiat+Membuat+CV_715_1_Membuat+Lamaran_715_2_Tips+WalkIn+Interview_715_3_Negoisasi+Gaji_715_4_Kiat+Kontrak+Kerja_715_5 H
+TTP/1.0" 200 4 "-" "-"
+172.27.239.153 - - [19/Mar/2012:10:34:04 +0700] "GET /infokerja_core/get_mentor_by_mdn.php?tx_id=201203bb4cfbae4fce4f4eb5e249f877a0f716_dms&mdn=02185403119 HTTP/1.0
+" 200 159 "-" "-"
+172.27.239.153 - - [19/Mar/2012:10:34:04 +0700] "GET /infokerja_core/get_tips_by_parent_id.php?tx_id=201203bb4cfbae4fce4f4eb5e249f877a0f716&id=1&order=tips_title&as
+cdsc=asc HTTP/1.0" 200 978 "-" "-"
+172.27.239.153 - - [19/Mar/2012:10:34:05 +0700] "GET /infokerja_core/add_logdms.php?tx_id=201203bb4cfbae4fce4f4eb5e249f877a0f716&time=2012-03-19+10%3A33%3A48&mdn=02
+185403119&lang=1&cid=c55&cmd=&status=&pageidsrc=710&pageidreq=715&request=http%3A%2F%2F172.27.239.153%2Fgrameen%2Finfokerja%2Frequest.php%3Fr%3D9749844%26app%3D6%26
+mdn%3D02185403119%26sid%3D123456%26lang%3D1%26cid%3Dc55%26imei%3D2162190936%26id%3D715%26src%3D710%26cur%3D9999999999%26var0%3DKiat%2BMembuat%2BCV_1%26http_user_age
+nt%3DBREW-Applet%252F0x01007413%2B%2528BREW%252F3.1.5.86%253B%2BDeviceId%253A%2B%2B39051%253B%2BLang%253A%2Bid%2529%26remote_addr%3D10.2.53.136&response=715_2_2_133
+2128028_Kiat+Membuat+CV__Pilih%7C1_Kembali%7C8_20_1.+Tulis+data+diri+dengan+singkat%2C+padat+dan+rapi.%0A%0A2.+Ketik+menggunakan+komputer+diatas+kertas+putih+HVS+at
+au+tulis+tangan+jika+diperlukan+namun+harus+tetap+menjaga+kerapihan+tulisan+agar+CV+yang+anda+buat+dapat+dengan+mudah+dibaca+oleh+perusahaan.%0A%0A3.+Gunakan+bahasa
++yang+sederhana+dan+sopan.%0A%0A4.+Tuliskan+selengkap+mungkin+tentang+kualifikasi+anda+seperti+riwayat+pendidikan%2C+pelatihan+yang+pernah+diikuti+maupun+pengalaman
++kerja+lengkap+dengan+tugas+dan+tanggung+jawab.+Hal+ini+akan+menjadi+nilai+jual+anda.%0A%0A5.+Jika+memungkinkan%2C+cek+kembali+kesesuaian+kualifikasi+anda+dengan+pe
+kerjaan+yang+akan+anda+lamar.+Uraikan+dengan+lebih+rinci+perihal+yang+menurut+anda+sesuai+dengan+kriteria+pekerjaan+yang+akan+anda+lamar.%0A%0A6.+Cek+kembali+uraian
++data+diri+yang+telah+anda+buat+untuk+mengoreksi+kesalahan._720_1 HTTP/1.0" 200 4 "-" "-"
+
+
+
+172.27.239.153 - - [19/Mar/2012:15:24:31 +0700] "GET /infokerja_core/get_mentor_by_mdn.php?tx_id=201203057794f832454270b472de0d43044784_dms&mdn=02185403119 HTTP/1.0" 2
+00 159 "-" "-"
+172.27.239.153 - - [19/Mar/2012:15:24:32 +0700] "GET /infokerja_core/get_logsms_by_log_id.php?tx_id=201203057794f832454270b472de0d43044784&log_id=22370 HTTP/1.0" 200 4
+09 "-" "-"
+172.27.239.153 - - [19/Mar/2012:15:24:32 +0700] "GET /infokerja_core/add_logdms.php?tx_id=201203057794f832454270b472de0d43044784&time=2012-03-19+15%3A24%3A15&mdn=02185
+403119&lang=1&cid=c55&cmd=&status=&pageidsrc=111&pageidreq=112&request=http%3A%2F%2F172.27.239.153%2Fgrameen%2Finfokerja%2Frequest.php%3Fr%3D2923279%26app%3D6%26mdn%3D
+02185403119%26sid%3D123456%26lang%3D1%26cid%3Dc55%26imei%3D2162190936%26id%3D112%26src%3D111%26cur%3D9999999999%26var0%3D2012-03-02%252C%2BCook%2BHelper_22370%26http_u
+ser_agent%3DBREW-Applet%252F0x01007413%2B%2528BREW%252F3.1.5.86%253B%2BDeviceId%253A%2B%2B39051%253B%2BLang%253A%2Bid%2529%26remote_addr%3D10.2.69.161&response=112_2_0
+_1332145455_Detail+Lowongan___Kembali_20_2012-03-02%2C+Cook+Helper%2C+Ismaya+Group%2CP%2FW%2C+Min+SMA%2C+Max+35th%2C+Bs+Bhs+Inggris%2C+Pnglmn+3th%2C+Kmnktif%2C+Jjr%2C+
+Shifting%2C+hub.Bpk+Victor+0215202913 HTTP/1.0" 200 4 "-" "-"
+
+
+REQUEST
+GET /grameen/request.php?app=6&mdn=510992185403119&sid=123456&lang=1&cid=c55&imei=2162190936&id=112&src=111&cur=9999999999&var0=2012-03-02%2C+Head+Chef_22384 HTTP/1.1
+Host: br14.esia.co.id
+User-Agent: BREW-Applet/0x01007413 (BREW/3.1.5.86; DeviceId:  39051; Lang: id)
+Connection: Keep-Alive
+
+
+
+RESPONSE
+112_2_0_1332145777_Detail Lowongan___Kembali_20_2012-03-02, Head Chef, Ismaya Group,P/W, Min SMA, Max 35th, Bs Bhs Inggris, Pnglmn 5th, Kmnktif, Jjr, Shifting, hub.Bpk Victor 0215202913
+
+
+
+
+
+===============================================================================
+
+dari BR14 ke KerjaLokal
+
+REQUEST
+GET /infokerja_core/get_mentor_by_mdn.php?tx_id=20120372b29855d6384d8c9eacc424e1627e48_dms&mdn=02185403119 HTTP/1.0
+RESPONSE
+HTTP/1.1 200 OK
+Date: Mon, 19 Mar 2012 09:05:10 GMT
+Server: Apache/2.2.3 (CentOS)
+X-Powered-By: PHP/5.2.17
+Content-Length: 159
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+{"mentor_id":"134","subscriber_id":"912","mdn":"02185403119","pin":"123456","date_add":"2012-02-07 15:18:38","date_update":null,"status":"1","country_id":"ID"}
+
+REQUEST
+GET /infokerja_core/get_logsms_by_log_id.php?tx_id=20120372b29855d6384d8c9eacc424e1627e48&log_id=21751 HTTP/1.0
+RESPONSE
+HTTP/1.1 200 OK
+Date: Mon, 19 Mar 2012 09:05:10 GMT
+Server: Apache/2.2.3 (CentOS)
+X-Powered-By: PHP/5.2.17
+Content-Length: 386
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+{"log_id":"21751","tx_id":"201202fea6a9742bdf488e93a272e26abe14bf","subscriber_id":"912","job_id":"8469","jobcat_id":"13","rel_id":"1208","jobsend_id":"13007","mdn":"02185403119","date_send":"2012-02-29 09:00:01","title":"2012-02-29, Crew Cook","msg":"2012-02-29, Crew Cook, Resto Score,P\/W, SMK Tata Boga, Max.30th, Pnglmn 2th, Cekatan, Shift, hub.Pa Sujadi 02175920279","status":"2"}
+
+
+REQUEST
+GET /infokerja_core/add_logdms.php?tx_id=20120372b29855d6384d8c9eacc424e1627e48&time=2012-03-19+16%3A04%3A53&mdn=02185403119&lang=1&cid=c55&cmd=&status=&pageidsrc=111&pageidreq=112&request=http%3A%2F%2F172.27.239.153%2Fgrameen%2Finfokerja%2Frequest.php%3Fr%3D9628366%26app%3D6%26mdn%3D02185403119%26sid%3D123456%26lang%3D1%26cid%3Dc55%26imei%3D2162190936%26id%3D112%26src%3D111%26cur%3D9999999999%26var0%3D2012-02-29%252C%2BCrew%2BCook_21751%26http_user_agent%3DBREW-Applet%252F0x01007413%2B%2528BREW%252F3.1.5.86%253B%2BDeviceId%253A%2B%2B39051%253B%2BLang%253A%2Bid%2529%26remote_addr%3D10.2.47.83&response=112_2_0_1332147893_Detail+Lowongan___Kembali_20_2012-02-29%2C+Crew+Cook%2C+Resto+Score%2CP%2FW%2C+SMK+Tata+Boga%2C+Max.30th%2C+Pnglmn+2th%2C+Cekatan%2C+Shift%2C+hub.Pa+Sujadi+02175920279 HTTP/1.0
+RESPONSE
+HTTP/1.1 200 OK
+Date: Mon, 19 Mar 2012 09:05:10 GMT
+Server: Apache/2.2.3 (CentOS)
+X-Powered-By: PHP/5.2.17
+Content-Length: 4
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+null
+
+
+
+
+
+
+{"log_id":"21751","tx_id":"201202fea6a9742bdf488e93a272e26abe14bf","subscriber_id":"912","job_id":"8469","jobcat_id":"13","rel_id":"1208","jobsend_id":"13007","mdn":"02185403119","date_send":"2012-02-29 09:00:01","title":"2012-02-29, Crew Cook","msg":"2012-02-29, Crew Cook, Resto Score,P\/W, SMK Tata Boga, Max.30th, Pnglmn 2th, Cekatan, Shift, hub.Pa Sujadi 02175920279","status":"2"}
+
+
+
+
+
+DAFTAR KATEGORY KERJA YAND REGISTERED:
+REQUEST
+/infokerja_core/get_jobcat_group_by_subscriber_id.php?tx_id=20120337fa2527be744ff8823c42fa6071b50c_MY+JOB+INFO&id=912
+
+RESPONSE
+{"nfields":25,"totaldata":6,"results":[{"rel_id":"1209","subscriber_id":"912","jobcat_id":"3","jobcat_key":"KASIR","date_add":"2011-02-22 00:00:00","date_active":"2012-02-25","dtime_active":null,"date_expired":"2012-03-02","date_update":"2011-03-30 10:52:19","date_unsub":null,"status":"1","update_by":"","update_notes":"CRON:Job send 2012-03-01","update_by_name":"SYS_00","n_jobreceived":"1","jobcat_title":"Kasir\/Keuangan","description":"Kasir\/Keuangan","country_id":"ID","DATE_ADD":"2012-02-24 16:12:18","STATUS":"5"},
+
+
+
+DAFTAR JOB LIST PER KATEGORY
+REQUEST
+GET /infokerja_core/get_logsms_by_limit.php?tx_id=201203d45b10571427472f8fff075905f26c37&id=912&jobcat_id=3&order=date_send&status=2
+
+RESPONSE
+{"nfields":7,"totaldata":10,"results":[{"subscriber_id":"912","log_id":"22372","title":"2012-03-02, Kasir","msg":"2012-03-02, Kasir, Pizza Hut Delivery,W, SMU, Max.25th, Mnarik, TB Min 160, Pnglmn 2th, Bs Kmptr, Teliti, Dom Jkt, hub.Bpk Yusuf 0218306789","status":"2","job_id":"8750","jobcat_id":"3"},{"subscriber_id":"912","log_id":"22386","title":"2012-03-02, Kasir","msg":"2012-03-02, Kasir, PT Kasyasindo Megah Perkasa,P\/W, Min SMA, Max 24th, Mnrk, Jjr, Dom Jakarta, hub.Edwin 02190635218","status":"2","job_id":"8188","jobcat_id":"3"},
+
+
+
+
+GET /infokerja_core/get_logsms_by_log_id.php?tx_id=2012033c1037377ae248b599a6bc3eb685be12&log_id=21723
+{"log_id":"21723","tx_id":"2012020a4385ed485648f2ad9487fc50631b5a","subscriber_id":"912","job_id":"7900","jobcat_id":"3","rel_id":"1209","jobsend_id":"12993","mdn":"02185403119","date_send":"2012-02-27 09:00:01","title":"2012-02-27, Cashier","msg":"2012-02-27, Cashier, Murphy's Irish Pub&Restaurant;,P\/W, Min SMA, Max 35th, Mnrk, Bs Bhs Inggris, Pnglmn, hub.Ibu Festy 02178833926","status":"2"}

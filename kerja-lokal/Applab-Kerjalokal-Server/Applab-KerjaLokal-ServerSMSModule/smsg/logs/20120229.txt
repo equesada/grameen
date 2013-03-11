@@ -1,0 +1,999 @@
+2012-02-29 17:48:03.36711000 >> 2193415830 SMSG:Check KERJA keyword. 
+2012-02-29 17:48:03.38528400 >> 2193415830 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-02-29 17:48:03.40711200 >> 2193415830 SMSG:Job category keyword valid. 
+2012-02-29 17:48:03.42436800 >> 2193415830 SMSG:Check MDN Registration. 
+2012-02-29 17:48:03.43608200 >> 2193415830 SMSG:MDN existed. Get subscriber_id 
+2012-02-29 17:48:03.43614100 >> 2193415830 SMSG:Check user subscription on registered job category. 
+2012-02-29 17:48:03.45585300 >> 2193415830 SMSG:REG request rejected. Reason: Active subscription found. 
+2012-02-29 17:48:03.45592700 >> 2193415830 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan SUPIR.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-02-29 17:52:04.71598500 >> 2193415830 SMSG:Check KERJA keyword. 
+2012-02-29 17:52:04.71604800 >> 2193415830 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-02-29 17:52:04.71788300 >> 2193415830 SMSG:Job category keyword valid. 
+2012-02-29 17:52:04.71951800 >> 2193415830 SMSG:Check MDN Registration. 
+2012-02-29 17:52:04.72126700 >> 2193415830 SMSG:MDN existed. Get subscriber_id 
+2012-02-29 17:52:04.72132900 >> 2193415830 SMSG:Check user subscription on registered job category. 
+2012-02-29 17:52:04.73212700 >> 2193415830 SMSG:REG request rejected. Reason: Active subscription found. 
+2012-02-29 17:52:04.73219700 >> 2193415830 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan SUPIR.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-02-29 17:54:02.99072200 >> 2193415830 SMSG:Check KERJA keyword. 
+2012-02-29 17:54:02.99078200 >> 2193415830 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-02-29 17:54:02.99258600 >> 2193415830 SMSG:Job category keyword valid. 
+2012-02-29 17:54:02.99406400 >> 2193415830 SMSG:Check MDN Registration. 
+2012-02-29 17:54:02.99572800 >> 2193415830 SMSG:MDN existed. Get subscriber_id 
+2012-02-29 17:54:02.99578300 >> 2193415830 SMSG:Check user subscription on registered job category. 
+2012-02-29 17:54:03.00588700 >> 2193415830 SMSG:REG request rejected. Reason: Active subscription found. 
+2012-02-29 17:54:03.00595300 >> 2193415830 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan SUPIR.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-02-29 17:56:38.77007700 >> 2193415830 SMSG:Check KERJA keyword. 
+2012-02-29 17:56:38.77013900 >> 2193415830 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-02-29 17:56:38.77202900 >> 2193415830 SMSG:Job category keyword valid. 
+2012-02-29 17:56:38.77359500 >> 2193415830 SMSG:Check MDN Registration. 
+2012-02-29 17:56:38.77526800 >> 2193415830 SMSG:MDN existed. Get subscriber_id 
+2012-02-29 17:56:38.77532600 >> 2193415830 SMSG:Check user subscription on registered job category. 
+2012-02-29 17:56:38.78584100 >> 2193415830 SMSG:REG request rejected. Reason: Active subscription found. 
+2012-02-29 17:56:38.78590600 >> 2193415830 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan SUPIR.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-02-29 17:56:48.62551100 >> 2193415830 SMSG:Check KERJA keyword. 
+2012-02-29 17:56:48.62557300 >> 2193415830 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-02-29 17:56:48.62734900 >> 2193415830 SMSG:Job category keyword valid. 
+2012-02-29 17:56:48.62883700 >> 2193415830 SMSG:Check MDN Registration. 
+2012-02-29 17:56:48.63044800 >> 2193415830 SMSG:MDN existed. Get subscriber_id 
+2012-02-29 17:56:48.63050300 >> 2193415830 SMSG:Check user subscription on registered job category. 
+2012-02-29 17:56:48.63955900 >> 2193415830 SMSG:REG request rejected. Reason: Active subscription found. 
+2012-02-29 17:56:48.63962100 >> 2193415830 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan SUPIR.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-02-29 17:59:19.83993000 >> 2193415830 SMSG:Check KERJA keyword. 
+2012-02-29 17:59:19.83999900 >> 2193415830 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-02-29 17:59:19.84187000 >> 2193415830 SMSG:Job category keyword valid. 
+2012-02-29 17:59:19.84341400 >> 2193415830 SMSG:Check MDN Registration. 
+2012-02-29 17:59:19.84501900 >> 2193415830 SMSG:MDN existed. Get subscriber_id 
+2012-02-29 17:59:19.84507400 >> 2193415830 SMSG:Check user subscription on registered job category. 
+2012-02-29 17:59:19.85536100 >> 2193415830 SMSG:REG request rejected. Reason: Active subscription found. 
+2012-02-29 17:59:19.85542700 >> 2193415830 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan SUPIR.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-02-29 18:04:36.11173200 >> 2193415830 SMSG:Check KERJA keyword. 
+2012-02-29 18:04:36.11179200 >> 2193415830 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-02-29 18:04:36.11371200 >> 2193415830 SMSG:Job category keyword valid. 
+2012-02-29 18:04:36.11527700 >> 2193415830 SMSG:Check MDN Registration. 
+2012-02-29 18:04:36.11695800 >> 2193415830 SMSG:MDN existed. Get subscriber_id 
+2012-02-29 18:04:36.11701200 >> 2193415830 SMSG:Check user subscription on registered job category. 
+2012-02-29 18:04:36.16845600 >> 2193415830 SMSG:REG request accepted. 
+2012-02-29 18:04:36.16852300 >> 2193415830 SMSG:MT: Anda akan mendaftar layanan info pkrjaan SUPIR dr PT RUMA.Rp3rb/mg.1sms/hr.Jk setuju balas dg ktik KERJA SUPIR OK.CS:02160908000 
+2012-02-29 18:04:47.74588100 >> 2193415830 SMSG:Check Job category not empty. 
+2012-02-29 18:04:47.74599000 >> 2193415830 SMSG:Job category not empty. Check Job category validity. 
+2012-02-29 18:04:47.74788700 >> 2193415830 SMSG:Job category keyword valid. 
+2012-02-29 18:04:47.74798600 >> 2193415830 SMSG:Check MDN Registration. 
+2012-02-29 18:04:47.74976400 >> 2193415830 SMSG:MDN existed. Get subscriber_id 
+2012-02-29 18:04:47.75168500 >> 2193415830 SMSG:Check subscription REG-ed by user. 
+2012-02-29 18:04:47.75378900 >> 2193415830 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-02-29 18:04:47.75947900 >> 2193415830 SMSG:Check not-activated-yet subscription validity 
+2012-02-29 18:04:47.75958400 >> 2193415830 SMSG:Not-activated-yet subscription valid. Deduct user balance 
+2012-02-29 18:04:47.75968100 >> 2193415830 SMSG:KERJA OK request accepted. User balance deducted. 
+2012-02-29 18:04:47.76450600 >> 2193415830 SMSG:MT: Info pkrjaan SUPIR aktif s/d 07-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA SUPIR YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-02-29 18:04:47.76461400 >> 2193415830 SMSG:Job matching 
+2012-02-29 18:04:47.88970400 >> 2193415830 SMSG:Send instant job to user 
+2012-02-29 18:04:47.88981800 >> 2193415830 SMSG:MT: PT Persona Prima Utama,Driver,P, Min SMA, Max 35th, Pny SIM, Tau Jabodetabek, Dom Jkt, hub.Seno 02183790597 
+2012-02-29 18:04:47.89465500 >> 2193415830 SMSG:DMS: 2012-02-29, Driver, PT Persona Prima Utama,P, Min SMA, Max 35th, Pny SIM, Tau Jabodetabek, Dom Jkt, hub.Seno 02183790597 
+2012-02-29 18:04:47.90120500 >> 2193415830 SMSG:MT: Info pkrjaan SUPIR aktif s/d 07-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA SUPIR YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-02-29 18:13:41.81659900 >> 0 CRON:Job matching start. Get subscription not expired. 
+2012-02-29 18:13:41.81874200 >> 0 CRON:Check last sent job 
+2012-02-29 18:13:41.82182200 >> 0 CRON:Add job to be sent 
+2012-02-29 18:13:41.91872500 >> 0 CRON:Job matching end. 
+2012-02-29 18:14:32.52048300 >> 0 CRON:Job sending start. Get job list 
+2012-02-29 18:14:56.56332900 >> 2141588797 CRON:MT: PT Tritunggal Bersatu,Sales Executive,Pria, SMU, Max35th, Pnglmn 1th, Pny Kndaraan, Kmnktif, Target, hub.Ibu Lani 0215356801 
+2012-02-29 18:14:56.56826600 >> 0 CRON:DMS: 2012-03-01, Sales Executive, PT Tritunggal Bersatu,0,Pria, SMU, Max35th, Pnglmn 1th, Pny Kndaraan, Kmnktif, Target, hub.Ibu Lani 0215356801 
+2012-02-29 18:14:56.57307700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.57624300 >> 2141588797 CRON:MT: Pundee Associates,Kitchen Crew,P/W, SMK Boga, Usia Max 25th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Jkt, hub.Nugi 0217252139 
+2012-02-29 18:14:56.58093700 >> 0 CRON:DMS: 2012-03-01, Kitchen Crew, Pundee Associates,0,P/W, SMK Boga, Usia Max 25th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Jkt, hub.Nugi 0217252139 
+2012-02-29 18:14:56.58574500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.58863600 >> 2141588797 CRON:MT: Goku Shabu Restaurant,Cook,P/W, Min SMA, Pnglmn, Max 30th, hub.Bpk Hendri 0215257393 
+2012-02-29 18:14:56.59326200 >> 0 CRON:DMS: 2012-03-01, Cook, Goku Shabu Restaurant,0,P/W, Min SMA, Pnglmn, Max 30th, hub.Bpk Hendri 0215257393 
+2012-02-29 18:14:56.59793500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.60093800 >> 2141588797 CRON:MT: PT Prima Putra Sapurah,Marketing,P/W, SMU, Max35th, Pny Kndaraan, Pkrj Krs, Target, Pnmptn Jkt, hub.Bu Ana 02175914986 
+2012-02-29 18:14:56.60556400 >> 0 CRON:DMS: 2012-03-01, Marketing, PT Prima Putra Sapurah,0,P/W, SMU, Max35th, Pny Kndaraan, Pkrj Krs, Target, Pnmptn Jkt, hub.Bu Ana 02175914986 
+2012-02-29 18:14:56.61016600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.61312600 >> 2141588797 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:56.61773800 >> 0 CRON:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:56.62221600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.62519900 >> 2141588931 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:56.62981900 >> 0 CRON:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:56.63428500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.63733500 >> 2191845161 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:56.64508400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.64811300 >> 2185403121 CRON:MT: Aperitivo Restoran,Kasir,Wanita, SMU, Max 23th, TB Min 165, Pnglmn 1th, Menarik, Bs Bhs Ing, Teliti, hub.Pa Hendrik 02152892304 
+2012-02-29 18:14:56.65264000 >> 0 CRON:DMS: 2012-03-01, Kasir, Aperitivo Restoran,Wanita, SMU, Max 23th, TB Min 165, Pnglmn 1th, Menarik, Bs Bhs Ing, Teliti, hub.Pa Hendrik 02152892304 
+2012-02-29 18:14:56.65726100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.66021600 >> 2185403119 CRON:MT: Yayasan Sekar Insani,Pembantu RT,W, Min SMP, Pnglmn, Sabar, Rjn, Pnmptn Jkt, hub.Ibu Nani 0213517484 
+2012-02-29 18:14:56.66480700 >> 0 CRON:DMS: 2012-03-01, Pembantu RT, Yayasan Sekar Insani,W, Min SMP, Pnglmn, Sabar, Rjn, Pnmptn Jkt, hub.Ibu Nani 0213517484 
+2012-02-29 18:14:56.66952400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.67239300 >> 2199252936 CRON:MT: Yayasan Buah Hati,Baby Sitter,W, Min SMP, Max 30th, Pnmptn Jkt, hub.Ibu Yati 02173447540 
+2012-02-29 18:14:56.67701000 >> 0 CRON:DMS: 2012-03-01, Baby Sitter, Yayasan Buah Hati,W, Min SMP, Max 30th, Pnmptn Jkt, hub.Ibu Yati 02173447540 
+2012-02-29 18:14:56.68162200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.68438200 >> 2185403121 CRON:MT: PT Pharos Indonesia,Quality Control,P, Max. 25th, Min. SMA, Pnmptn Jkt, hub.Agung 0217200981 
+2012-02-29 18:14:56.68903200 >> 0 CRON:DMS: 2012-03-01, Quality Control, PT Pharos Indonesia,P, Max. 25th, Min. SMA, Pnmptn Jkt, hub.Agung 0217200981 
+2012-02-29 18:14:56.69362800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.69650800 >> 2199252936 CRON:MT: PT Grha Humanindo Manajemen,Security,P/W, Min SMA, Max 28th, TB Min 165, BB Proposional, Pnmptn Jkt, hub.Ibu Tika 02188961207 
+2012-02-29 18:14:56.70115900 >> 0 CRON:DMS: 2012-03-01, Security, PT Grha Humanindo Manajemen,P/W, Min SMA, Max 28th, TB Min 165, BB Proposional, Pnmptn Jkt, hub.Ibu Tika 02188961207 
+2012-02-29 18:14:56.70571600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.70854500 >> 2141588797 CRON:MT: PT Pyridam Farma,Driver,P, SMU, Max 35th, Pnglmn 2th, Tau Jln, Jjur & Brtnggng Jwb, Shift, Pnmptn Jkt, hub.Pa Julian 0215482526 
+2012-02-29 18:14:56.71325900 >> 0 CRON:DMS: 2012-03-01, Driver, PT Pyridam Farma,0,P, SMU, Max 35th, Pnglmn 2th, Tau Jln, Jjur & Brtnggng Jwb, Shift, Pnmptn Jkt, hub.Pa Julian 0215482526 
+2012-02-29 18:14:56.71777400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.72070700 >> 2141588797 CRON:MT: PT Outsource Indonesia,Resepsionis,W, SMU, Max26th, Pnglmn 1th, Mnarik & Ramah, Bs Bhs Ing, Pnmptn Jkt, hub.Ibu Lia 02157851718 
+2012-02-29 18:14:56.72531700 >> 0 CRON:DMS: 2012-03-01, Resepsionis, PT Outsource Indonesia,0,W, SMU, Max26th, Pnglmn 1th, Mnarik & Ramah, Bs Bhs Ing, Pnmptn Jkt, hub.Ibu Lia 02157851718 
+2012-02-29 18:14:56.72989400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.73275700 >> 2141588797 CRON:MT: PT Grha Humanindo Manajemen,Operator BTT,P, Min SMA, Max 28th, Pnmptn Jkt, hub.Ibu Tika 02188961207 
+2012-02-29 18:14:56.73733100 >> 0 CRON:DMS: 2012-03-01, Operator BTT, PT Grha Humanindo Manajemen,0,P, Min SMA, Max 28th, Pnmptn Jkt, hub.Ibu Tika 02188961207 
+2012-02-29 18:14:56.74196400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.74480700 >> 2199252936 CRON:MT: Icera Cafe,Waitress,P/W, Min SMA, Max 30th, Pnglmn, Jjr, Pkrj Krs, hub.Ibu Tanti 02145869872 
+2012-02-29 18:14:56.74932300 >> 0 CRON:DMS: 2012-03-01, Waitress, Icera Cafe,P/W, Min SMA, Max 30th, Pnglmn, Jjr, Pkrj Krs, hub.Ibu Tanti 02145869872 
+2012-02-29 18:14:56.75393800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.75687000 >> 2141588797 CRON:MT: PT Batik Danar Hadi,SPG,Wanita, SMU, Max22th, TB 160, BB Prprsional, Smart & Good Looking, Dom Jkt, hub.Ibu Eka 0217237659 
+2012-02-29 18:14:56.76134500 >> 0 CRON:DMS: 2012-03-01, SPG, PT Batik Danar Hadi,0,Wanita, SMU, Max22th, TB 160, BB Prprsional, Smart & Good Looking, Dom Jkt, hub.Ibu Eka 0217237659 
+2012-02-29 18:14:56.76603100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.76888500 >> 2199252936 CRON:MT: PT Outsource Indonesia,Accounting,P/W, Min SMK, Max 35th, Bs Office, Pnglmn, Pnmptn Jkt, hub.Ibu Lia 02157851718 
+2012-02-29 18:14:56.77339700 >> 0 CRON:DMS: 2012-03-01, Accounting, PT Outsource Indonesia,P/W, Min SMK, Max 35th, Bs Office, Pnglmn, Pnmptn Jkt, hub.Ibu Lia 02157851718 
+2012-02-29 18:14:56.77804800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.78092000 >> 2141588797 CRON:MT: Astrido Group,Mekanik,P, STM Mesin, Max30th, Pnglmn 2th, Trget, Mngrti Msin & Otomotif, Pny Kndraan & SIM, Dom Jkt, hub.Ibu Mila 0215669776 
+2012-02-29 18:14:56.78543900 >> 0 CRON:DMS: 2012-03-01, Mekanik, Astrido Group,0,P, STM Mesin, Max30th, Pnglmn 2th, Trget, Mngrti Msin & Otomotif, Pny Kndraan & SIM, Dom Jkt, hub.Ibu Mila 0215669776 
+2012-02-29 18:14:56.79007300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.79289700 >> 2141588931 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:56.79738600 >> 0 CRON:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:56.80191700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.80468800 >> 2199252936 CRON:MT: PT Grha Humanindo Manajemen,Operator GSE,P/W, Min SMA, Max 28th, Pnmptn Jkt, hub.Ibu Tika 02188961207 
+2012-02-29 18:14:56.80929100 >> 0 CRON:DMS: 2012-03-01, Operator GSE, PT Grha Humanindo Manajemen,P/W, Min SMA, Max 28th, Pnmptn Jkt, hub.Ibu Tika 02188961207 
+2012-02-29 18:14:56.81383200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.81659800 >> 2141588797 CRON:MT: PT Mustika Citra Rasa,Pastry Cook,P/W, Min SMA, Max 35th, Pnglmn Min 2th, Pnmptn Jkt, hub.Ibu Ratna 02169830469 
+2012-02-29 18:14:56.82113800 >> 0 CRON:DMS: 2012-03-01, Pastry Cook, PT Mustika Citra Rasa,0,P/W, Min SMA, Max 35th, Pnglmn Min 2th, Pnmptn Jkt, hub.Ibu Ratna 02169830469 
+2012-02-29 18:14:56.82571200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.82857900 >> 2141588797 CRON:MT: PT Century Franchisindo Utama,Operation Support,W, SMU, Max22th, Single, Bs Mnghafal Letak Barang, Pnmptn Jkt, hub.Ibu Lastri 085813169458 
+2012-02-29 18:14:56.83327000 >> 0 CRON:DMS: 2012-03-01, Operation Support, PT Century Franchisindo Utama,0,W, SMU, Max22th, Single, Bs Mnghafal Letak Barang, Pnmptn Jkt, hub.Ibu Lastri 085813169458 
+2012-02-29 18:14:56.83787700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.84075300 >> 2141588797 CRON:MT: Yayasan Karya Bangsa,Baby Sitter,W, Min SMA, Pnglmn, Max 28th, Dom Jkt, hub.Ibu Rani 02163863539 
+2012-02-29 18:14:56.84523600 >> 0 CRON:DMS: 2012-03-01, Baby Sitter, Yayasan Karya Bangsa,0,W, Min SMA, Pnglmn, Max 28th, Dom Jkt, hub.Ibu Rani 02163863539 
+2012-02-29 18:14:56.84976100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.85271800 >> 2193333208 CRON:MT: Secure Parking,Kasir Pos Parkir,P/W, SMU, Max28th, Single, Teliti, Disiplin, Shift, Pnmptn Dpk, hub.Hendi 0216265868 
+2012-02-29 18:14:56.86027400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.86317400 >> 2141588797 CRON:MT: PT Sentra Boga Handal,Waitress,P/W, Min SMA, Max 27th, Pnglmn, Dom Tng, hub.Ibu Arum 02183783527 
+2012-02-29 18:14:56.86763900 >> 0 CRON:DMS: 2012-03-01, Waitress, PT Sentra Boga Handal,0,P/W, Min SMA, Max 27th, Pnglmn, Dom Tng, hub.Ibu Arum 02183783527 
+2012-02-29 18:14:56.87216900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.87500200 >> 2141588797 CRON:MT: PT Nusapala Group,Kasir,P/W, Min SMA, Max 25th, Pnglmn, Pnmptn Jkt, hub.Ibu Rahma 02187785209 
+2012-02-29 18:14:56.87954800 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Nusapala Group,0,P/W, Min SMA, Max 25th, Pnglmn, Pnmptn Jkt, hub.Ibu Rahma 02187785209 
+2012-02-29 18:14:56.88414900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.88700500 >> 2193333208 CRON:MT: Yayasan Karya Bangsa,Perawat Jompo,W, Min SMA, Pnglmn, Max 28th, Dom Dpk, hub.Ibu Rani 02163863539 
+2012-02-29 18:14:56.89437800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.89720600 >> 2196218594 CRON:MT: PT Sentra Boga Handal,Waitress,P/W, Min SMA, Max 27th, Pnglmn, Dom Bgr, hub.Ibu Arum 02183783527 
+2012-02-29 18:14:56.90173700 >> 0 CRON:DMS: 2012-03-01, Waitress, PT Sentra Boga Handal,P/W, Min SMA, Max 27th, Pnglmn, Dom Bgr, hub.Ibu Arum 02183783527 
+2012-02-29 18:14:56.90623900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.90906100 >> 2196218594 CRON:MT: Yayasan Karya Bangsa,Perawat Jompo,W, Min SMA, Pnglmn, Max 28th, Dom Dpk, hub.Ibu Rani 02163863539 
+2012-02-29 18:14:56.91354900 >> 0 CRON:DMS: 2012-03-01, Perawat Jompo, Yayasan Karya Bangsa,W, Min SMA, Pnglmn, Max 28th, Dom Dpk, hub.Ibu Rani 02163863539 
+2012-02-29 18:14:56.91801200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.92088500 >> 2196218594 CRON:MT: PT Clarindotama Perdana,Sales Marketing,P/W, SMU, Max30th, Pnglmn 1th, Pny Kndaraan, Target, Pkrj Krs, Pnmptn Dpk, hub.Ibu Inge 0215260725 
+2012-02-29 18:14:56.92537600 >> 0 CRON:DMS: 2012-03-01, Sales Marketing, PT Clarindotama Perdana,P/W, SMU, Max30th, Pnglmn 1th, Pny Kndaraan, Target, Pkrj Krs, Pnmptn Dpk, hub.Ibu Inge 0215260725 
+2012-02-29 18:14:56.92988900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.93273700 >> 2196218582 CRON:MT: PT Century Franchisindo Utama,Kasir,Wanita, Max20th, SMU, Single, Teliti, Pnmptn Jkt, hub.Ibu Lastri 085813169458 
+2012-02-29 18:14:56.93722800 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Century Franchisindo Utama,Wanita, Max20th, SMU, Single, Teliti, Pnmptn Jkt, hub.Ibu Lastri 085813169458 
+2012-02-29 18:14:56.94175200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.94460200 >> 2196218582 CRON:MT: PT Nusapala Group,Waitress,P/W, Min SMA, Max 25th, Pnglmn, Pnmptn Jkt, hub.Ibu Rahma 02187785209 
+2012-02-29 18:14:56.94909800 >> 0 CRON:DMS: 2012-03-01, Waitress, PT Nusapala Group,P/W, Min SMA, Max 25th, Pnglmn, Pnmptn Jkt, hub.Ibu Rahma 02187785209 
+2012-02-29 18:14:56.95359100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.95647600 >> 2196218594 CRON:MT: PT Clarindotama Perdana,Team Leader BA,Wanita, SMU, Max 28th, TB Min160, Pnglmn 2th, Menarik, Target, Brtnggung Jwb, Pnmptn Dpk, hub.Ibu Inge 0215260725 
+2012-02-29 18:14:56.96102100 >> 0 CRON:DMS: 2012-03-01, Team Leader BA, PT Clarindotama Perdana,Wanita, SMU, Max 28th, TB Min160, Pnglmn 2th, Menarik, Target, Brtnggung Jwb, Pnmptn Dpk, hub.Ibu Inge 0215260725 
+2012-02-29 18:14:56.96549600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.96832500 >> 2196218594 CRON:MT: Yayasan Karya Bangsa,Baby Sitter,W, Min SMA, Pnglmn, Max 28th, Dom Dpk, hub.Ibu Rani 02163863539 
+2012-02-29 18:14:56.97280800 >> 0 CRON:DMS: 2012-03-01, Baby Sitter, Yayasan Karya Bangsa,W, Min SMA, Pnglmn, Max 28th, Dom Dpk, hub.Ibu Rani 02163863539 
+2012-02-29 18:14:56.97727600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.98011700 >> 2196218594 CRON:MT: PT Nusapala Group,Waitress,P/W, Min SMA, Max 25th, Pnglmn, Pnmptn Dpk, hub.Ibu Rahma 02187785209 
+2012-02-29 18:14:56.98461700 >> 0 CRON:DMS: 2012-03-01, Waitress, PT Nusapala Group,P/W, Min SMA, Max 25th, Pnglmn, Pnmptn Dpk, hub.Ibu Rahma 02187785209 
+2012-02-29 18:14:56.98907400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:56.99181100 >> 2193333208 CRON:MT: test approvedyudha6 
+2012-02-29 18:14:56.99921300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:57.00207100 >> 2193333208 CRON:MT: Yayasan Karya Bangsa,Baby Sitter,W, Min SMA, Pnglmn, Max 28th, Dom Dpk, hub.Ibu Rani 02163863539 
+2012-02-29 18:14:57.00951200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:57.01237500 >> 2141588797 CRON:MT: PT Century Franchisindo Utama,Kasir,Wanita, Max20th, SMU, Single, Teliti, Pnmptn Jkt, hub.Ibu Lastri 085813169458 
+2012-02-29 18:14:57.01690400 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Century Franchisindo Utama,0,Wanita, Max20th, SMU, Single, Teliti, Pnmptn Jkt, hub.Ibu Lastri 085813169458 
+2012-02-29 18:14:57.02137800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:57.02421900 >> 2141588797 CRON:MT: PT Nusapala Group,Waitress,P/W, Min SMA, Max 25th, Pnglmn, Pnmptn Jkt, hub.Ibu Rahma 02187785209 
+2012-02-29 18:14:58.74286900 >> 0 CRON:DMS: 2012-03-01, Waitress, PT Nusapala Group,0,P/W, Min SMA, Max 25th, Pnglmn, Pnmptn Jkt, hub.Ibu Rahma 02187785209 
+2012-02-29 18:14:58.74760500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.75047200 >> 2193333208 CRON:MT: PT Star N Co,Kasir,P/W, Min SMA, Max 26th, TB 153cm, Blm Mnkh, Dom Dpk, hub.Ibu Maria 02129238947 
+2012-02-29 18:14:58.75800800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.76092500 >> 2141588797 CRON:MT: LPK Kharisma Citra Bunda,Perawat Lansia,Wanita, SMP, Max38th, Ad KTP Asli, Pnglmn 1th, Jjur & Rajin, Niat Bkrj, Pnmptn Jkt, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:58.76546800 >> 0 CRON:DMS: 2012-03-01, Perawat Lansia, LPK Kharisma Citra Bunda,0,Wanita, SMP, Max38th, Ad KTP Asli, Pnglmn 1th, Jjur & Rajin, Niat Bkrj, Pnmptn Jkt, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:58.77004600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.77291000 >> 2141588797 CRON:MT: PT Century Franchisindo Utama,Junior Operation,W, Max22th, SMU, Single, Bs Mngoperasikan Kmptr, Pnmptn Jkt, hub.Ibu Lastri 085813169458 
+2012-02-29 18:14:58.77752500 >> 0 CRON:DMS: 2012-03-01, Junior Operation, PT Century Franchisindo Utama,0,W, Max22th, SMU, Single, Bs Mngoperasikan Kmptr, Pnmptn Jkt, hub.Ibu Lastri 085813169458 
+2012-02-29 18:14:58.78205100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.78486900 >> 2141588797 CRON:MT: PT Sentra Boga Handal,Pastry Cook,P/W, Min SMA, Max 35th, Pnglmn, Dom Dpk, hub.Ibu Arum 02183783527 
+2012-02-29 18:14:58.78941500 >> 0 CRON:DMS: 2012-03-01, Pastry Cook, PT Sentra Boga Handal,0,P/W, Min SMA, Max 35th, Pnglmn, Dom Dpk, hub.Ibu Arum 02183783527 
+2012-02-29 18:14:58.79387200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.79669000 >> 2141588797 CRON:MT: PT Sentra Boga Handal,Pastry Cook,P/W, Min SMA, Max 35th, Pnglmn, Dom Tng, hub.Ibu Arum 02183783527 
+2012-02-29 18:14:58.80123900 >> 0 CRON:DMS: 2012-03-01, Pastry Cook, PT Sentra Boga Handal,0,P/W, Min SMA, Max 35th, Pnglmn, Dom Tng, hub.Ibu Arum 02183783527 
+2012-02-29 18:14:58.80575300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.80856300 >> 2141588797 CRON:MT: PT Lintas Utama Persada,Staff,P/W, Min SMA, Max 30th, Pnglmn, Dom Jkt, hub.Bpk Aldi 02189833448 
+2012-02-29 18:14:58.81309700 >> 0 CRON:DMS: 2012-03-01, Staff, PT Lintas Utama Persada,0,P/W, Min SMA, Max 30th, Pnglmn, Dom Jkt, hub.Bpk Aldi 02189833448 
+2012-02-29 18:14:58.81757200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.82042500 >> 2141588797 CRON:MT: LPK Kharisma Citra Bunda,Baby Sitter,Wanita, SMP, Max38th, Ad KTP Asli, Pnglmn 1th, Jjur & Rajin, Niat Bkrj, Pnmptn Jkt, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:58.82494400 >> 0 CRON:DMS: 2012-03-01, Baby Sitter, LPK Kharisma Citra Bunda,0,Wanita, SMP, Max38th, Ad KTP Asli, Pnglmn 1th, Jjur & Rajin, Niat Bkrj, Pnmptn Jkt, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:58.82943700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.83224400 >> 2193333208 CRON:MT: PT Vidya Artha Tama,Accounting,P/W, Min SMA, Max 25th, Pnglmn, Dom Dpk, hub.Dwi 0218011739 
+2012-02-29 18:14:58.83963000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.84247000 >> 2141588797 CRON:MT: PT Cyberworld Network,Waiter,P/W, SMU, Max26th, Pnglmn 1th, TB Min155, Prporsional, Shift, Pnmptn Tgr, hub.Pa Rudi 02138908888 
+2012-02-29 18:14:58.84695400 >> 0 CRON:DMS: 2012-03-01, Waiter, PT Cyberworld Network,0,P/W, SMU, Max26th, Pnglmn 1th, TB Min155, Prporsional, Shift, Pnmptn Tgr, hub.Pa Rudi 02138908888 
+2012-02-29 18:14:58.85143800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.85426200 >> 2141588797 CRON:MT: PT Vidya Artha Tama,Accounting,P/W, Min SMA, Max 25th, Pnglmn, Dom Tng, hub.Dwi 0218011739 
+2012-02-29 18:14:58.85876900 >> 0 CRON:DMS: 2012-03-01, Accounting, PT Vidya Artha Tama,0,P/W, Min SMA, Max 25th, Pnglmn, Dom Tng, hub.Dwi 0218011739 
+2012-02-29 18:14:58.86332100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.86616300 >> 2193333208 CRON:MT: LPK Kharisma Citra Bunda,Perawat Lansia,Wanita, SMP, Max38th, Ad KTP Asli, Pnglmn 1th, Jjur & Rajin, Niat Bkrj, Pnmptn Dpk, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:58.87355600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.87634700 >> 2193333208 CRON:MT: PT Sentra Boga Handal,Pastry Cook,P/W, Min SMA, Max 35th, Pnglmn, Dom Jkt, hub.Ibu Arum 02183783527 
+2012-02-29 18:14:58.88374700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.88654600 >> 2196218594 CRON:MT: Pundee Associates,Waitress,W, SMU, Max 25th, TB Min 150, Dom Bogor, hub.Ibu Indah 0217252139 
+2012-02-29 18:14:58.89107300 >> 0 CRON:DMS: 2012-03-01, Waitress, Pundee Associates,W, SMU, Max 25th, TB Min 150, Dom Bogor, hub.Ibu Indah 0217252139 
+2012-02-29 18:14:58.89556400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.89839400 >> 2196218594 CRON:MT: LPK Kharisma Citra Bunda,Perawat Lansia,Wanita, SMP, Max38th, Ad KTP Asli, Pnglmn 1th, Jjur & Rajin, Niat Bkrj, Pnmptn Dpk, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:58.90292900 >> 0 CRON:DMS: 2012-03-01, Perawat Lansia, LPK Kharisma Citra Bunda,Wanita, SMP, Max38th, Ad KTP Asli, Pnglmn 1th, Jjur & Rajin, Niat Bkrj, Pnmptn Dpk, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:58.90739800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.91023500 >> 2196218594 CRON:MT: PT Clarindotama Perdana,Beauty Advisor,Wanita, SMU, Max26th, TB160, Menarik, Kmnkatif, Target, Pnmptn Dpk, hub.Ibu Inge 0215260725 
+2012-02-29 18:14:58.91475500 >> 0 CRON:DMS: 2012-03-01, Beauty Advisor, PT Clarindotama Perdana,Wanita, SMU, Max26th, TB160, Menarik, Kmnkatif, Target, Pnmptn Dpk, hub.Ibu Inge 0215260725 
+2012-02-29 18:14:58.91925000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.92208100 >> 2195952100 CRON:MT: PT G4S,Security,P/W, SMU, 20-28th, Pnglmn 1th, Tdk Brtato/Tindik/Brkcmta, Ad Srtfikat Satpam, Shift, Pnmptn Dpk, hub.Pa Azis 0217807807 
+2012-02-29 18:14:58.92951800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.93231900 >> 2195952100 CRON:MT: PT Lintas Utama Persada,Staff,P/W, Min SMA, Max 30th, Pnglmn, Dom Jkt, hub.Bpk Aldi 02189833448 
+2012-02-29 18:14:58.93969000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.94254700 >> 2195952100 CRON:MT: PT Clarindotama Perdana,Sales Marketing,P/W, SMU, Max30th, Pnglmn 1th, Pny Kndaraan, Target, Pkrj Krs, Pnmptn Jkt, hub.Ibu Inge 0215260725 
+2012-02-29 18:14:58.94996600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.95280200 >> 2141588797 CRON:MT: PT Propan Raya,Operator Colour,P, STM, Max 27th, Pnglmn, Pny SIM C, Pny Motor, TB Min 160cm, BB 50kg, Kmnktf, hub.Ibu Puji 02159303333 
+2012-02-29 18:14:58.95729500 >> 0 CRON:DMS: 2012-03-01, Operator Colour, PT Propan Raya,0,P, STM, Max 27th, Pnglmn, Pny SIM C, Pny Motor, TB Min 160cm, BB 50kg, Kmnktf, hub.Ibu Puji 02159303333 
+2012-02-29 18:14:58.96183900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.96466500 >> 2141588931 CRON:MT: PT Vidya Artha Tama,Accounting,P/W, Min SMA, Max 25th, Pnglmn, Dom Tng, hub.Dwi 0218011739 
+2012-02-29 18:14:58.96918200 >> 0 CRON:DMS: 2012-03-01, Accounting, PT Vidya Artha Tama,P/W, Min SMA, Max 25th, Pnglmn, Dom Tng, hub.Dwi 0218011739 
+2012-02-29 18:14:58.97365500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.97652300 >> 2141588931 CRON:MT: PT Propan Raya,Operator Colour,P, STM, Max 27th, Pnglmn, Pny SIM C, Pny Motor, TB Min 160cm, BB 50kg, Kmnktf, hub.Ibu Puji 02159303333 
+2012-02-29 18:14:58.98112400 >> 0 CRON:DMS: 2012-03-01, Operator Colour, PT Propan Raya,P, STM, Max 27th, Pnglmn, Pny SIM C, Pny Motor, TB Min 160cm, BB 50kg, Kmnktf, hub.Ibu Puji 02159303333 
+2012-02-29 18:14:58.98568500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.98857400 >> 2196218582 CRON:MT: PT Cyberworld Network,Waiter,P/W, SMU, Max26th, Pnglmn 1th, TB Min155, Prporsional, Shift, Pnmptn Tgr, hub.Pa Rudi 02138908888 
+2012-02-29 18:14:58.99316900 >> 0 CRON:DMS: 2012-03-01, Waiter, PT Cyberworld Network,P/W, SMU, Max26th, Pnglmn 1th, TB Min155, Prporsional, Shift, Pnmptn Tgr, hub.Pa Rudi 02138908888 
+2012-02-29 18:14:58.99769700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:58.00059300 >> 2196218582 CRON:MT: Pizza Hut Delivery,Kasir,W, SMU, Max25, Pnglmn, Bs Kmptr, Dom Tng, hub.Agusmara 0218306789 
+2012-02-29 18:14:59.00522600 >> 0 CRON:DMS: 2012-03-01, Kasir, Pizza Hut Delivery,W, SMU, Max25, Pnglmn, Bs Kmptr, Dom Tng, hub.Agusmara 0218306789 
+2012-02-29 18:14:59.00981600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.01268000 >> 2196218582 CRON:MT: Secure Parking,Kasir Pos Parkir,P/W, SMU, Max28th, Single, Teliti, Disiplin, Shift, Pnmptn Jkt, hub.Hendi 0216265868 
+2012-02-29 18:14:59.01723100 >> 0 CRON:DMS: 2012-03-01, Kasir Pos Parkir, Secure Parking,P/W, SMU, Max28th, Single, Teliti, Disiplin, Shift, Pnmptn Jkt, hub.Hendi 0216265868 
+2012-02-29 18:14:59.02176800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.02461500 >> 2196218582 CRON:MT: Pundee Associates,Waitress,W, SMU, Max 25th, TB Min 150, Dom Tangerang, hub.Ibu Indah 0217252139 
+2012-02-29 18:14:59.02909300 >> 0 CRON:DMS: 2012-03-01, Waitress, Pundee Associates,W, SMU, Max 25th, TB Min 150, Dom Tangerang, hub.Ibu Indah 0217252139 
+2012-02-29 18:14:59.03360700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.03644200 >> 2141588797 CRON:MT: LPK Kharisma Citra Bunda,Pembantu,Wanita, SMP, Max38th, Ad KTP Asli, Jjur & Rajin, Niat Bkrj, Pnmptn Jkt, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:59.04103800 >> 0 CRON:DMS: 2012-03-01, Pembantu, LPK Kharisma Citra Bunda,0,Wanita, SMP, Max38th, Ad KTP Asli, Jjur & Rajin, Niat Bkrj, Pnmptn Jkt, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:59.04551700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.04832000 >> 2141588931 CRON:MT: PT Unggul Karya Semesta,Operator,P/W, SMA, Max 26th, TB Min 160, Pnglmn, Dom Tng, hub.Maria 0216619290 
+2012-02-29 18:14:59.05275500 >> 0 CRON:DMS: 2012-03-01, Operator, PT Unggul Karya Semesta,P/W, SMA, Max 26th, TB Min 160, Pnglmn, Dom Tng, hub.Maria 0216619290 
+2012-02-29 18:14:59.05732000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.06011600 >> 2141588931 CRON:MT: Pizza Hut Delivery,Kasir,W, SMU, Max25, Pnglmn, Bs Kmptr, Dom Tng, hub.Agusmara 0218306789 
+2012-02-29 18:14:59.06471800 >> 0 CRON:DMS: 2012-03-01, Kasir, Pizza Hut Delivery,W, SMU, Max25, Pnglmn, Bs Kmptr, Dom Tng, hub.Agusmara 0218306789 
+2012-02-29 18:14:59.06915100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.07195400 >> 2141588797 CRON:MT: PT Unggul Karya Semesta,Operator,P/W, SMA, Max 26th, TB Min 160, Pnglmn, Dom Jkt, hub.Maria 0216619290 
+2012-02-29 18:14:59.07640800 >> 0 CRON:DMS: 2012-03-01, Operator, PT Unggul Karya Semesta,0,P/W, SMA, Max 26th, TB Min 160, Pnglmn, Dom Jkt, hub.Maria 0216619290 
+2012-02-29 18:14:59.08095200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.08379400 >> 2195952100 CRON:MT: PT Clarindotama Perdana,Team Leader BA,Wanita, SMU, Max 28th, TB Min160, Pnglmn 2th, Menarik, Target, Brtnggung Jwb, Pnmptn Jkt, hub.Ibu Inge 0215260725 
+2012-02-29 18:14:59.09118000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.09395300 >> 2141588797 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:59.09850200 >> 0 CRON:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:59.10306200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.10587300 >> 2195952100 CRON:MT: PT Vidya Artha Tama,Admin,W, Min SMA, Max 25th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:14:59.11331100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.11613700 >> 2195952100 CRON:MT: PT Security Phisik Dinamika,Security,P/W, Min SMU, 21-38th, TB(P Min 170, W Min 160), BB Proporsional, Dom Dpk, hub.Bpk Andi 0217986934 
+2012-02-29 18:14:59.12364600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.12640400 >> 2196218594 CRON:MT: PT Sinergy Niagatama,SPG,Wanita, SMU, Max26, Single, Menarik & Kmnkatif, Pnmptn Dpk, hub.Ibu Erma 02145852688 
+2012-02-29 18:14:59.13099800 >> 0 CRON:DMS: 2012-03-01, SPG, PT Sinergy Niagatama,Wanita, SMU, Max26, Single, Menarik & Kmnkatif, Pnmptn Dpk, hub.Ibu Erma 02145852688 
+2012-02-29 18:14:59.13555200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.13836400 >> 2196218594 CRON:MT: LPK Kharisma Citra Bunda,Baby Sitter,Wanita, SMP, Max38th, Ad KTP Asli, Pnglmn 1th, Jjur & Rajin, Niat Bkrj, Pnmptn Dpk, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:59.14285400 >> 0 CRON:DMS: 2012-03-01, Baby Sitter, LPK Kharisma Citra Bunda,Wanita, SMP, Max38th, Ad KTP Asli, Pnglmn 1th, Jjur & Rajin, Niat Bkrj, Pnmptn Dpk, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:14:59.14732800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.15014800 >> 2196218594 CRON:MT: JS Multi Collection,Waitress,P/W, SMA, Max 25th, Pnglmn, Dom Bgr, hub.Ben 0216928882 
+2012-02-29 18:14:59.15481800 >> 0 CRON:DMS: 2012-03-01, Waitress, JS Multi Collection,P/W, SMA, Max 25th, Pnglmn, Dom Bgr, hub.Ben 0216928882 
+2012-02-29 18:14:59.15927200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.16207800 >> 2141588797 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:59.16658600 >> 0 CRON:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:14:59.17113500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.17391900 >> 2193333208 CRON:MT: Resto Sian Suki,Cook,Pria, SMU, Pnglmn 3th, Max35th, Bs Mskn Asia, Pnmptn Klp Gading, hub.Santi 02145850316 
+2012-02-29 18:14:59.18138200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:14:59.18423000 >> 2193333208 CRON:MT: LPK Kharisma Citra Bunda,Baby Sitter,Wanita, SMP, Max38th, Ad KTP Asli, Pnglmn 1th, Jjur & Rajin, Niat Bkrj, Pnmptn Dpk, hub.Ibu Pramesti 085716200098 
+2012-02-29 18:15:00.96304800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:00.96603700 >> 2141588797 CRON:MT: Secure Parking,Kasir Pos Parkir,P/W, SMU, Max28th, Single, Teliti, Disiplin, Shift, Pnmptn Jkt, hub.Hendi 0216265868 
+2012-02-29 18:15:00.97072300 >> 0 CRON:DMS: 2012-03-01, Kasir Pos Parkir, Secure Parking,0,P/W, SMU, Max28th, Single, Teliti, Disiplin, Shift, Pnmptn Jkt, hub.Hendi 0216265868 
+2012-02-29 18:15:00.97533100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:00.97818900 >> 2141588797 CRON:MT: Pundee Associates,Waitress,W, SMU, Max 25th, TB Min 150, Dom Tangerang, hub.Ibu Indah 0217252139 
+2012-02-29 18:15:00.98291000 >> 0 CRON:DMS: 2012-03-01, Waitress, Pundee Associates,0,W, SMU, Max 25th, TB Min 150, Dom Tangerang, hub.Ibu Indah 0217252139 
+2012-02-29 18:15:00.98742900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:00.99020200 >> 2193333208 CRON:MT: PT Kasyasindo Megah Perkasa,Kasir,P/W, Min SMA, 19-24th, Dom Dpk, hub.Edwin 02190635218 
+2012-02-29 18:15:00.99771400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:00.00048500 >> 2141588799 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:15:01.00505800 >> 0 CRON:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:15:01.00968900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.01271600 >> 2141588931 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:15:01.01721300 >> 0 CRON:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:15:01.02171900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.02448000 >> 2141588797 CRON:MT: LPK Kharisma Jaya,Governess,W, Min SMP, Pnglmn, Pnmptn Jkt, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:01.02899600 >> 0 CRON:DMS: 2012-03-01, Governess, LPK Kharisma Jaya,0,W, Min SMP, Pnglmn, Pnmptn Jkt, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:01.03367900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.03666700 >> 2141588797 CRON:MT: PT Vidya Artha Tama,Admin,W, Min SMA, Max 25th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:01.04118200 >> 0 CRON:DMS: 2012-03-01, Admin, PT Vidya Artha Tama,0,W, Min SMA, Max 25th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:01.04562800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.04846800 >> 2141588797 CRON:MT: Resto Sian Suki,Fryers,Pria, SMU, Pnglmn 1th, Max30th, Bs Mskn Asia, Pnmptn Tgr, hub.Santi 02145850316 
+2012-02-29 18:15:01.05295600 >> 0 CRON:DMS: 2012-03-01, Fryers, Resto Sian Suki,0,Pria, SMU, Pnglmn 1th, Max30th, Bs Mskn Asia, Pnmptn Tgr, hub.Santi 02145850316 
+2012-02-29 18:15:01.05747900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.06024600 >> 2141588797 CRON:MT: Resto Sian Suki,Steamer,Pria, SMU, Pnglmn 1th, Max30th, Bs Mskn Asia, Pnmptn Tgr, hub.Santi 02145850316 
+2012-02-29 18:15:01.06487100 >> 0 CRON:DMS: 2012-03-01, Steamer, Resto Sian Suki,0,Pria, SMU, Pnglmn 1th, Max30th, Bs Mskn Asia, Pnmptn Tgr, hub.Santi 02145850316 
+2012-02-29 18:15:01.06932000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.07217400 >> 2141588797 CRON:MT: PT Vidya Artha Tama,Resepsionis,W, Min SMA, Max 25th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:01.07661500 >> 0 CRON:DMS: 2012-03-01, Resepsionis, PT Vidya Artha Tama,0,W, Min SMA, Max 25th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:01.08114600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.08397100 >> 2141588797 CRON:MT: LPK Kharisma Jaya,Perawat Lansia,W, Min SMP, Pnglmn, Pnmptn Jkt, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:01.08858300 >> 0 CRON:DMS: 2012-03-01, Perawat Lansia, LPK Kharisma Jaya,0,W, Min SMP, Pnglmn, Pnmptn Jkt, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:01.09302300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.09583200 >> 2193333208 CRON:MT: Pizza Hut Delivery,Kasir,W, SMU, Max25, Pnglmn, Bs Kmptr, Dom Dpk, hub.Agusmara 0218306789 
+2012-02-29 18:15:01.10322000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.10596600 >> 2141588797 CRON:MT: JS Multi Collection,Waitress,P/W, SMA, Max 25th, Pnglmn, Dom Tng, hub.Ben 0216928882 
+2012-02-29 18:15:01.11043700 >> 0 CRON:DMS: 2012-03-01, Waitress, JS Multi Collection,0,P/W, SMA, Max 25th, Pnglmn, Dom Tng, hub.Ben 0216928882 
+2012-02-29 18:15:01.11546100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.11847000 >> 2141588797 CRON:MT: PT Star N Co,Kasir,P/W, Min SMA, Max 26th, TB 153cm, Blm Mnkh, Dom Jkt, hub.Ibu Maria 02129238947 
+2012-02-29 18:15:01.12311400 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Star N Co,0,P/W, Min SMA, Max 26th, TB 153cm, Blm Mnkh, Dom Jkt, hub.Ibu Maria 02129238947 
+2012-02-29 18:15:01.12754800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.13034900 >> 2193333208 CRON:MT: LPK Kharisma Jaya,Governess,W, Min SMP, Pnglmn, Pnmptn Dpk, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:01.13783100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.14073300 >> 2141588931 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:15:01.14529400 >> 0 CRON:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:15:01.14991200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.15270800 >> 2193333208 CRON:MT: PT Sentra Boga Handal,Pastry Cook,P/W, Min SMA, Max 35th, Pnglmn, Dom Bgr, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:01.16013500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.16294100 >> 2196218594 CRON:MT: PT Sentra Boga Handal,Waitress,P/W, Min SMA, Max 27th, Pnglmn, Dom Dpk, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:01.16767300 >> 0 CRON:DMS: 2012-03-01, Waitress, PT Sentra Boga Handal,P/W, Min SMA, Max 27th, Pnglmn, Dom Dpk, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:01.17218900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.17500100 >> 2196218594 CRON:MT: LPK Kharisma Jaya,Governess,W, Min SMP, Pnglmn, Pnmptn Dpk, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:01.17959800 >> 0 CRON:DMS: 2012-03-01, Governess, LPK Kharisma Jaya,W, Min SMP, Pnglmn, Pnmptn Dpk, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:01.18405000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.18684000 >> 2196218594 CRON:MT: PT Solusi Express Logistics,Marketing,Pria, SMU, 25-35th, Pnglmn 3th, Pny Kndaraan, Bs Kmptr & Email, Pnmptn Dpk, hub.Pa Deva 02143921450 
+2012-02-29 18:15:01.19151900 >> 0 CRON:DMS: 2012-03-01, Marketing, PT Solusi Express Logistics,Pria, SMU, 25-35th, Pnglmn 3th, Pny Kndaraan, Bs Kmptr & Email, Pnmptn Dpk, hub.Pa Deva 02143921450 
+2012-02-29 18:15:01.19599700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.19879000 >> 2195952100 CRON:MT: PT Vidya Rezeki Tama,Security,P, Min SMA, Max 35th, TB 168cm, Tdk Bertatto, Dom Dpk, hub.Ibu Rini 02180878266 
+2012-02-29 18:15:01.20924900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.21216100 >> 2195952100 CRON:MT: PT Vidya Artha Tama,Resepsionis,W, Min SMA, Max 25th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:01.22768300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.23402200 >> 2195952100 CRON:MT: PT Clarindotama Perdana,Beauty Advisor,Wanita, SMU, Max26th, TB160, Menarik, Kmnkatif, Target, Pnmptn Jkt, hub.Ibu Inge 0215260725 
+2012-02-29 18:15:01.24396300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.24695800 >> 2141588797 CRON:MT: PT Sentra Boga Handal,Quality Control,P, Min SMA, Max 27th, Pnglmn, Dom Jkt, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:01.25339600 >> 0 CRON:DMS: 2012-03-01, Quality Control, PT Sentra Boga Handal,0,P, Min SMA, Max 27th, Pnglmn, Dom Jkt, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:01.26010500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.26306100 >> 2141588931 CRON:MT: Resto Sian Suki,Kasir,Wanita, SMU, Pnglmn 1th, Max25th, Jjur, Bs Kmptr, Teliti, Pnmptn Tgr, hub.Santi 02145850316 
+2012-02-29 18:15:01.26771000 >> 0 CRON:DMS: 2012-03-01, Kasir, Resto Sian Suki,Wanita, SMU, Pnglmn 1th, Max25th, Jjur, Bs Kmptr, Teliti, Pnmptn Tgr, hub.Santi 02145850316 
+2012-02-29 18:15:01.27333300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.27825500 >> 2141588931 CRON:MT: PT Sentra Boga Handal,Quality Control,P, Min SMA, Max 27th, Pnglmn, Dom Tng, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:01.28492900 >> 0 CRON:DMS: 2012-03-01, Quality Control, PT Sentra Boga Handal,P, Min SMA, Max 27th, Pnglmn, Dom Tng, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:01.29141700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.29453900 >> 2141588797 CRON:MT: LPK Cinta Keluarga,Pembantu,Wanita, SMU, 17-35, Brbdn Sehat, Pny KTP, Ada tes & Pelatihan, Pnmptn Jkt, hub.Fia 02171136677 
+2012-02-29 18:15:01.30207000 >> 0 CRON:DMS: 2012-03-01, Pembantu, LPK Cinta Keluarga,0,Wanita, SMU, 17-35, Brbdn Sehat, Pny KTP, Ada tes & Pelatihan, Pnmptn Jkt, hub.Fia 02171136677 
+2012-02-29 18:15:01.30892700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.31181200 >> 2196218582 CRON:MT: JS Multi Collection,Waitress,P/W, SMA, Max 25th, Pnglmn, Dom Tng, hub.Ben 0216928882 
+2012-02-29 18:15:01.31649100 >> 0 CRON:DMS: 2012-03-01, Waitress, JS Multi Collection,P/W, SMA, Max 25th, Pnglmn, Dom Tng, hub.Ben 0216928882 
+2012-02-29 18:15:01.32143600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.32511900 >> 2196218582 CRON:MT: PT Star N Co,Kasir,P/W, Min SMA, Max 26th, TB 153cm, Blm Mnkh, Dom Jkt, hub.Ibu Maria 02129238947 
+2012-02-29 18:15:01.33237800 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Star N Co,P/W, Min SMA, Max 26th, TB 153cm, Blm Mnkh, Dom Jkt, hub.Ibu Maria 02129238947 
+2012-02-29 18:15:01.34148300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.34475700 >> 2191848328 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:15:01.35381700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.35694000 >> 2196218582 CRON:MT: PT Federal International Finan,Accounting,P/W, Min SMK, Max 25th, Pnglmn, Dom Jkt, hub.Ibu Mayang 0218816558 
+2012-02-29 18:15:01.36285100 >> 0 CRON:DMS: 2012-03-01, Accounting, PT Federal International Finan,P/W, Min SMK, Max 25th, Pnglmn, Dom Jkt, hub.Ibu Mayang 0218816558 
+2012-02-29 18:15:01.37238700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.37521400 >> 2196218582 CRON:MT: 369 Depot,Waitress,P/W, Min SMA, Max 26th, hub.Bpk Niko 0216594613 
+2012-02-29 18:15:01.38003700 >> 0 CRON:DMS: 2012-03-01, Waitress, 369 Depot,P/W, Min SMA, Max 26th, hub.Bpk Niko 0216594613 
+2012-02-29 18:15:01.38491000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.38801400 >> 2141588797 CRON:MT: PT Lintas Utama Persada,Office Boy,P, Min SMA, Pnglmn, Dom Jkt, hub.Bpk Aldi 02189833448 
+2012-02-29 18:15:01.39278300 >> 0 CRON:DMS: 2012-03-01, Office Boy, PT Lintas Utama Persada,0,P, Min SMA, Pnglmn, Dom Jkt, hub.Bpk Aldi 02189833448 
+2012-02-29 18:15:01.39743700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.40057500 >> 2141588931 CRON:MT: PT Propan Raya,Produksi/Pengemasan,P, SMA IPA, Max 25th, TB Min 160cm, BB 50kg, Tdk Brkcmata, hub.Ibu Puji 02159303333 
+2012-02-29 18:15:01.40847800 >> 0 CRON:DMS: 2012-03-01, Produksi/Pengemasan, PT Propan Raya,P, SMA IPA, Max 25th, TB Min 160cm, BB 50kg, Tdk Brkcmata, hub.Ibu Puji 02159303333 
+2012-02-29 18:15:01.41351300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.41666200 >> 2141588931 CRON:MT: PT Snapy Digital Printing,Kasir,P/W, SMK, Max. 27th, Dom Tangerang, hub.Lucky 02151104801 
+2012-02-29 18:15:01.42309000 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Snapy Digital Printing,P/W, SMK, Max. 27th, Dom Tangerang, hub.Lucky 02151104801 
+2012-02-29 18:15:01.43042700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.43343800 >> 2141588797 CRON:MT: PT Federal International Finan,Operator Produksi,P, Min SMK, Max 24th, Dom Jkt, hub.Ibu Mayang 0218816558 
+2012-02-29 18:15:01.43859200 >> 0 CRON:DMS: 2012-03-01, Operator Produksi, PT Federal International Finan,0,P, Min SMK, Max 24th, Dom Jkt, hub.Ibu Mayang 0218816558 
+2012-02-29 18:15:01.44784900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.45306500 >> 2195952100 CRON:MT: PT Cyberworld Network,Marketing Franchise,P/W, SMU, Max26th, Pnglmn 2th, Target, Pny Kndraan, Bs Kmptr, Pkrj Krs, Pnmtpn Jkt, hub.Pa Rudi 02138908888 
+2012-02-29 18:15:01.46182800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.46596800 >> 2195952100 CRON:MT: PT Kasyasindo Megah Perkasa,Customer Service,P/W, Min SMA, 19-24th, Dom Jkt, hub.Edwin 02190635218 
+2012-02-29 18:15:01.47524800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.47830000 >> 2195952100 CRON:MT: PT G4S,Security,P/W, SMU, 20-28th, Pnglmn 1th, Tdk Brtato/Tindik/Brkcmta, Ad Srtfikat Satpam, Shift, Pnmptn Jkt, hub.Pa Azis 0217807807 
+2012-02-29 18:15:01.48632700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.48931200 >> 2196218594 CRON:MT: PT Astra Otoparts Tbk,Salesman,P, Min SMA, Max 30th, Pnmptn Dpk, hub.Bpk Oka 02129981162 
+2012-02-29 18:15:01.49436700 >> 0 CRON:DMS: 2012-03-01, Salesman, PT Astra Otoparts Tbk,P, Min SMA, Max 30th, Pnmptn Dpk, hub.Bpk Oka 02129981162 
+2012-02-29 18:15:01.50082300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.50454900 >> 2196218594 CRON:MT: LPK Kharisma Jaya,Perawat Lansia,W, Min SMP, Pnglmn, Pnmptn Dpk, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:01.50956300 >> 0 CRON:DMS: 2012-03-01, Perawat Lansia, LPK Kharisma Jaya,W, Min SMP, Pnglmn, Pnmptn Dpk, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:01.51490100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.51826500 >> 2196218594 CRON:MT: PT Cyberworld Network,Waiter,P/W, SMU, Max26th, Pnglmn 1th, TB Min155, Prporsional, Shift, Pnmptn Dpk, hub.Pa Rudi 02138908888 
+2012-02-29 18:15:01.52305800 >> 0 CRON:DMS: 2012-03-01, Waiter, PT Cyberworld Network,P/W, SMU, Max26th, Pnglmn 1th, TB Min155, Prporsional, Shift, Pnmptn Dpk, hub.Pa Rudi 02138908888 
+2012-02-29 18:15:01.52875300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.53205700 >> 2193333208 CRON:MT: PT Cyberworld Network,Cook,P/W, SMK Tata Boga, Max26th, Pnglmn 1th, Shift, Pny Kndraan, Bs Mskn Chinese & Indo, Pnmtpn Bgr, hub.Pa Rudi 02138908888 
+2012-02-29 18:15:01.54026600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.54392200 >> 2193333208 CRON:MT: LPK Kharisma Jaya,Perawat Lansia,W, Min SMP, Pnglmn, Pnmptn Dpk, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:01.55244700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:01.55589100 >> 2141588797 CRON:MT: PT Federal International Finan,Accounting,P/W, Min SMK, Max 25th, Pnglmn, Dom Jkt, hub.Ibu Mayang 0218816558 
+2012-02-29 18:15:01.56310400 >> 0 CRON:DMS: 2012-03-01, Accounting, PT Federal International Finan,0,P/W, Min SMK, Max 25th, Pnglmn, Dom Jkt, hub.Ibu Mayang 0218816558 
+2012-02-29 18:15:03.25353600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.25645500 >> 2141588797 CRON:MT: 369 Depot,Waitress,P/W, Min SMA, Max 26th, hub.Bpk Niko 0216594613 
+2012-02-29 18:15:03.26101000 >> 0 CRON:DMS: 2012-03-01, Waitress, 369 Depot,0,P/W, Min SMA, Max 26th, hub.Bpk Niko 0216594613 
+2012-02-29 18:15:03.26552900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.26844100 >> 2193333208 CRON:MT: PT Snapy Digital Printing,Kasir,P/W, SMK, Max. 27th, Dom Depok, hub.Lucky 02151104801 
+2012-02-29 18:15:03.27618900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.27927700 >> 2141588797 CRON:MT: LPK Kharisma Jaya,Baby Sitter,W, Min SMP, Pnglmn, Pnmptn Jkt, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:03.28385300 >> 0 CRON:DMS: 2012-03-01, Baby Sitter, LPK Kharisma Jaya,0,W, Min SMP, Pnglmn, Pnmptn Jkt, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:03.28837900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.29127400 >> 2141588797 CRON:MT: Optik Melawai,Assisant Apoteker,W, Max.25th, SMF, Mtvsi Tinggi, Pnglmn, hub.Vera 02170613796 
+2012-02-29 18:15:03.29584300 >> 0 CRON:DMS: 2012-03-01, Assisant Apoteker, Optik Melawai,0,W, Max.25th, SMF, Mtvsi Tinggi, Pnglmn, hub.Vera 02170613796 
+2012-02-29 18:15:03.30034600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.30333100 >> 2141588797 CRON:MT: Resto Sian Suki,Cook,Pria, SMU, Pnglmn 3th, Max35th, Bs Mskn Asia, Pnmptn Tgr, hub.Santi 02145850316 
+2012-02-29 18:15:03.30786600 >> 0 CRON:DMS: 2012-03-01, Cook, Resto Sian Suki,0,Pria, SMU, Pnglmn 3th, Max35th, Bs Mskn Asia, Pnmptn Tgr, hub.Santi 02145850316 
+2012-02-29 18:15:03.31236400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.31523600 >> 2141588797 CRON:MT: PT Sentra Boga Handal,Pastry Cook,P/W, Min SMA, Max 35th, Pnglmn, Dom Jkt, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:03.31981500 >> 0 CRON:DMS: 2012-03-01, Pastry Cook, PT Sentra Boga Handal,0,P/W, Min SMA, Max 35th, Pnglmn, Dom Jkt, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:03.32428400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.32733800 >> 2141588797 CRON:MT: X.O Restaurant,Purchasing,P/W, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:03.33185800 >> 0 CRON:DMS: 2012-03-01, Purchasing, X.O Restaurant,0,P/W, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:03.33633800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.33938300 >> 2141588797 CRON:MT: Yayasan Karya Asri,Baby Sitter,W, SMU, Max35th, Pny KTP, Pnglmn 2th, Pnmptn Jkt, hub.Wulan 0215372313 
+2012-02-29 18:15:03.34413100 >> 0 CRON:DMS: 2012-03-01, Baby Sitter, Yayasan Karya Asri,0,W, SMU, Max35th, Pny KTP, Pnglmn 2th, Pnmptn Jkt, hub.Wulan 0215372313 
+2012-02-29 18:15:03.34893900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.35179400 >> 2193333208 CRON:MT: PT Esa Sukses Maju,Accounting,P/W, Min SMA, 18-37th, Dom Dpk, hub.Suplin 02136176050 
+2012-02-29 18:15:03.35914700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.36196700 >> 2141588797 CRON:MT: PT Sentra Boga Handal,Waitress,P/W, Min SMA, Max 27th, Pnglmn, Dom Jkt, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:03.36652800 >> 0 CRON:DMS: 2012-03-01, Waitress, PT Sentra Boga Handal,0,P/W, Min SMA, Max 27th, Pnglmn, Dom Jkt, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:03.37101700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.37390300 >> 2141588797 CRON:MT: PT Vidya Artha Tama,Accounting,P/W, Min SMA, Max 25th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:03.37843900 >> 0 CRON:DMS: 2012-03-01, Accounting, PT Vidya Artha Tama,0,P/W, Min SMA, Max 25th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:03.38295800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.38583200 >> 2193333208 CRON:MT: LPK Kharisma Jaya,Baby Sitter,W, Min SMP, Pnglmn, Pnmptn Dpk, hub.Ibu Yani 02171484870 
+2012-02-29 18:15:03.39320700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.39602500 >> 2193333208 CRON:MT: PT Sentra Boga Handal,Pastry Cook,P/W, Min SMA, Max 35th, Pnglmn, Dom Dpk, hub.Ibu Arum 02183783527 
+2012-02-29 18:15:03.40342000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.40619900 >> 2196218594 CRON:MT: Pundee Associates,Waitress,W, SMU, Max 25th, TB Min 150, Dom Depok, hub.Ibu Indah 0217252139 
+2012-02-29 18:15:03.41069700 >> 0 CRON:DMS: 2012-03-01, Waitress, Pundee Associates,W, SMU, Max 25th, TB Min 150, Dom Depok, hub.Ibu Indah 0217252139 
+2012-02-29 18:15:03.41521100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.41802700 >> 2196218594 CRON:MT: Yayasan Karya Asri,Baby Sitter,W, SMU, Max35th, Pny KTP, Pnglmn 2th, Pnmptn Dpk, hub.Wulan 0215372313 
+2012-02-29 18:15:03.42254900 >> 0 CRON:DMS: 2012-03-01, Baby Sitter, Yayasan Karya Asri,W, SMU, Max35th, Pny KTP, Pnglmn 2th, Pnmptn Dpk, hub.Wulan 0215372313 
+2012-02-29 18:15:03.42704300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.42995000 >> 2196218594 CRON:MT: PT Avisha Potensi Abadi,Beauty Advisor,W, Max.25th, TB160cm, Mnrk, Kmnikatif, Krj Shifting, Pnmptn Dpk, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:03.43449100 >> 0 CRON:DMS: 2012-03-01, Beauty Advisor, PT Avisha Potensi Abadi,W, Max.25th, TB160cm, Mnrk, Kmnikatif, Krj Shifting, Pnmptn Dpk, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:03.43896400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.44181000 >> 2195952100 CRON:MT: PT FIN Logistics,Security,P, Min SMA, Max 30th, Pny Srtfkt, hub.Ibu Wita 0215701700 
+2012-02-29 18:15:03.44921600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.45203100 >> 2195952100 CRON:MT: Optik Melawai,Assisant Apoteker,W, Max.25th, SMF, Mtvsi Tinggi, Pnglmn, hub.Vera 02170613796 
+2012-02-29 18:15:03.45938800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.46244000 >> 2195952100 CRON:MT: PT Astra Otoparts Tbk,Salesman,P, Min SMA, Max 30th, Pnmptn Jkt, hub.Bpk Oka 02129981162 
+2012-02-29 18:15:03.47316000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.47605500 >> 2141588797 CRON:MT: PT Snapy Digital Printing,Operator Print,P/W, SMK, Max. 27th, Dom Jkt, hub.Lucky 02151104801 
+2012-02-29 18:15:03.48066000 >> 0 CRON:DMS: 2012-03-01, Operator Print, PT Snapy Digital Printing,0,P/W, SMK, Max. 27th, Dom Jkt, hub.Lucky 02151104801 
+2012-02-29 18:15:03.48516300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.48798700 >> 2141588931 CRON:MT: PT Esa Sukses Maju,Accounting,P/W, Min SMA, 18-37th, Dom Tng, hub.Suplin 02136176050 
+2012-02-29 18:15:03.49245000 >> 0 CRON:DMS: 2012-03-01, Accounting, PT Esa Sukses Maju,P/W, Min SMA, 18-37th, Dom Tng, hub.Suplin 02136176050 
+2012-02-29 18:15:03.49688700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.49974200 >> 2141588931 CRON:MT: PT Snapy Digital Printing,Operator Print,P/W, SMK, Max. 27th, Dom Tng, hub.Lucky 02151104801 
+2012-02-29 18:15:03.50427800 >> 0 CRON:DMS: 2012-03-01, Operator Print, PT Snapy Digital Printing,P/W, SMK, Max. 27th, Dom Tng, hub.Lucky 02151104801 
+2012-02-29 18:15:03.50872400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.51155200 >> 2141588797 CRON:MT: PT Ciwangi Berlian Pondok Inda,Salesman,P, Min SMA, Max 30th, Pny Motor, Dom Jkt, hub.Sri 02172798720 
+2012-02-29 18:15:03.51606100 >> 0 CRON:DMS: 2012-03-01, Salesman, PT Ciwangi Berlian Pondok Inda,0,P, Min SMA, Max 30th, Pny Motor, Dom Jkt, hub.Sri 02172798720 
+2012-02-29 18:15:03.52052000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.52333900 >> 2196218594 CRON:MT: 369 Depot,Junior Crew,P/W, Min SMA, Max 26th, hub.Bpk Niko 0216594613 
+2012-02-29 18:15:03.52780500 >> 0 CRON:DMS: 2012-03-01, Junior Crew, 369 Depot,P/W, Min SMA, Max 26th, hub.Bpk Niko 0216594613 
+2012-02-29 18:15:03.53228500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.53509900 >> 2151453471 CRON:MT: Pundee Associates,Waitress,W, SMU, Max 25th, TB Min 150, Dom Jakarta, hub.Ibu Indah 0217252139 
+2012-02-29 18:15:03.53958300 >> 0 CRON:DMS: 2012-03-01, Waitress, Pundee Associates,W, SMU, Max 25th, TB Min 150, Dom Jakarta, hub.Ibu Indah 0217252139 
+2012-02-29 18:15:03.54402900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.54694000 >> 2151453471 CRON:MT: PT Ciwangi Berlian Pondok Inda,Salesman,P, Min SMA, Max 30th, Pny Motor, Dom Jkt, hub.Sri 02172798720 
+2012-02-29 18:15:03.55147600 >> 0 CRON:DMS: 2012-03-01, Salesman, PT Ciwangi Berlian Pondok Inda,P, Min SMA, Max 30th, Pny Motor, Dom Jkt, hub.Sri 02172798720 
+2012-02-29 18:15:03.55595600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.55880500 >> 2151453471 CRON:MT: PT Kasyasindo Megah Perkasa,Kasir,P/W, Min SMA, 19-24th, Dom Jkt, hub.Edwin 02190635218 
+2012-02-29 18:15:03.56329200 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Kasyasindo Megah Perkasa,P/W, Min SMA, 19-24th, Dom Jkt, hub.Edwin 02190635218 
+2012-02-29 18:15:03.56774100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.57057500 >> 2151453471 CRON:MT: PT Snapy Digital Printing,Operator Print,P/W, SMK, Max. 27th, Dom Jkt, hub.Lucky 02151104801 
+2012-02-29 18:15:03.57504100 >> 0 CRON:DMS: 2012-03-01, Operator Print, PT Snapy Digital Printing,P/W, SMK, Max. 27th, Dom Jkt, hub.Lucky 02151104801 
+2012-02-29 18:15:03.57954500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.58248300 >> 2196218594 CRON:MT: PT Cyberworld Network,Cook,P/W, SMK Tata Boga, Max26th, Pnglmn 1th, Shift, Pny Kndraan, Bs Mskn Chinese & Indo, Pnmtpn Dpk, hub.Pa Rudi 02138908888 
+2012-02-29 18:15:03.58690100 >> 0 CRON:DMS: 2012-03-01, Cook, PT Cyberworld Network,P/W, SMK Tata Boga, Max26th, Pnglmn 1th, Shift, Pny Kndraan, Bs Mskn Chinese & Indo, Pnmtpn Dpk, hub.Pa Rudi 02138908888 
+2012-02-29 18:15:03.59137400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.59414500 >> 2196218594 CRON:MT: 369 Depot,Ellen Test,Ellen Test, hub.Bpk Niko 0216594613 
+2012-02-29 18:15:03.59863300 >> 0 CRON:DMS: 2012-03-01, Ellen Test, 369 Depot,Ellen Test, hub.Bpk Niko 0216594613 
+2012-02-29 18:15:03.60311900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.60592600 >> 2196218594 CRON:MT: PT Vidya Artha Tama,Driver,P, Min SMA, Max 32th, Pnglmn, Pny SIM, Tau Jabodetabek, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:03.61041300 >> 0 CRON:DMS: 2012-03-01, Driver, PT Vidya Artha Tama,P, Min SMA, Max 32th, Pnglmn, Pny SIM, Tau Jabodetabek, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:03.61489100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.61774200 >> 2196218594 CRON:MT: 369 Depot,Cashier,P/W, Min SMA, Max 26th, hub.Bpk Niko 0216594613 
+2012-02-29 18:15:03.62223900 >> 0 CRON:DMS: 2012-03-01, Cashier, 369 Depot,P/W, Min SMA, Max 26th, hub.Bpk Niko 0216594613 
+2012-02-29 18:15:03.62672200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.62955000 >> 2196218594 CRON:MT: PT Vidya Artha Tama,Cleaning Service,P/W, Min SMA, Max 32th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:03.63404200 >> 0 CRON:DMS: 2012-03-01, Cleaning Service, PT Vidya Artha Tama,P/W, Min SMA, Max 32th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:03.63853600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.64147900 >> 2141588797 CRON:MT: PT Vidya Artha Tama,Cleaning Service,P/W, Min SMA, Max 32th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:03.64597000 >> 0 CRON:DMS: 2012-03-01, Cleaning Service, PT Vidya Artha Tama,0,P/W, Min SMA, Max 32th, Pnglmn, Dom Jkt, hub.Dwi 0218011739 
+2012-02-29 18:15:03.65046300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.65333000 >> 2196218582 CRON:MT: Pundee Associates,Waitress,W, SMU, Max 25th, TB Min 150, Dom Jakarta, hub.Ibu Indah 0217252139 
+2012-02-29 18:15:03.65782000 >> 0 CRON:DMS: 2012-03-01, Waitress, Pundee Associates,W, SMU, Max 25th, TB Min 150, Dom Jakarta, hub.Ibu Indah 0217252139 
+2012-02-29 18:15:03.66225500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.66509300 >> 2196218582 CRON:MT: PT Kasyasindo Megah Perkasa,Kasir,P/W, Min SMA, 19-24th, Dom Jkt, hub.Edwin 02190635218 
+2012-02-29 18:15:03.66953600 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Kasyasindo Megah Perkasa,P/W, Min SMA, 19-24th, Dom Jkt, hub.Edwin 02190635218 
+2012-02-29 18:15:03.67396100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.67677800 >> 2196218582 CRON:MT: Pizza Hut Delivery,Kasir,W, SMU, Max25, Pnglmn, Bs Kmptr, Dom Jkt, hub.Agusmara 0218306789 
+2012-02-29 18:15:03.68127000 >> 0 CRON:DMS: 2012-03-01, Kasir, Pizza Hut Delivery,W, SMU, Max25, Pnglmn, Bs Kmptr, Dom Jkt, hub.Agusmara 0218306789 
+2012-02-29 18:15:03.68571800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.68851400 >> 2196218582 CRON:MT: JS Multi Collection,Waitress,P/W, SMA, Max 25th, Pnglmn, Dom Jkt, hub.Ben 0216928882 
+2012-02-29 18:15:03.69294000 >> 0 CRON:DMS: 2012-03-01, Waitress, JS Multi Collection,P/W, SMA, Max 25th, Pnglmn, Dom Jkt, hub.Ben 0216928882 
+2012-02-29 18:15:03.69742400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:03.70025600 >> 2141588797 CRON:MT: PT Gagana Megah Utama,Cleaning Service,P/W, SMU, Max35th, Rajin & Cekatan, Pnmptn Jkt, hub.Ibu Ayu 0218469523 
+2012-02-29 18:15:05.43367800 >> 0 CRON:DMS: 2012-03-01, Cleaning Service, PT Gagana Megah Utama,0,P/W, SMU, Max35th, Rajin & Cekatan, Pnmptn Jkt, hub.Ibu Ayu 0218469523 
+2012-02-29 18:15:05.43821300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.44110100 >> 2193415830 CRON:MT: PT Duta Indah Lestari,Driver,P/W, Min SMA, Max 30th, Pny SIM, Tau Jakarta, Dom Jkt, hub.Dedi 0215325441 
+2012-02-29 18:15:05.44565000 >> 0 CRON:DMS: 2012-03-01, Driver, PT Duta Indah Lestari,P/W, Min SMA, Max 30th, Pny SIM, Tau Jakarta, Dom Jkt, hub.Dedi 0215325441 
+2012-02-29 18:15:05.45020700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.45306400 >> 2196218594 CRON:MT: PT Gagana Megah Utama,Cleaning Service,P/W, SMU, Max35th, Rajin & Cekatan, Pnmptn Jkt, hub.Ibu Ayu 0218469523 
+2012-02-29 18:15:05.45752900 >> 0 CRON:DMS: 2012-03-01, Cleaning Service, PT Gagana Megah Utama,P/W, SMU, Max35th, Rajin & Cekatan, Pnmptn Jkt, hub.Ibu Ayu 0218469523 
+2012-02-29 18:15:05.46198600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.46486500 >> 2196218594 CRON:MT: PT Astra Otoparts Tbk,Accounting Staff,P/W, Min SMA, Pnglmn 2th, Max 23th, Pnmptn Jkt, hub.Bpk Oka 02129981162 
+2012-02-29 18:15:05.46939000 >> 0 CRON:DMS: 2012-03-01, Accounting Staff, PT Astra Otoparts Tbk,P/W, Min SMA, Pnglmn 2th, Max 23th, Pnmptn Jkt, hub.Bpk Oka 02129981162 
+2012-02-29 18:15:05.47386900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.47673900 >> 2196218594 CRON:MT: PT Cyberworld Network,Driver,Pria, SMU, Max35th, Pnglmn 2th, Bs Matic & Manual, Lmbur, Jjur & Pkrj Krs, Pnmptn Jkt, hub.Pa Rudi 02138908888 
+2012-02-29 18:15:05.48120800 >> 0 CRON:DMS: 2012-03-01, Driver, PT Cyberworld Network,Pria, SMU, Max35th, Pnglmn 2th, Bs Matic & Manual, Lmbur, Jjur & Pkrj Krs, Pnmptn Jkt, hub.Pa Rudi 02138908888 
+2012-02-29 18:15:05.48569500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.48855300 >> 2196218594 CRON:MT: CV Khairiah,Tukang Kebun,P, SMA, Max 32th, Dom Tangerang, hub.Asih 02173692787 
+2012-02-29 18:15:05.49300300 >> 0 CRON:DMS: 2012-03-01, Tukang Kebun, CV Khairiah,P, SMA, Max 32th, Dom Tangerang, hub.Asih 02173692787 
+2012-02-29 18:15:05.49745300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.50029300 >> 2196218594 CRON:MT: Pundee Associates,Cook,P/W, SMK Boga, Usia Max 30th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Bgr, hub.Nugi 0217252139 
+2012-02-29 18:15:05.50478300 >> 0 CRON:DMS: 2012-03-01, Cook, Pundee Associates,P/W, SMK Boga, Usia Max 30th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Bgr, hub.Nugi 0217252139 
+2012-02-29 18:15:05.50928700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.51214300 >> 2151453471 CRON:MT: PT Snapy Digital Printing,Operator Photo Copy,P, SMK, Max. 27th, Dom Jkt, hub.Lucky 02151104801 
+2012-02-29 18:15:05.51684500 >> 0 CRON:DMS: 2012-03-01, Operator Photo Copy, PT Snapy Digital Printing,P, SMK, Max. 27th, Dom Jkt, hub.Lucky 02151104801 
+2012-02-29 18:15:05.52130500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.52417200 >> 2151453471 CRON:MT: PT Astra Otoparts Tbk,Accounting Staff,P/W, Min SMA, Pnglmn 2th, Max 23th, Pnmptn Jkt, hub.Bpk Oka 02129981162 
+2012-02-29 18:15:05.52866900 >> 0 CRON:DMS: 2012-03-01, Accounting Staff, PT Astra Otoparts Tbk,P/W, Min SMA, Pnglmn 2th, Max 23th, Pnmptn Jkt, hub.Bpk Oka 02129981162 
+2012-02-29 18:15:05.53307900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.53583200 >> 2151453471 CRON:MT: PT Kinnara,SPG,P/W, Min. SMA Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:05.54028100 >> 0 CRON:DMS: 2012-03-01, SPG, PT Kinnara,P/W, Min. SMA Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:05.54472600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.54756200 >> 2151453471 CRON:MT: JS Multi Collection,Waitress,P/W, SMA, Max 25th, Pnglmn, Dom Jkt, hub.Ben 0216928882 
+2012-02-29 18:15:05.55212800 >> 0 CRON:DMS: 2012-03-01, Waitress, JS Multi Collection,P/W, SMA, Max 25th, Pnglmn, Dom Jkt, hub.Ben 0216928882 
+2012-02-29 18:15:05.55655900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.55937800 >> 2196218594 CRON:MT: PT Dinamika Mitra Huresindo,Data Entry,P/W, Min SMA, Max 25th, Pnglmn, Mnrk, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:05.56390600 >> 0 CRON:DMS: 2012-03-01, Data Entry, PT Dinamika Mitra Huresindo,P/W, Min SMA, Max 25th, Pnglmn, Mnrk, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:05.56835100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.57120500 >> 2141588797 CRON:MT: PT Kinnara,SPG,P/W, Min. SMA Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:05.57565900 >> 0 CRON:DMS: 2012-03-01, SPG, PT Kinnara,0,P/W, Min. SMA Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:05.58011000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.58298700 >> 2141588931 CRON:MT: PT Snapy Digital Printing,Operator Photo Copy,P, SMK, Max. 27th, Dom Tng, hub.Lucky 02151104801 
+2012-02-29 18:15:05.58744700 >> 0 CRON:DMS: 2012-03-01, Operator Photo Copy, PT Snapy Digital Printing,P, SMK, Max. 27th, Dom Tng, hub.Lucky 02151104801 
+2012-02-29 18:15:05.59188500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.59473300 >> 2141588931 CRON:MT: PT Esa Sukses Maju,Kasir,P/W, Min SMA, 18-37th, Dom Tng, hub.Suplin 02136176050 
+2012-02-29 18:15:05.59920400 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Esa Sukses Maju,P/W, Min SMA, 18-37th, Dom Tng, hub.Suplin 02136176050 
+2012-02-29 18:15:05.60367100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.60654200 >> 2141588797 CRON:MT: PT Snapy Digital Printing,Operator Photo Copy,P, SMK, Max. 27th, Dom Jkt, hub.Lucky 02151104801 
+2012-02-29 18:15:05.61106900 >> 0 CRON:DMS: 2012-03-01, Operator Photo Copy, PT Snapy Digital Printing,0,P, SMK, Max. 27th, Dom Jkt, hub.Lucky 02151104801 
+2012-02-29 18:15:05.61546300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.61834000 >> 2195952100 CRON:MT: PT Kinnara,SPG,P/W, Min. SMA Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:05.62565500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.62854500 >> 2195952100 CRON:MT: PT Dinamika Mitra Huresindo,Data Entry,P/W, Min SMA, Max 25th, Pnglmn, Mnrk, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:05.63588900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.63880900 >> 2195952100 CRON:MT: PT Security Phisik Dinamika,Security,P/W, Min SMU, 21-38th, TB(P Min 170, W Min 160), BB Proporsional, Dom Jkt, hub.Bpk Andi 0217986934 
+2012-02-29 18:15:05.64621200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.64907800 >> 2195952100 CRON:MT: PT Vidya Rezeki Tama,Security,P, Min SMA, Max 35th, TB 168cm, Tdk Bertatto, Dom Jkt, hub.Ibu Rini 02180878266 
+2012-02-29 18:15:05.65640000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.65922500 >> 2195952100 CRON:MT: PT Dinamika Mitra Huresindo,Receptionist,W, Min SMA, Max 25th, Pnglmn, Mnrk, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:05.66654600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.66944200 >> 2195952100 CRON:MT: PT Avisha Potensi Abadi,Beauty Advisor,W, Max.25th, TB160cm, Mnrk, Kmnikatif, Krj Shifting, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:05.67680700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.67966800 >> 2141588797 CRON:MT: PT Esa Sukses Maju,Operator Gudang,P/W, Min SMA, 18-37th, Pnglmn, Dom Jkt, hub.Suplin 02136176050 
+2012-02-29 18:15:05.68415200 >> 0 CRON:DMS: 2012-03-01, Operator Gudang, PT Esa Sukses Maju,0,P/W, Min SMA, 18-37th, Pnglmn, Dom Jkt, hub.Suplin 02136176050 
+2012-02-29 18:15:05.68853800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.69134700 >> 2141588931 CRON:MT: PT Avisha Potensi Abadi,Kasir,W, SMA, Max.25th, Bs EDP/Office, TB.160cm, Kmnktif, Shift, Pnmptn Tng, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:05.69576000 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Avisha Potensi Abadi,W, SMA, Max.25th, Bs EDP/Office, TB.160cm, Kmnktif, Shift, Pnmptn Tng, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:05.70023600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.70304400 >> 2141588931 CRON:MT: PT Esa Sukses Maju,Operator Gudang,P/W, Min SMA, 18-37th, Pnglmn, Dom Tng, hub.Suplin 02136176050 
+2012-02-29 18:15:05.70739200 >> 0 CRON:DMS: 2012-03-01, Operator Gudang, PT Esa Sukses Maju,P/W, Min SMA, 18-37th, Pnglmn, Dom Tng, hub.Suplin 02136176050 
+2012-02-29 18:15:05.71184700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.71467300 >> 2141588797 CRON:MT: PT Avisha Potensi Abadi,Sales Counter,P/W, Max.26th, Min.SMU, Kmnikatif, Bs Krj Target, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:05.71915900 >> 0 CRON:DMS: 2012-03-01, Sales Counter, PT Avisha Potensi Abadi,0,P/W, Max.26th, Min.SMU, Kmnikatif, Bs Krj Target, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:05.72359800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.72644600 >> 2196218594 CRON:MT: PT Dinamika Mitra Huresindo,Receptionist,W, Min SMA, Max 25th, Pnglmn, Mnrk, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:05.73080200 >> 0 CRON:DMS: 2012-03-01, Receptionist, PT Dinamika Mitra Huresindo,W, Min SMA, Max 25th, Pnglmn, Mnrk, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:05.73522600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.73806700 >> 2151453471 CRON:MT: Lime Light Karaoke,Waiter,P/W, SMU, Max25th, Pnglmn 1th, Menarik, Ramah, Shift, Pnmptn Cengkareng, hub.Pa Nanang 02155954358 
+2012-02-29 18:15:05.74252600 >> 0 CRON:DMS: 2012-03-01, Waiter, Lime Light Karaoke,P/W, SMU, Max25th, Pnglmn 1th, Menarik, Ramah, Shift, Pnmptn Cengkareng, hub.Pa Nanang 02155954358 
+2012-02-29 18:15:05.74696500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.74981400 >> 2151453471 CRON:MT: PT Avisha Potensi Abadi,Sales Counter,P/W, Max.26th, Min.SMU, Kmnikatif, Bs Krj Target, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:05.75435000 >> 0 CRON:DMS: 2012-03-01, Sales Counter, PT Avisha Potensi Abadi,P/W, Max.26th, Min.SMU, Kmnikatif, Bs Krj Target, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:05.75872500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.76154800 >> 2151453471 CRON:MT: PT Snapy Digital Printing,Kasir,P/W, SMK, Max. 27th, Dom Jakarta, hub.Lucky 02151104801 
+2012-02-29 18:15:05.76590200 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Snapy Digital Printing,P/W, SMK, Max. 27th, Dom Jakarta, hub.Lucky 02151104801 
+2012-02-29 18:15:05.77025900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.77307900 >> 2151453471 CRON:MT: PT Pusaka Tradisi Ibu,Operator Gudang,Pria, SMU, Max 35th, Tnggng Jwb, Pnmptn Jkt, hub.Ibu Eva 0215849070 
+2012-02-29 18:15:05.77752900 >> 0 CRON:DMS: 2012-03-01, Operator Gudang, PT Pusaka Tradisi Ibu,Pria, SMU, Max 35th, Tnggng Jwb, Pnmptn Jkt, hub.Ibu Eva 0215849070 
+2012-02-29 18:15:05.78188000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.78478800 >> 2196218594 CRON:MT: Pundee Associates,Kitchen Crew,P/W, SMK Boga, Usia Max 25th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Bgr, hub.Nugi 0217252139 
+2012-02-29 18:15:05.78914500 >> 0 CRON:DMS: 2012-03-01, Kitchen Crew, Pundee Associates,P/W, SMK Boga, Usia Max 25th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Bgr, hub.Nugi 0217252139 
+2012-02-29 18:15:05.79350800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.79629200 >> 2196218594 CRON:MT: PT Kinnara,Kernet,P/W, Min. SMA, Dom Tangerang, hub.Nur 02196665841 
+2012-02-29 18:15:05.80063000 >> 0 CRON:DMS: 2012-03-01, Kernet, PT Kinnara,P/W, Min. SMA, Dom Tangerang, hub.Nur 02196665841 
+2012-02-29 18:15:05.80505100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.80783800 >> 2196218594 CRON:MT: PT Serasi Autoraya,Driver,P, Min SMA, Pny SIM A/B1, Dom Jakarta, hub.Bpk Rusmanto 02126605333 
+2012-02-29 18:15:05.81223400 >> 0 CRON:DMS: 2012-03-01, Driver, PT Serasi Autoraya,P, Min SMA, Pny SIM A/B1, Dom Jakarta, hub.Bpk Rusmanto 02126605333 
+2012-02-29 18:15:05.81660100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.81950000 >> 2196218594 CRON:MT: PT Snapy Digital Printing,Kasir,P/W, SMK, Max. 27th, Dom Jakarta, hub.Lucky 02151104801 
+2012-02-29 18:15:05.82386900 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Snapy Digital Printing,P/W, SMK, Max. 27th, Dom Jakarta, hub.Lucky 02151104801 
+2012-02-29 18:15:05.82827500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.83106400 >> 2196218594 CRON:MT: PT FIN Logistics,Office Boy,P, Min SMA, Max 27th, Pnglmn, hub.Ibu Wita 0215701700 
+2012-02-29 18:15:05.83546700 >> 0 CRON:DMS: 2012-03-01, Office Boy, PT FIN Logistics,P, Min SMA, Max 27th, Pnglmn, hub.Ibu Wita 0215701700 
+2012-02-29 18:15:05.83980100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.84256800 >> 2141588797 CRON:MT: PT FIN Logistics,Office Boy,P, Min SMA, Max 27th, Pnglmn, hub.Ibu Wita 0215701700 
+2012-02-29 18:15:05.84694800 >> 0 CRON:DMS: 2012-03-01, Office Boy, PT FIN Logistics,0,P, Min SMA, Max 27th, Pnglmn, hub.Ibu Wita 0215701700 
+2012-02-29 18:15:05.85137300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.85419300 >> 2141588797 CRON:MT: PT Prima Putra Sapurah,Cleaning Service,P/W, SMU, Max35th, Pkrj Krs, Rajin, Pkrj Krs, Pnmptn Jkt, hub.Bu Ana 02175914986 
+2012-02-29 18:15:05.85865200 >> 0 CRON:DMS: 2012-03-01, Cleaning Service, PT Prima Putra Sapurah,0,P/W, SMU, Max35th, Pkrj Krs, Rajin, Pkrj Krs, Pnmptn Jkt, hub.Bu Ana 02175914986 
+2012-02-29 18:15:05.86298100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.86577200 >> 2196218594 CRON:MT: PT Adrifa Satria,Office Boy,P/W, SMA, Max35th, Rajin, Jjur & Brtngng Jwb, Dom Jkt, hub.Pa Agus 02188856185 
+2012-02-29 18:15:05.87022700 >> 0 CRON:DMS: 2012-03-01, Office Boy, PT Adrifa Satria,P/W, SMA, Max35th, Rajin, Jjur & Brtngng Jwb, Dom Jkt, hub.Pa Agus 02188856185 
+2012-02-29 18:15:05.87460900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.87747900 >> 2196218594 CRON:MT: PT Esa Sukses Maju,Accounting,P/W, Min SMA, 18-37th, Dom Jkt, hub.Suplin 02136176050 
+2012-02-29 18:15:05.88188500 >> 0 CRON:DMS: 2012-03-01, Accounting, PT Esa Sukses Maju,P/W, Min SMA, 18-37th, Dom Jkt, hub.Suplin 02136176050 
+2012-02-29 18:15:05.88623800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.88904500 >> 2196218594 CRON:MT: PT Adrifa Satria,Driver,P, SMA, Max35th, Pny SIM A, Pnglmn 1th, Tau Jln, Dom Jkt, hub.Pa Agus 02188856185 
+2012-02-29 18:15:05.89348100 >> 0 CRON:DMS: 2012-03-01, Driver, PT Adrifa Satria,P, SMA, Max35th, Pny SIM A, Pnglmn 1th, Tau Jln, Dom Jkt, hub.Pa Agus 02188856185 
+2012-02-29 18:15:05.89782600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.90059300 >> 2196218594 CRON:MT: PT Grand Auto Shop,Tukang Ban,P, Min SMA, Pnglmn, hub.Bpk Jimmy 0216620151 
+2012-02-29 18:15:05.90498600 >> 0 CRON:DMS: 2012-03-01, Tukang Ban, PT Grand Auto Shop,P, Min SMA, Pnglmn, hub.Bpk Jimmy 0216620151 
+2012-02-29 18:15:05.90943600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.91225700 >> 2196218594 CRON:MT: PT Permana Mitra terpercaya,Cook Helper,P/W, SMU, Max38th, Pnglmn 2th, Bs Mskn Chinese/Western/Asia, Dom Bgr, hub.Bu Diah 02185551757 
+2012-02-29 18:15:05.91661900 >> 0 CRON:DMS: 2012-03-01, Cook Helper, PT Permana Mitra terpercaya,P/W, SMU, Max38th, Pnglmn 2th, Bs Mskn Chinese/Western/Asia, Dom Bgr, hub.Bu Diah 02185551757 
+2012-02-29 18:15:05.92134000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:05.92430000 >> 2151453471 CRON:MT: PT Global Prima Teknik,Milling Manual,Pria, STM, Max30th, Pnglmn 3th, Pkrj Krs, Brtnggng Jwb, hub.Firman 0215540853 
+2012-02-29 18:15:05.92873800 >> 0 CRON:DMS: 2012-03-01, Milling Manual, PT Global Prima Teknik,Pria, STM, Max30th, Pnglmn 3th, Pkrj Krs, Brtnggng Jwb, hub.Firman 0215540853 
+2012-02-29 18:15:07.72557300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.72867700 >> 2151453471 CRON:MT: PT Esa Sukses Maju,Kasir,P/W, Min SMA, 18-37th, Dom Jkt, hub.Suplin 02136176050 
+2012-02-29 18:15:07.73325600 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Esa Sukses Maju,P/W, Min SMA, 18-37th, Dom Jkt, hub.Suplin 02136176050 
+2012-02-29 18:15:07.73784400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.74116400 >> 2151453471 CRON:MT: PT Avisha Potensi Abadi,Sales Canvasser,P/W, Max.26th, Min.SMU, Kmnikatif, Bs Krj Target, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.74569100 >> 0 CRON:DMS: 2012-03-01, Sales Canvasser, PT Avisha Potensi Abadi,P/W, Max.26th, Min.SMU, Kmnikatif, Bs Krj Target, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.75019100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.75307400 >> 2151453471 CRON:MT: Goku Shabu Restaurant,Waitress,P/W, Min SMA, Pnglmn, Max 27th, hub.Bpk Hendri 0215257393 
+2012-02-29 18:15:07.75827300 >> 0 CRON:DMS: 2012-03-01, Waitress, Goku Shabu Restaurant,P/W, Min SMA, Pnglmn, Max 27th, hub.Bpk Hendri 0215257393 
+2012-02-29 18:15:07.76280300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.76571200 >> 2196218594 CRON:MT: PT Manunggal Rejeki Indah,Waitress,P/W, Min SMA, Pnglmn, Dom Jkt, hub.Baban 02186900802 
+2012-02-29 18:15:07.77018900 >> 0 CRON:DMS: 2012-03-01, Waitress, PT Manunggal Rejeki Indah,P/W, Min SMA, Pnglmn, Dom Jkt, hub.Baban 02186900802 
+2012-02-29 18:15:07.77464800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.77744700 >> 2141588797 CRON:MT: PT Damai Berkat Bersaudara,Kitchen Staf,P/W, Min SMK, Max 30th, Pnglmn, hub.Soleh 0216613073 
+2012-02-29 18:15:07.78192400 >> 0 CRON:DMS: 2012-03-01, Kitchen Staf, PT Damai Berkat Bersaudara,0,P/W, Min SMK, Max 30th, Pnglmn, hub.Soleh 0216613073 
+2012-02-29 18:15:07.78627600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.78907500 >> 2141588797 CRON:MT: PT Avisha Potensi Abadi,Sales Canvasser,P/W, Max.26th, Min.SMU, Kmnikatif, Bs Krj Target, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.79360200 >> 0 CRON:DMS: 2012-03-01, Sales Canvasser, PT Avisha Potensi Abadi,0,P/W, Max.26th, Min.SMU, Kmnikatif, Bs Krj Target, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.79805900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.80084700 >> 2141588797 CRON:MT: PT Avisha Potensi Abadi,SPG/SPB,W, SMA, Max.25th, TB160cm, Mnrik, Kmnikatif, Krj Shifting, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.80528100 >> 0 CRON:DMS: 2012-03-01, SPG/SPB, PT Avisha Potensi Abadi,0,W, SMA, Max.25th, TB160cm, Mnrik, Kmnikatif, Krj Shifting, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.80966300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.81249300 >> 2141588797 CRON:MT: Goku Shabu Restaurant,Captain Cook,P/W, Min SMA, Pnglmn, Max 30th, hub.Bpk Hendri 0215257393 
+2012-02-29 18:15:07.81695000 >> 0 CRON:DMS: 2012-03-01, Captain Cook, Goku Shabu Restaurant,0,P/W, Min SMA, Pnglmn, Max 30th, hub.Bpk Hendri 0215257393 
+2012-02-29 18:15:07.82129200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.82413200 >> 2196218594 CRON:MT: PT Manunggal Rejeki Indah,Resepsionis,W, Min SMA, Pnglmn, Dom Jkt, hub.Baban 02186900802 
+2012-02-29 18:15:07.82855300 >> 0 CRON:DMS: 2012-03-01, Resepsionis, PT Manunggal Rejeki Indah,W, Min SMA, Pnglmn, Dom Jkt, hub.Baban 02186900802 
+2012-02-29 18:15:07.83305600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.83580000 >> 2151453471 CRON:MT: X.O Restaurant,Bartender,P, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:07.84015900 >> 0 CRON:DMS: 2012-03-01, Bartender, X.O Restaurant,P, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:07.84457800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.84735000 >> 2151453471 CRON:MT: PT Avisha Potensi Abadi,SPG/SPB,W, SMA, Max.25th, TB160cm, Mnrik, Kmnikatif, Krj Shifting, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.85180800 >> 0 CRON:DMS: 2012-03-01, SPG/SPB, PT Avisha Potensi Abadi,W, SMA, Max.25th, TB160cm, Mnrik, Kmnikatif, Krj Shifting, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.85612600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.85899500 >> 2151453471 CRON:MT: Lime Light Karaoke,Kasir,P/W, SMU, Max25th, Pnglmn 1th, Bs Kmptr, Teliti, Shift, Pnmptn Cengkareng, hub.Pa Nanang 02155954358 
+2012-02-29 18:15:07.86336200 >> 0 CRON:DMS: 2012-03-01, Kasir, Lime Light Karaoke,P/W, SMU, Max25th, Pnglmn 1th, Bs Kmptr, Teliti, Shift, Pnmptn Cengkareng, hub.Pa Nanang 02155954358 
+2012-02-29 18:15:07.86778600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.87059400 >> 2151453471 CRON:MT: PT Global Prima Teknik,Drafter,Pria, STM, Max30th, Pnglmn 3th, Bs 3D, Pkrj Krs, Brtnggng Jwb, hub.Firman 0215540853 
+2012-02-29 18:15:07.87495000 >> 0 CRON:DMS: 2012-03-01, Drafter, PT Global Prima Teknik,Pria, STM, Max30th, Pnglmn 3th, Bs 3D, Pkrj Krs, Brtnggng Jwb, hub.Firman 0215540853 
+2012-02-29 18:15:07.87929300 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.88206900 >> 2196218594 CRON:MT: Goku Shabu Restaurant,Captain Cook,P/W, Min SMA, Pnglmn, Max 30th, hub.Bpk Hendri 0215257393 
+2012-02-29 18:15:07.88644900 >> 0 CRON:DMS: 2012-03-01, Captain Cook, Goku Shabu Restaurant,P/W, Min SMA, Pnglmn, Max 30th, hub.Bpk Hendri 0215257393 
+2012-02-29 18:15:07.89080200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.89359900 >> 2196218594 CRON:MT: CV Khairiah,Tukang Kebun,P, SMA, Max 32th, Dom Jakarta, hub.Asih 02173692787 
+2012-02-29 18:15:07.89807600 >> 0 CRON:DMS: 2012-03-01, Tukang Kebun, CV Khairiah,P, SMA, Max 32th, Dom Jakarta, hub.Asih 02173692787 
+2012-02-29 18:15:07.90243600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.90517700 >> 2196218594 CRON:MT: PT Kinnara,Driver,P/W, Min. SMA, Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:07.90963600 >> 0 CRON:DMS: 2012-03-01, Driver, PT Kinnara,P/W, Min. SMA, Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:07.91409200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.91682000 >> 2196218594 CRON:MT: PT Esa Sukses Maju,Kasir,P/W, Min SMA, 18-37th, Dom Jkt, hub.Suplin 02136176050 
+2012-02-29 18:15:07.92116300 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Esa Sukses Maju,P/W, Min SMA, 18-37th, Dom Jkt, hub.Suplin 02136176050 
+2012-02-29 18:15:07.92559500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.92837900 >> 2196218594 CRON:MT: CV Yudistira Prima,Pembantu,Wanita, SMU, 20-40th, Pny KTP, Brbdn Shat, Jjur, Rajin, Pnmptn Jkt, hub.Ibu Yudhi 02136271084 
+2012-02-29 18:15:07.93285300 >> 0 CRON:DMS: 2012-03-01, Pembantu, CV Yudistira Prima,Wanita, SMU, 20-40th, Pny KTP, Brbdn Shat, Jjur, Rajin, Pnmptn Jkt, hub.Ibu Yudhi 02136271084 
+2012-02-29 18:15:07.93720000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.94003900 >> 2196218594 CRON:MT: PT Kinnara,OB,P/W, Min. SMA, Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:07.94439400 >> 0 CRON:DMS: 2012-03-01, OB, PT Kinnara,P/W, Min. SMA, Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:07.94882800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.95164000 >> 2196218594 CRON:MT: PT Avisha Potensi Abadi,Kasir,W, SMA, Max.25th, Bs EDP/Office, TB.160cm, Kmnktif, Shift, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.95606700 >> 0 CRON:DMS: 2012-03-01, Kasir, PT Avisha Potensi Abadi,W, SMA, Max.25th, Bs EDP/Office, TB.160cm, Kmnktif, Shift, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.96041100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.96332400 >> 2196218594 CRON:MT: PT Avisha Potensi Abadi,Driver,P, SMU, Max 40th, Pnglmn, Pny SIM A/B1/B2, Tau Area, Brsdia Kluar Kota, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.96767200 >> 0 CRON:DMS: 2012-03-01, Driver, PT Avisha Potensi Abadi,P, SMU, Max 40th, Pnglmn, Pny SIM A/B1/B2, Tau Area, Brsdia Kluar Kota, Pnmptn Jkt, hub.Ibu Marcia 0218355537 
+2012-02-29 18:15:07.97212600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.97487200 >> 2196218594 CRON:MT: CV Swadaya Prima,Tukang Sebar Brosur,P, SMU, Max 35th, Rajin, Pnmptn Jkt, hub.HRD 02133722544 
+2012-02-29 18:15:07.97929600 >> 0 CRON:DMS: 2012-03-01, Tukang Sebar Brosur, CV Swadaya Prima,P, SMU, Max 35th, Rajin, Pnmptn Jkt, hub.HRD 02133722544 
+2012-02-29 18:15:07.98365000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.98659000 >> 2196218594 CRON:MT: Pundee Associates,Cook,P/W, SMK Boga, Usia Max 30th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Jkt, hub.Nugi 0217252139 
+2012-02-29 18:15:07.99106300 >> 0 CRON:DMS: 2012-03-01, Cook, Pundee Associates,P/W, SMK Boga, Usia Max 30th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Jkt, hub.Nugi 0217252139 
+2012-02-29 18:15:07.99542900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:07.99830300 >> 2151453471 CRON:MT: PT Global Prima Teknik,Desainer Mould,Pria, STM, Max30th, Pnglmn 3th, Bs 3D, Pkrj Krs, Brtnggng Jwb, hub.Firman 0215540853 
+2012-02-29 18:15:08.00270500 >> 0 CRON:DMS: 2012-03-01, Desainer Mould, PT Global Prima Teknik,Pria, STM, Max30th, Pnglmn 3th, Bs 3D, Pkrj Krs, Brtnggng Jwb, hub.Firman 0215540853 
+2012-02-29 18:15:08.00717800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.00997500 >> 2151453471 CRON:MT: X.O Restaurant,Accounting,P/W, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:08.01441400 >> 0 CRON:DMS: 2012-03-01, Accounting, X.O Restaurant,P/W, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:08.01893200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.02177600 >> 2151453471 CRON:MT: PT Dinamika Mitra Huresindo,Telemarketing,P/W, Min SMA, Max 25th, Pnglmn, Mnrk, TB Min 160, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:08.02619600 >> 0 CRON:DMS: 2012-03-01, Telemarketing, PT Dinamika Mitra Huresindo,P/W, Min SMA, Max 25th, Pnglmn, Mnrk, TB Min 160, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:08.03087600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.03402800 >> 2151453471 CRON:MT: X.O Restaurant,Captain,P/W, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:08.03895800 >> 0 CRON:DMS: 2012-03-01, Captain, X.O Restaurant,P/W, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:08.04344700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.04625100 >> 2196218594 CRON:MT: PT Manunggal Rejeki Indah,Admin,P/W, Min SMA, Dom Jkt, hub.Baban 02186900802 
+2012-02-29 18:15:08.05073200 >> 0 CRON:DMS: 2012-03-01, Admin, PT Manunggal Rejeki Indah,P/W, Min SMA, Dom Jkt, hub.Baban 02186900802 
+2012-02-29 18:15:08.05518100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.05803300 >> 2141588797 CRON:MT: Pundee Associates,Cook,P/W, SMK Boga, Usia Max 30th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Jkt, hub.Nugi 0217252139 
+2012-02-29 18:15:08.06253900 >> 0 CRON:DMS: 2012-03-01, Cook, Pundee Associates,0,P/W, SMK Boga, Usia Max 30th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Jkt, hub.Nugi 0217252139 
+2012-02-29 18:15:08.06700500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.06982800 >> 2141588797 CRON:MT: PT Dinamika Mitra Huresindo,SPG,P/W, Min SMA, Max 25th, Pnglmn, Mnrk, TB Min 160, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:08.07430500 >> 0 CRON:DMS: 2012-03-01, SPG, PT Dinamika Mitra Huresindo,0,P/W, Min SMA, Max 25th, Pnglmn, Mnrk, TB Min 160, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:08.07874100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.08154100 >> 2196218594 CRON:MT: PT Dharma Distrindo Sarana Sej,Adm,W, Min SMA, Max 25th, Mnrk, hub.Edi 0217990888 
+2012-02-29 18:15:08.08602700 >> 0 CRON:DMS: 2012-03-01, Adm, PT Dharma Distrindo Sarana Sej,W, Min SMA, Max 25th, Mnrk, hub.Edi 0217990888 
+2012-02-29 18:15:08.09048000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.09329800 >> 2151453471 CRON:MT: X.O Restaurant,Waitress,P/W, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:08.09779800 >> 0 CRON:DMS: 2012-03-01, Waitress, X.O Restaurant,P/W, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:08.10222900 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.10502600 >> 2151453471 CRON:MT: PT Dinamika Mitra Huresindo,SPG,P/W, Min SMA, Max 25th, Pnglmn, Mnrk, TB Min 160, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:08.10949100 >> 0 CRON:DMS: 2012-03-01, SPG, PT Dinamika Mitra Huresindo,P/W, Min SMA, Max 25th, Pnglmn, Mnrk, TB Min 160, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:08.11396100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.11673900 >> 2151453471 CRON:MT: X.O Restaurant,Kasir,P/W, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:08.12116800 >> 0 CRON:DMS: 2012-03-01, Kasir, X.O Restaurant,P/W, Min SMA, Pnglmn, Pnmptn Kuningan, hub.Bpk Alvin 02166676616 
+2012-02-29 18:15:08.12559700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.12841300 >> 2151453471 CRON:MT: PT Global Prima Teknik,Operator CNC,Pria, STM, Max30th, Pnglmn 3th, Pkrj Krs, Brtnggng Jwb, hub.Firman 0215540853 
+2012-02-29 18:15:08.13291900 >> 0 CRON:DMS: 2012-03-01, Operator CNC, PT Global Prima Teknik,Pria, STM, Max30th, Pnglmn 3th, Pkrj Krs, Brtnggng Jwb, hub.Firman 0215540853 
+2012-02-29 18:15:08.13738100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.14018300 >> 2196218594 CRON:MT: Pundee Associates,Cook,P/W, SMK Boga, Usia Max 30th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Dpk, hub.Nugi 0217252139 
+2012-02-29 18:15:08.14460400 >> 0 CRON:DMS: 2012-03-01, Cook, Pundee Associates,P/W, SMK Boga, Usia Max 30th, Pnglmn 1th, Bs Mskn Asia & Eropa, Pnmptn Dpk, hub.Nugi 0217252139 
+2012-02-29 18:15:08.14902200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:08.15176500 >> 2196218594 CRON:MT: PT Kinnara,Kernet,P/W, Min. SMA, Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:08.15620400 >> 0 CRON:DMS: 2012-03-01, Kernet, PT Kinnara,P/W, Min. SMA, Dom Jakarta, hub.Nur 02196665841 
+2012-02-29 18:15:10.04116200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.04462100 >> 2196218594 CRON:MT: PT Dinamika Mitra Huresindo,Driver,P, Min SMA, Max 32th, Pnglmn, Pny SIM, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:10.04954000 >> 0 CRON:DMS: 2012-03-01, Driver, PT Dinamika Mitra Huresindo,P, Min SMA, Max 32th, Pnglmn, Pny SIM, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:10.05405100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.05712200 >> 2196218594 CRON:MT: PT Kandaga Asri,Cashier,P/W, SMA, Max 27th, Pnglmn, hub.Lerry 0213521122 
+2012-02-29 18:15:10.06164900 >> 0 CRON:DMS: 2012-03-01, Cashier, PT Kandaga Asri,P/W, SMA, Max 27th, Pnglmn, hub.Lerry 0213521122 
+2012-02-29 18:15:10.06617700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.06903500 >> 2196218594 CRON:MT: PT Dinamika Mitra Huresindo,Cleaning Service,P/W, Min SMA, Max 32th, Pnglmn, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:10.07422400 >> 0 CRON:DMS: 2012-03-01, Cleaning Service, PT Dinamika Mitra Huresindo,P/W, Min SMA, Max 32th, Pnglmn, Dom Jkt, hub.Bpk Rio 0217419591 
+2012-02-29 18:15:10.07885500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.08169500 >> 2141588797 CRON:MT: PT Mitra Adiperkasa,Pramuniaga,P/W, SMU, 19-25th, TB Pria 165/Wanita 158, Brsdia Lembur, Pnmptn Jkt, hub.Aditia Pratiwi 0215745808 
+2012-02-29 18:15:10.08619400 >> 0 CRON:DMS: 2012-03-01, Pramuniaga, PT Mitra Adiperkasa,0,P/W, SMU, 19-25th, TB Pria 165/Wanita 158, Brsdia Lembur, Pnmptn Jkt, hub.Aditia Pratiwi 0215745808 
+2012-02-29 18:15:10.09063000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.09347200 >> 2293385384 CRON:MT: PT Siantar Top, Teknik Packing, Pria, SMK, Max.30th, Pnglmn Operator Packing Hrzontal min.1th, Bs Troubleshooting, hub. HRD 0218251010 
+2012-02-29 18:15:10.10071000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.10359800 >> 2141588624 CRON:MT: PT Eglin Pharma, Quality Control, Dom. Tng, Mengerti QC, Ada Skill QC, Shift, Pnglmn QD min.2th, hub. HRD 0215903374 
+2012-02-29 18:15:10.10798200 >> 0 CRON:DMS: 2012-03-01, Quality Control, PT Eglin Pharma,Dom. Tng, Mengerti QC, Ada Skill QC, Shift, Pnglmn QD min.2th, hub.HRD 0215903374 
+2012-02-29 18:15:10.11236200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.11517300 >> 2192738742 CRON:MT: Indomaret,Driver,Pria, SMU, Max35th, Pny SIM B1/B2, Pkrja Keras, Pnmptn Jkt, hub.Pa Hari 0216914478 
+2012-02-29 18:15:10.11966400 >> 0 CRON:DMS: 2012-03-01, Driver, Indomaret,Pria, SMU, Max35th, Pny SIM B1/B2, Pkrja Keras, Pnmptn Jkt, hub.Pa Hari 0216914478 
+2012-02-29 18:15:10.12413400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.12695800 >> 2192738742 CRON:MT: PT Sandi Jasa Estika,Maintenance,P/W, Min SMA, Max 30, Dom Jakarta, hub.Hilda 0213913860 
+2012-02-29 18:15:10.13130500 >> 0 CRON:DMS: 2012-03-01, Maintenance, PT Sandi Jasa Estika,P/W, Min SMA, Max 30, Dom Jakarta, hub.Hilda 0213913860 
+2012-02-29 18:15:10.13569400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.13850700 >> 2192738742 CRON:MT: Indomaret,Pramuniaga,Pria, SMU, Max22th, Single, Nilai Mtk min 6,5, Tnggi min 160, Pnmptn Jkt, hub.Pa Hari 0216914478 
+2012-02-29 18:15:10.14292500 >> 0 CRON:DMS: 2012-03-01, Pramuniaga, Indomaret,Pria, SMU, Max22th, Single, Nilai Mtk min 6,5, Tnggi min 160, Pnmptn Jkt, hub.Pa Hari 0216914478 
+2012-02-29 18:15:10.14737800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.15020300 >> 2141588797 CRON:MT: PT Mitra Karsa Utama,Office Boy,P/W, SMU, Max 35th, Pkrj Krs, Disiplin & Cekatan, Pnmptn Jkt, hub.Bpk Bobo Setiadi 02183796668 
+2012-02-29 18:15:10.15471300 >> 0 CRON:DMS: 2012-03-01, Office Boy, PT Mitra Karsa Utama,0,P/W, SMU, Max 35th, Pkrj Krs, Disiplin & Cekatan, Pnmptn Jkt, hub.Bpk Bobo Setiadi 02183796668 
+2012-02-29 18:15:10.15917800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.16203100 >> 2141588797 CRON:MT: PT Dharma Distrindo Sarana Sej,Senior Mekanik,P, Min SMA, Max 35th, Pnglmn, hub.Edi 0217990888 
+2012-02-29 18:15:10.16653800 >> 0 CRON:DMS: 2012-03-01, Senior Mekanik, PT Dharma Distrindo Sarana Sej,0,P, Min SMA, Max 35th, Pnglmn, hub.Edi 0217990888 
+2012-02-29 18:15:10.17101400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.17386400 >> 2196216200 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:15:10.18123100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.18409000 >> 2196216200 CRON:MT: PT Global Guard Service Indone,Security,P/W, Min SMA, TB (P Min 168, W Min 165), Dom Jakarta, hub.Sudaryono 02146625146 
+2012-02-29 18:15:10.19144000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.19428200 >> 2141588797 CRON:MT: Tadika Puri, Guru TK usia 3th, Mau ditraining slm 6bln, sabar, disiplin, hub. Hrd 0215531858 
+2012-02-29 18:15:10.19876500 >> 0 CRON:DMS: 2012-03-01, Guru TK usia 3th, Tadika Puri,0,Mau ditraining slm 6bln, sabar, disiplin, hub.Hrd 0215531858 
+2012-02-29 18:15:10.20323100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.20608800 >> 2141588797 CRON:MT: Pt Master Johnson, Tk masak, Bs masakan padang, bersih, cekatan, pnmptn tgr, hub. Ibu Laida 0216255013 
+2012-02-29 18:15:10.21056100 >> 0 CRON:DMS: 2012-03-01, Tk masak, Pt Master Johnson,0,Bs masakan padang, bersih, cekatan, pnmptn tgr, hub.Ibu Laida 0216255013 
+2012-02-29 18:15:10.21502500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.21793100 >> 2141263851 CRON:MT: PT Avisha Potensi Abadi,Driver,Pria, SMU, Max 40th, Pnglmn 1th, Pny SIM A/B1/B2, Tau Area, Brsdia Kluar Kota, Pnmptn Dpk, hub.Bpk Arkhi 02170971175 
+2012-02-29 18:15:10.22526400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.22814700 >> 2141588797 CRON:MT: PT Sandi Jasa Estika,Security,P/W, Min SMA, Max 30, Pnglmn, Dom Jakarta, hub.Hilda 0213913860 
+2012-02-29 18:15:10.23264400 >> 0 CRON:DMS: 2012-03-01, Security, PT Sandi Jasa Estika,0,P/W, Min SMA, Max 30, Pnglmn, Dom Jakarta, hub.Hilda 0213913860 
+2012-02-29 18:15:10.23709800 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.23999000 >> 2141263851 CRON:MT: PT Inaben,Driver Logistic,Pria, SMU, Max 40th, Pnglmn 2th, Pny SIM A, Pkrj Krs, Pnmptn Dpk, hub.Tita 02131901641 
+2012-02-29 18:15:10.24732000 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.25016400 >> 2199252936 CRON:MT: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:15:10.25462700 >> 0 CRON:DMS: Maaf, informasi lowongan untuk kategori ini belum tersedia pada hari ini. Tunggu informasi berikutnya. 
+2012-02-29 18:15:10.25907100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.26194900 >> 2185403119 CRON:MT: Ismaya Group,Barista,P/W, Min SMA, Max 27th, Bs Bhs Inggris, Pnglmn, Kmnktif, Jjr, Shifting, hub.Bpk Victor 0215202913 
+2012-02-29 18:15:10.26642600 >> 0 CRON:DMS: 2012-03-01, Barista, Ismaya Group,P/W, Min SMA, Max 27th, Bs Bhs Inggris, Pnglmn, Kmnktif, Jjr, Shifting, hub.Bpk Victor 0215202913 
+2012-02-29 18:15:10.27091200 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.27379900 >> 2185403119 CRON:MT: Ismaya Group,Cook,P/W, Min SMA, Max 35th, Bs Bhs Inggris, Pnglmn 3th, Kmnktif, Jjr, Shifting, hub.Bpk Victor 0215202913 
+2012-02-29 18:15:10.27826200 >> 0 CRON:DMS: 2012-03-01, Cook, Ismaya Group,P/W, Min SMA, Max 35th, Bs Bhs Inggris, Pnglmn 3th, Kmnktif, Jjr, Shifting, hub.Bpk Victor 0215202913 
+2012-02-29 18:15:10.28275400 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.28560800 >> 2185403119 CRON:MT: Rasane Seafood,Kasir,W, SMA, Max.25th, Pnglmn 1th, Menarik, Teliti, Cekatan, Pnmptn Jkt, hub.Ibu Eva 02156961144 
+2012-02-29 18:15:10.29006700 >> 0 CRON:DMS: 2012-03-01, Kasir, Rasane Seafood,W, SMA, Max.25th, Pnglmn 1th, Menarik, Teliti, Cekatan, Pnmptn Jkt, hub.Ibu Eva 02156961144 
+2012-02-29 18:15:10.29454600 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.29744700 >> 2185403119 CRON:MT: PT Century Franchisindo Utama,Supir,Pria, SMU, Max.27th, Pny SIM A, Pnglmn 1th, Tau Jln, Pnmpt Jkt, hub.Ibu Diana 085813169458 
+2012-02-29 18:15:10.30197600 >> 0 CRON:DMS: 2012-03-01, Supir, PT Century Franchisindo Utama,Pria, SMU, Max.27th, Pny SIM A, Pnglmn 1th, Tau Jln, Pnmpt Jkt, hub.Ibu Diana 085813169458 
+2012-02-29 18:15:10.30642100 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.30927900 >> 2185403119 CRON:MT: PT Snapy Digital Printing,Operator Print,P/W, SMK, Max. 27th, Dom Jkt, hub.Lucky 02151104801 
+2012-02-29 18:15:10.31377900 >> 0 CRON:DMS: 2012-03-01, Operator Print, PT Snapy Digital Printing,P/W, SMK, Max. 27th, Dom Jkt, hub.Lucky 02151104801 
+2012-02-29 18:15:10.31826500 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.32111100 >> 2141685223 CRON:MT: PT Sinar Jernih Sarana,Beauty Advisor,W, SMU, Max28th, TB 158, Prporsional, Mnarik, Pnmptn Jkt, hub.Pa Jiko 02132737727 
+2012-02-29 18:15:10.32547500 >> 0 CRON:DMS: 2012-03-01, Beauty Advisor, PT Sinar Jernih Sarana,W, SMU, Max28th, TB 158, Prporsional, Mnarik, Pnmptn Jkt, hub.Pa Jiko 02132737727 
+2012-02-29 18:15:10.32991700 >> 0 CRON:Update job statistic. 
+2012-02-29 18:15:10.33002100 >> 0 CRON:Job sending end. 
+2012-02-29 18:20:23.19511500 >> 0 CRON:Job reminder start. Get subscriber list for KERJA LOKASI. 
+2012-02-29 18:20:23.23334800 >> 0 CRON:Get subscriber list for KERJA PROFIL. 
+2012-02-29 18:20:23.23528200 >> 0 CRON:Get subscriber list for reminder H-2. 
+2012-02-29 18:20:23.23710300 >> 0 CRON:Get subscriber list for reminder H-0. 
+2012-02-29 18:20:23.23890200 >> 0 CRON:Job reminder end. 
+2012-02-29 18:20:56.97935200 >> 0 CRON:Job renewal start. Get active subscriber list 
+2012-02-29 18:20:56.98156100 >> 0 CRON:Job renewal end. 
+2012-02-29 18:21:02.27314600 >> 0 CRON:Job matching start. Get subscription not expired. 
+2012-02-29 18:21:02.28337500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:02.28688600 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:02.30194200 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:02.30534500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:02.34354500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:02.34697600 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:02.44288500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:02.44633500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:02.51515800 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:02.51859800 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:02.61491500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:02.61838500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:02.67109400 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:02.67452500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:02.81673100 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:02.82021100 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:02.88901500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:02.89246600 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:02.97858300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:02.98201800 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.03475000 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.03817700 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.05225500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.05562400 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.11136400 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.11477000 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.15306200 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.15646500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.29201200 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.29549500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.31050200 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.31391000 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.37428100 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.37774100 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.45986700 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.46329900 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.52381000 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.52725100 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.58865800 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.59206600 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.67400900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.67748500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.73318900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.73662500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.78221400 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.78563100 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.84161000 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.84501500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:03.92697400 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:03.93042700 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.01406800 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.01753600 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.07287600 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.07634300 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.15958200 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.16302500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.24942500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.25288300 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.31418900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.31764000 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.41500000 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.41844600 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.46430800 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.46774200 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.52411600 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.52761100 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.59713600 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.60060900 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.66147200 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.66491900 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.74940100 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.75286300 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.84205900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.84550800 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:04.98946300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:04.99293900 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.07994300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.08341000 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.15293300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.15635400 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.21730400 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.22074800 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.29038300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.29381600 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.37843800 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.38189100 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.52675700 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.53027300 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.56886300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.57233300 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.66147700 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.66494900 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.72635900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.72983400 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.81460000 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.81805300 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.90094500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.90440300 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:05.99352300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:05.99697000 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.05370300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.05712400 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.14014900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.14361000 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.20453900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.20793800 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.29786500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.30131900 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.36248500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.36591700 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.44900700 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.45260800 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.59893200 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.60247700 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.65849500 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.66193400 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.73217300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.73559700 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.78925000 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.79266300 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.85425300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.85770600 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:06.94312900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:06.94659000 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.01689100 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.02037700 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.11056200 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.11403900 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.25980000 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.26331000 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.36200600 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.36546800 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.40458900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.40801000 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.47832900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.48173400 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.56569600 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.56914600 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.65769400 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.66116100 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.72312800 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.72654900 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.77344200 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.77683700 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.86562800 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.86904900 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.92567300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.92909700 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:07.98977300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:07.99318700 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:08.09159100 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:08.09505100 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:08.16493300 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:08.16834700 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:08.25367900 >> 0 CRON:Check last sent job 
+2012-02-29 18:21:08.25712500 >> 0 CRON:Add job to be sent 
+2012-02-29 18:21:08.35614200 >> 0 CRON:Job matching end. 

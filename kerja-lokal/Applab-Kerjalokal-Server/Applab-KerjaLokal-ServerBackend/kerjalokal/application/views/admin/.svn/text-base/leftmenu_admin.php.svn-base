@@ -1,0 +1,40 @@
+				<div class="leftmenu_group">
+					<div class="leftmenu_title">COMPANY</div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/company/add">Create New</a></div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/company/manage">Manage</a></div>
+				</div>
+				<div class="leftmenu_group">
+					<div class="leftmenu_title">JOB POSTER</div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/jobposter/add">Create New</a></div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/jobposter/manage">Manage</a></div>
+				</div>
+				<div class="leftmenu_group">
+					<div class="leftmenu_title">JOB SEEKER</div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/jobseeker/add">Create New</a></div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/jobseeker/addjob">Manage Job Subscription</a></div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/jobseeker/manage">Manage</a></div>
+				</div>
+				<div class="leftmenu_group">
+					<div class="leftmenu_title">JOB MENTOR</div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/jobmentor/manage">Manage</a></div>
+				</div>
+				<div class="leftmenu_group">
+					<div class="leftmenu_title">EDUCATION</div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/education/add">Create New</a></div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/education/manage">Manage</a></div>
+				</div>
+				<div class="leftmenu_group">
+					<div class="leftmenu_title">JOB CATEGORY</div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/jobcategory/add">Create New</a></div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/jobcategory/manage">Manage</a></div>
+				</div>
+				<div class="leftmenu_group">
+					<div class="leftmenu_title">JOB POST</div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/jobpost/add">Create New</a></div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/jobpost/manage">Manage</a></div>
+				</div>
+				<div class="leftmenu_group">
+					<div class="leftmenu_title">REPORTS</div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/report/jobmatched">Job Matched</a></div>
+					<div class="leftmenu_subtitle"><a href="<?php echo base_url(); ?>admin/report/jobsent">Job Sent</a></div>
+				</div>

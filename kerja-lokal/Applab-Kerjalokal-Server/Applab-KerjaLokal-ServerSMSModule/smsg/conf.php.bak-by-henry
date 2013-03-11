@@ -1,0 +1,20 @@
+<?php
+/*
+$mysql_host = "localhost";
+$mysql_database = "t32907_infokerja";
+$mysql_user = "t32907_myuser";
+$mysql_password = "t32907_mypwd";
+*/
+
+$mysql_host = "localhost";
+$mysql_database = "smsg";
+$mysql_user = "root";
+$mysql_password = "pendekarganteng";
+
+mysql_connect($mysql_host,$mysql_user,$mysql_password);
+mysql_select_db($mysql_database);
+
+
+define("CORE_URL", "http://10.99.1.5:8085/infokerja_core/");
+define("BASE_URL", "http://172.27.239.153/grameen/infokerja/");
+?>

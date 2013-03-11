@@ -1,0 +1,124 @@
+body{
+	font-family: Verdana;
+	font-size: 9pt;
+}
+
+h2 {
+	font-family: Verdana;
+	font-size: 12pt;
+}
+
+input {
+	font-family: Verdana;
+	font-size: 9pt;
+	padding: 5px; 
+	border:1px solid #ccc;
+}
+
+select{
+	font-family: Verdana;
+	border:1px solid #ccc;
+}
+
+option{
+	font-family: Verdana;
+	font-size: 9pt;
+	padding: 5px; 
+}
+
+hr {
+	margin:10px 0px;
+	border-width: 0px; 
+	height:1px;
+	background-color:#ccc;
+}
+
+a {
+	text-decoration: none;
+}
+.leftmenu_group {
+	margin-bottom:20px;
+}
+
+.leftmenu_title {
+	background:#eee; 
+	width:180px; 
+	padding:5px;
+	border:1px solid #666;
+	font-weight:bold;
+}
+
+.leftmenu_subtitle {
+	background:#fff; 
+	width:180px; 
+	padding:5px;
+	border-left:1px solid #666;
+	border-right:1px solid #666;
+	border-bottom:1px solid #666;
+}
+
+.row { display:table-row;}
+
+.cell { display:table-cell; }
+
+.table {
+	display:table; 
+	width:100%; 
+	border-spacing:0px; 
+	border-collapse:collapse;
+	margin: 10px 0px;
+}
+
+
+.table_cell {
+	padding:5px;
+	border:1px solid #ccc;
+}
+
+.table_head {
+	padding:5px;
+	border:1px solid #ccc;
+	text-align: center;
+	font-weight: bold;
+}
+
+.cell_key{ 
+	display:table-cell; 
+	width:150px; 
+	padding:5px; 
+	text-align:right;
+}
+
+.cell_val{ 
+	display:table-cell; 
+	padding:5px; 
+	text-align:left;
+}
+
+.right_subtitle {
+	font-weight:bold; 
+	border-bottom:1px solid #ccc;
+}
+
+.right_section {
+	background-color:#eee;
+	padding:5px;
+	margin:10px 0px;
+	font-weight:bold; 
+	border-bottom:1px solid #ccc;
+}
+
+.msg {
+	border:1px solid #f00;
+	padding:20px;
+}
+.error{
+	color:red;
+}
+
+.form_error {
+	
+	color: #f00;
+	font-size:8pt;
+}
+

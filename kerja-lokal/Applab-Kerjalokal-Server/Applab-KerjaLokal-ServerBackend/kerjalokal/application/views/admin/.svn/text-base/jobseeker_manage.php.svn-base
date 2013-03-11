@@ -1,0 +1,77 @@
+<div style="display:table; width:100%;">
+<div class="row">
+<?php 
+	$filter = "";
+	echo "<div class=\"cell table_cell\" style=\"border:0px\">".form_open($form_submit);
+	
+	echo "Filter by ".form_dropdown("status", $list_status , $status)." "; 
+	echo form_hidden("subscriber_name", $search["subscriber_name"]);
+	echo form_hidden("gender", $search["gender"]);
+	echo form_hidden("loc_name", $search["loc_name"]);
+	echo form_hidden("salary", $search["salary"]);
+	echo form_hidden("date_add", $search["date_add"]);
+	echo form_submit("submit", "Submit");
+	echo form_close()."</div>";
+	echo "<div class=\"cell table_cell\" style=\"border:0px; text-align:right\"><a href=\"$search_link\" id=\"search_form\" rel=\"simpleDialog\">Search</a></div>";
+
+	foreach($search as $key => $val)
+	{ $filter .= $val."/"; }
+	
+	echo form_open($form_submit);
+?>
+</div>
+</div>
+
+<div style="display:table; width:100%;">
+<?php echo form_open($form_submit); ?>
+<div class="table">
+<div class="row">
+	<div class="cell table_head" style="width:50px"><a href="<?php echo base_url()."admin/jobseeker/manage/$page/$next_order"."_subscriber_id/$filter"; ?>">ID</a></div>
+	<div class="cell table_head"><a href="<?php echo base_url()."admin/jobseeker/manage/$page/$next_order"."_subscriber_name/$filter"; ?>">Job Seeker Name</a></div>
+	<div class="cell table_head"><a href="<?php echo base_url()."admin/jobseeker/manage/$page/$next_order"."_mdn/$filter"; ?>">Tel.</a></div>
+	<div class="cell table_head"><a href="<?php echo base_url()."admin/jobseeker/manage/$page/$next_order"."_loc_name/$filter"; ?>">Location</a></div>
+	<div class="cell table_head"><a href="<?php echo base_url()."admin/jobseeker/manage/$page/$next_order"."_status/$filter"; ?>">Status</a></div>
+	<div class="cell table_head"><a href="<?php echo base_url()."admin/jobseeker/manage/$page/$next_order"."_date_add/$filter"; ?>">Date Register</a></div>
+	<div class="cell table_head"><a href="<?php echo base_url()."admin/jobseeker/manage/$page/$next_order"."_date_update/$filter"; ?>">Last Activity</a></div>
+</div>
+<?php
+	//echo "<pre>"; print_r($subscribers); echo "</pre>";
+	$a = "";
+	foreach ($results as $subscriber)
+	{
+		echo "<div class=\"row\">\n";
+		//echo "<div class=\"cell table_cell\">".form_checkbox("del[]",$subscriber["subscriber_id"],($subscriber["status"]=="2") ? TRUE : "")." ".$subscriber["subscriber_id"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$subscriber["subscriber_id"]."</div>\n";
+		echo "<div class=\"cell table_cell\"><a href=\"".base_url()."admin/jobseeker/edit/".$subscriber["subscriber_id"]."\">". $subscriber["subscriber_name"]."</a></div>\n";
+		
+		echo "<div class=\"cell table_cell\">".$subscriber["mdn"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$subscriber["loc_name"]."</div>\n";
+		if ($subscriber["status"] == "1")
+			echo "<div class=\"cell table_cell\">Active</div>\n";
+		else
+			echo "<div class=\"cell table_cell\">Inactive</div>\n";
+		echo "<div class=\"cell table_cell\">".$subscriber["subscriber_date_add"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$subscriber["subscriber_date_update"]."</div>\n";
+		
+		echo "</div>\n";
+		$a .= $subscriber["subscriber_id"].",";
+	}
+	$a = substr($a, 0, strlen($a)-1);
+	
+	echo "</div>"; // CLOSE TABLE
+	echo form_hidden("all_id", $a);
+	
+	$paging = "";
+	
+	if ($npage > 1)
+		for ($a = 1; $a <=$npage; $a++) $paging .= "<a href=\"".base_url()."admin/jobseeker/manage/$a\">$a</a> - ";
+	$paging = substr($paging,0,strlen($paging)-3);
+	echo $paging."<br><br>";
+	//echo form_submit("submit", "Disabled selected job seeker");
+	echo form_close();
+	echo "<br><br><a href=\"".base_url()."admin/jobseeker/save_csv/$order/$filter\">Save as CSV</a>";
+
+?>
+
+
+</div>

@@ -1,0 +1,24 @@
+
+<div style="display:table; width:100%;">
+<?php
+	foreach ($subscribers as $a)
+	{ $list_subscriber[$a["subscriber_id"]] = $a["subscriber_name"]; }
+
+	echo form_open(base_url()."admin/jobseeker/updatejob");
+	//echo "<div class='right_section'><b>UPDATES JOB SUBSCRIBER's SUBSCRIPTION</b></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('Subscriber', 'subscriber_id')."</div>\n";
+	echo "<div class='cell_val'>".form_dropdown("subscriber_id", $list_subscriber);
+	echo " <input type=\"button\" value=\"Get Subscription Category\" id=\"btn\" /></div></div>\n";
+	echo "<div class='row'><div class='cell_key'>Subscription</div>\n";
+	echo "<div class='cell_val'><div id='jobcats'></div></div>";
+	echo "</div>\n";
+	echo "<div class='row'><div class='cell_key'>Job Received</div>\n";
+	echo "<div class='cell_val'><div id='jobcat_detail'></div></div>";
+	echo "</div>\n";
+	echo "<div class='row'><div class='cell_key'></div><div class='cell_val'>".form_submit("submit", "Submit")."</div></div>";
+	//  <input type=\"button\" value=\"Get Existing Record\" id=\"comp_btn\" />
+	echo form_close();
+
+
+	?>
+</div>

@@ -1,0 +1,12 @@
+<loader version="1.0" >
+<application id="KerjaLokal">
+<name>KerjaLokal</name>
+<description>Job Marketplace for Blackberry</description>
+<version>1.0.0.0</version>
+<vendor>Applab Indonesia - Grameen Foundation</vendor>
+<fileset Java="1.45">
+<directory></directory>
+<files>KerjaLokal.cod</files>
+</fileset>
+</application>
+</loader>

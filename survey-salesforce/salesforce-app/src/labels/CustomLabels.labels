@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>BUILDER_ERR_CONCURRENTSAVE</fullName>
+        <categories>Error,Builder</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Concurrent Save Error</shortDescription>
+        <value>The survey was modified by someone else. Please refresh the page and re do your work.</value>
+    </labels>
+    <labels>
+        <fullName>BUILDER_ERR_SURVEYALREADYPUBLISHED</fullName>
+        <categories>Error,Builder</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>You can not modify a published survey</shortDescription>
+        <value>The survey has been published already, you cannot save it.</value>
+    </labels>
+    <labels>
+        <fullName>BUILDER_ERR_READONLYSURVEY</fullName>
+        <categories>Error,Builder</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>You can not modify this survey. You have not permission.</shortDescription>
+        <value>You don\'t have sufficient privilege to modify this survey.</value>
+    </labels>
+    <labels>
+        <fullName>QUESTION_ERR_WRONGORDER</fullName>
+        <categories>Question</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QUESTION_ERR_WRONGORDER</shortDescription>
+        <value>The position of two or more questions was wrong and was fixed automatically</value>
+    </labels>
+    <labels>
+        <fullName>SURVEY_ERR_NOSURVEYSELECTED</fullName>
+        <categories>ErrorMessage</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SURVEY_ERR_NOSURVEYSELECTED</shortDescription>
+        <value>You must select an existing survey to be able to clone it</value>
+    </labels>
+    <labels>
+        <fullName>SURVEY_ERR_UNIQUETITLE</fullName>
+        <categories>ErrorMessage</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SURVEY_ERR_UNIQUETITLE</shortDescription>
+        <value>Title of Survey must be unique. Please enter another Title.</value>
+    </labels>
+    <labels>
+        <fullName>SYSTEM_ERR_NOLICENSEPERMISSION</fullName>
+        <categories>ErrorMessage</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SYSTEM_ERR_NOLICENSEPERMISSION</shortDescription>
+        <value>You do not have permissions to edit and create ppi surveys</value>
+    </labels>
+    <labels>
+        <fullName>SURVEYMAPPING_ERR_PAGEERRORS</fullName>
+        <categories>ErrorMessage</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SURVEYMAPPING_ERR_PAGEERRORS</shortDescription>
+        <value>There are errors in the page. Please check and save again.</value>
+    </labels>
+</CustomLabels>

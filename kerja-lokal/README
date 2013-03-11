@@ -1,0 +1,47 @@
+
+
+
+Applab KerjaLokal
+
+Applab Kerjalokal is a local job marketplace provided to bridge 'blue collar' jobseeker and employer.
+
+Employer publishes Job Info through backend application, while job seeker register themselves and subscribe to any job categories they are interested to.
+Jobseeker will be able to see 10 latest job info match to his/her location for every category. Job's map is also provided to ease job seeker to see job location.
+
+
+PLATFORM SUPPORTED FOR MOBILE CLIENT:
+- Android
+- Blackberry
+
+PACKAGE URL:
+Download client App at:
+http://employer.kerjalokal.com/files/
+
+
+HOME URL:
+http://www.kerjalokal.com/
+
+
+SERVER BACKEND
+a) Applab-KerjaLokal-ServerAPI 
+Provides all server side Application Programming Interface (API) used by Backend Server
+b) Applab-KerjaLokal-ServerBackend
+Backend Server. Provide web based employer interface and engine to process job info (posting, broadcast scheduling, etc)
+c) Applab-KerjaLokal-ServerSMSModule
+Module to send job info Short Message Service (SMS) to client who register to recieve sms for any job category they registered to
+
+
+MOBILE/CLIENT MODULE
+a) Applab-Kerjalokal-Android
+HTML5 Client App using Android 
+b) Applab-Kerjalokal-Blackberry
+HTML5 Client App using Blackberry
+c)Applab-Kerjalokal-MobileAPI
+API called by Android and Blackberry app
+
+
+
+
+DISCLAIMER:
+This code is owned by Grameen Applab Indonesia
+Copying and re-using the code is prohibited without permission from  Grameen Applab Indonesia

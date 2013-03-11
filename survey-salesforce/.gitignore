@@ -1,0 +1,16 @@
+# Eclipse workspace metadata folder
+/.metadata
+
+# Force.com (based on https://github.com/github/gitignore/blob/master/ForceDotCom.gitignore)
+.settings
+salesforce.schema
+Referenced Packages
+/salesforce-app/*.properties
+
+# Git temp files when fixing conflicts
+.orig
+
+#Android Binarys
+*.class
+*.apk
+/odk/collect/bin/

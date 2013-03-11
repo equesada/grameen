@@ -1,0 +1,2 @@
+<apex:page standardController="Device__c" recordSetVar="devices" extensions="DeviceMassStatusUpdateController" showHeader="false" id="muopp" action="{!deactivateDevices}" >
+</apex:page>

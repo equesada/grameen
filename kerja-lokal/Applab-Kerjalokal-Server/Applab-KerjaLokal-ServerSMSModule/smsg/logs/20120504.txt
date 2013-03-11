@@ -1,0 +1,21 @@
+2012-05-04 11:34:06.57067500 >> 2199252936 SMSG:MO: REG KERJA 
+2012-05-04 11:35:18.41469800 >> 2199252936 SMSG:MO: REG KERJA SUPIR 
+2012-05-04 11:35:18.42561300 >> 2199252936 SMSG:Check KERJA keyword. 
+2012-05-04 11:35:18.42571200 >> 2199252936 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-05-04 11:35:18.43655800 >> 2199252936 SMSG:Job category keyword valid. 
+2012-05-04 11:35:18.43823600 >> 2199252936 SMSG:Check MDN Registration. 
+2012-05-04 11:35:18.45119700 >> 2199252936 SMSG:MDN existed. Get subscriber_id 
+2012-05-04 11:35:18.45129900 >> 2199252936 SMSG:Check user subscription on registered job category. 
+2012-05-04 11:35:18.50066200 >> 2199252936 SMSG:REG request accepted. 
+2012-05-04 11:36:32.37953000 >> 2199252936 SMSG:MO: Kerja supir ok 
+2012-05-04 11:36:32.39612400 >> 2199252936 SMSG:Check Job category not empty. 
+2012-05-04 11:36:32.39625500 >> 2199252936 SMSG:Job category not empty. Check Job category validity. 
+2012-05-04 11:36:32.39838500 >> 2199252936 SMSG:Job category keyword valid. 
+2012-05-04 11:36:32.39849600 >> 2199252936 SMSG:Check MDN Registration. 
+2012-05-04 11:36:32.40041300 >> 2199252936 SMSG:MDN existed. Get subscriber_id 
+2012-05-04 11:36:32.40935700 >> 2199252936 SMSG:Check subscription REG-ed by user. 
+2012-05-04 11:36:32.42604200 >> 2199252936 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-05-04 11:36:32.43363500 >> 2199252936 SMSG:Check not-activated-yet subscription validity 
+2012-05-04 11:36:32.43374000 >> 2199252936 SMSG:Not-activated-yet subscription valid. Deduct user balance 
+2012-05-04 11:37:02.48614400 >> 2199252936 SMSG:KERJA OK request rejected. Reason: Charging failed. 
+2012-05-04 11:37:02.48625200 >> 2199252936 SMSG:MT: Langganan info lowongan pekerjaan SUPIR tidak berhasil diproses karena pulsa tidak cukup.Silahkan lakukan isi ulang pulsa Esia Anda. CS: 02160908000 

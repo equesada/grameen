@@ -1,0 +1,4 @@
+<apex:page standardController="ContactGroup__c" tabStyle="ContactGroups__tab" >
+  <apex:sectionHeader title="Group" subtitle="{!ContactGroup__c.Name}"/>
+  <apex:detail subject="{!ContactGroup__c}" title="false" relatedList="true" />
+</apex:page>

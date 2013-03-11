@@ -1,0 +1,45 @@
+<?php
+	$list_format_date = array(
+			'n/j/y' => "m/d/yy (3/14/01)",
+			'n/j/Y' => "m/d/yy (3/14/2001)",
+			'm/d/y' => "mm/dd/yy (03/14/01)",
+			'm/d/Y' => "mm/dd/yy (03/14/2001)",
+			'd-M-y' => "dd-Mmm-yy (14-Mar-01)",
+			'd-M-Y' => "dd-Mmm-yyyy (14-Mar-2001)",
+			'F j, Y' => "March 14, 2001"
+	);
+	
+	$list_format_time = array(
+			'H:m' => "hh:mm (13:30)",
+			'g:m A' => "h:mm AM/PM (1:30 PM)"
+	);
+	
+	$list_format_number = array(
+			'1' => "9.999,99",
+			'2' => "9,999.99"
+	);
+	
+	echo "<div class=\"table\">";
+	echo form_open($form_submit);
+	echo "<div class=\"row\"><div class=\"cell_key\">ID</div>\n";
+	echo "<div class=\"cell_val\"><b>$country_id</b></div></div>\n";
+	echo "<div class=\"row\"><div class=\"cell_key\">".form_label('Name', 'country_name')."</div>\n";
+	echo "<div class=\"cell_val\">".form_input("country_name", $country_name ,"size=40 maxlength=100").form_error("country_name", "<div class='form_error'>", "</div>")."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('Date Format', 'format_date')."</div>\n";
+	echo "<div class='cell_val'>".form_dropdown("format_date", $list_format_date ,$format_date, "id=format_date")."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('Time Format', 'format_time')."</div>\n";
+	echo "<div class='cell_val'>".form_dropdown("format_time", $list_format_time ,$format_time, "id=format_time")."</div></div>\n";
+	echo "<div class='row'><div class='cell_key'>".form_label('Number Format', 'format_number')."</div>\n";
+	echo "<div class='cell_val'>".form_dropdown("format_number", $list_format_number ,$format_number, "id=format_number")."</div></div>\n";
+	echo "<div class=\"row\"><div class=\"cell_key\">".form_label('Currency', 'format_currency')."</div>\n";
+	echo "<div class=\"cell_val\">".form_input("format_currency", $format_currency ,"size=5 maxlength=10").form_error("format_currency", "<div class='form_error'>", "</div>")."</div></div>\n";
+	echo "<div class=\"row\"><div class=\"cell_key\">".form_label('Language', 'lang')."</div>\n";
+	echo "<div class=\"cell_val\">".form_input("lang", $lang ,"size=4 maxlength=10")."</div></div>\n";
+	echo form_hidden("country_id", $country_id);
+	echo form_submit("submit", "Submit");
+	echo form_close();
+	echo "</div>";
+?>
+
+
+<hr>

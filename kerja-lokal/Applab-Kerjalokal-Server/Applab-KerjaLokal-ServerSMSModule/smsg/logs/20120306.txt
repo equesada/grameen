@@ -1,0 +1,132 @@
+2012-03-06 09:12:47.28518600 >> 2185403119 SMSG:Check KERJA keyword. 
+2012-03-06 09:12:47.30773200 >> 2185403119 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-06 09:12:47.31907000 >> 2185403119 SMSG:Job category keyword valid. 
+2012-03-06 09:12:47.32059300 >> 2185403119 SMSG:Check MDN Registration. 
+2012-03-06 09:12:47.34884300 >> 2185403119 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 09:12:47.34889700 >> 2185403119 SMSG:Check user subscription on registered job category. 
+2012-03-06 09:12:47.39154400 >> 2185403119 SMSG:REG request accepted. 
+2012-03-06 09:12:47.39161100 >> 2185403119 SMSG:MT: Anda akan mendaftar layanan info pkrjaan SUPIR dr PT RUMA.Rp3rb/mg.1sms/hr.Jk setuju balas dg ktik KERJA SUPIR OK.CS:02160908000 
+2012-03-06 09:15:07.68762400 >> 2185403119 SMSG:Check Job category not empty. 
+2012-03-06 09:15:07.68773700 >> 2185403119 SMSG:Job category not empty. Check Job category validity. 
+2012-03-06 09:15:07.68959600 >> 2185403119 SMSG:Job category keyword valid. 
+2012-03-06 09:15:07.68970000 >> 2185403119 SMSG:Check MDN Registration. 
+2012-03-06 09:15:07.69138900 >> 2185403119 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 09:15:07.70044200 >> 2185403119 SMSG:Check subscription REG-ed by user. 
+2012-03-06 09:15:07.70878800 >> 2185403119 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-03-06 09:15:07.71433300 >> 2185403119 SMSG:Check not-activated-yet subscription validity 
+2012-03-06 09:15:07.71444300 >> 2185403119 SMSG:Not-activated-yet subscription valid. Deduct user balance 
+2012-03-06 09:15:07.71453800 >> 2185403119 SMSG:KERJA OK request accepted. User balance deducted. 
+2012-03-06 09:15:07.72357500 >> 2185403119 SMSG:MT: Info pkrjaan SUPIR aktif s/d 13-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA SUPIR YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-03-06 09:15:07.72368100 >> 2185403119 SMSG:Job matching 
+2012-03-06 09:15:07.82333100 >> 2185403119 SMSG:Send instant job to user 
+2012-03-06 09:15:07.82344400 >> 2185403119 SMSG:MT: PT Fabindo Sejahtera,Driver,Pria, SMU, Max.35th, Pnglmn 2th, Jjur & Brtnggng Jwb, Pkrj Krs, Shift, Pnmptn  Jkt, hub.Ibu Sherly 0215664013 
+2012-03-06 09:15:07.82806400 >> 2185403119 SMSG:DMS: 2012-03-06, Driver, PT Fabindo Sejahtera,Pria, SMU, Max.35th, Pnglmn 2th, Jjur & Brtnggng Jwb, Pkrj Krs, Shift, Pnmptn  Jkt, hub.Ibu Sherly 0215664013 
+2012-03-06 09:15:07.83431400 >> 2185403119 SMSG:MT: Info pkrjaan SUPIR aktif s/d 13-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA SUPIR YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-03-06 09:31:15.68648400 >> 2185403119 SMSG:Check Job category not empty. 
+2012-03-06 09:31:15.68659600 >> 2185403119 SMSG:Job category not empty. Check Job category validity. 
+2012-03-06 09:31:15.68850700 >> 2185403119 SMSG:Job category keyword valid. 
+2012-03-06 09:31:15.68861300 >> 2185403119 SMSG:Check MDN Registration. 
+2012-03-06 09:31:15.69032300 >> 2185403119 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 09:31:15.71150800 >> 2185403119 SMSG:Double Confirmation enabled. Check subscription REG-ed by user. 
+2012-03-06 09:31:15.71367100 >> 2185403119 SMSG:Subscription REG-ed by user existed. Check subscription OK-ed by user. 
+2012-03-06 09:31:15.74011800 >> 2185403119 SMSG:Subscription OK-ed by user existed. Check subscription OK-ed validity. 
+2012-03-06 09:31:15.75112100 >> 2185403119 SMSG:KERJA YA request accepted. MT: Terimakasih.Info lowongan pekerjaan SUPIR akan diperpanjang otomatis setiap minggu.Rp3rb/mg.Utk berhenti ketik UNREG KERJA (pekerjaan) ke 818 
+2012-03-06 09:31:15.75123300 >> 2185403119 SMSG:MT: Terimakasih.Info lowongan pekerjaan SUPIR akan diperpanjang otomatis setiap minggu.Rp3rb/mg.Utk berhenti ketik UNREG KERJA (pekerjaan) ke 818 
+2012-03-06 12:19:38.66821200 >> 2192738742 SMSG:Check KERJA keyword. 
+2012-03-06 12:19:38.66827600 >> 2192738742 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-06 12:19:38.67009300 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-06 12:19:38.67161800 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-06 12:19:38.67327000 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 12:19:38.67332500 >> 2192738742 SMSG:Check user subscription on registered job category. 
+2012-03-06 12:19:38.68359300 >> 2192738742 SMSG:REG request rejected. Reason: Active subscription found. 
+2012-03-06 12:19:38.68365600 >> 2192738742 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan GURU.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-03-06 12:20:20.13098000 >> 2192738742 SMSG:Check KERJA keyword. 
+2012-03-06 12:20:20.13104400 >> 2192738742 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-06 12:20:20.13281600 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-06 12:20:20.13431600 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-06 12:20:20.13600300 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 12:20:20.13605800 >> 2192738742 SMSG:Check user subscription on registered job category. 
+2012-03-06 12:20:20.14933200 >> 2192738742 SMSG:REG request accepted. 
+2012-03-06 12:20:20.14940300 >> 2192738742 SMSG:MT: Anda akan mendaftar layanan info pkrjaan KOKI dr PT RUMA.Rp3rb/mg.1sms/hr.Jk setuju balas dg ktik KERJA KOKI OK.CS:02160908000 
+2012-03-06 12:20:25.64323000 >> 2192738742 SMSG:Check KERJA keyword. 
+2012-03-06 12:20:25.64329100 >> 2192738742 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-06 12:20:25.64503900 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-06 12:20:25.64662800 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-06 12:20:25.64828300 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 12:20:25.64833700 >> 2192738742 SMSG:Check user subscription on registered job category. 
+2012-03-06 12:20:25.66160300 >> 2192738742 SMSG:REG request accepted. 
+2012-03-06 12:20:25.66166900 >> 2192738742 SMSG:MT: Anda akan mendaftar layanan info pkrjaan KOKI dr PT RUMA.Rp3rb/mg.1sms/hr.Jk setuju balas dg ktik KERJA KOKI OK.CS:02160908000 
+2012-03-06 12:21:11.68099500 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-06 12:21:11.68110000 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-06 12:21:11.68298200 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-06 12:21:11.68308000 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-06 12:21:11.68476900 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 12:21:11.68658500 >> 2192738742 SMSG:Check subscription REG-ed by user. 
+2012-03-06 12:21:11.68868700 >> 2192738742 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-03-06 12:21:11.69421400 >> 2192738742 SMSG:Check not-activated-yet subscription validity 
+2012-03-06 12:21:11.69432300 >> 2192738742 SMSG:Not-activated-yet subscription valid. Deduct user balance 
+2012-03-06 12:21:11.69441700 >> 2192738742 SMSG:KERJA OK request accepted. User balance deducted. 
+2012-03-06 12:21:11.69920100 >> 2192738742 SMSG:MT: Info pkrjaan KOKI aktif s/d 13-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA KOKI YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-03-06 12:21:11.69931000 >> 2192738742 SMSG:Job matching 
+2012-03-06 12:21:11.75507600 >> 2192738742 SMSG:Send instant job to user 
+2012-03-06 12:21:11.75519000 >> 2192738742 SMSG:MT: Liyen Restaurant,Cook,P/W, Min SMA, Pnglmn, Jjr, Rapi, Brsih, hub.Ibu Merry 0213451516 
+2012-03-06 12:21:11.75978700 >> 2192738742 SMSG:DMS: 2012-03-06, Cook, Liyen Restaurant,P/W, Min SMA, Pnglmn, Jjr, Rapi, Brsih, hub.Ibu Merry 0213451516 
+2012-03-06 12:21:11.76595800 >> 2192738742 SMSG:MT: Info pkrjaan KOKI aktif s/d 13-03-2012.Setuju diprpanjang otomatis?Jk ya,ktk KERJA KOKI YA ke 818.Utk Stop:UNREG KERJA (pekerjaan) ke 818 
+2012-03-06 12:21:16.66382300 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-06 12:21:16.66393500 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-06 12:21:16.66574500 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-06 12:21:16.66584500 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-06 12:21:16.66751600 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 12:21:16.66935100 >> 2192738742 SMSG:Check subscription REG-ed by user. 
+2012-03-06 12:21:16.67140000 >> 2192738742 SMSG:Subscription REG-ed by user existed. Check active subscription. 
+2012-03-06 12:21:16.68555900 >> 2192738742 SMSG:KERJA request rejected. Reason: Active subscription existed. MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan KOKI.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-03-06 12:21:16.68567100 >> 2192738742 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan KOKI.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-03-06 12:22:02.26649600 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-06 12:22:02.26660500 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-06 12:22:02.26844800 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-06 12:22:02.26854800 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-06 12:22:02.27022800 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 12:22:02.27207700 >> 2192738742 SMSG:Double Confirmation enabled. Check subscription REG-ed by user. 
+2012-03-06 12:22:02.27407700 >> 2192738742 SMSG:Subscription REG-ed by user existed. Check subscription OK-ed by user. 
+2012-03-06 12:22:02.27599300 >> 2192738742 SMSG:Subscription OK-ed by user existed. Check subscription OK-ed validity. 
+2012-03-06 12:22:02.27780800 >> 2192738742 SMSG:Subscription OK valid. Update subscription status to auto-renew. 
+2012-03-06 12:22:02.28228800 >> 2192738742 SMSG:KERJA YA request accepted. 
+2012-03-06 12:22:02.28239200 >> 2192738742 SMSG:MT: Terimakasih.Info lowongan pekerjaan KOKI akan diperpanjang otomatis setiap minggu.Rp3rb/mg.Utk berhenti ketik UNREG KERJA (pekerjaan) ke 818 
+2012-03-06 13:23:18.65341400 >> 2192738742 SMSG:MO: Reg kerja koki 
+2012-03-06 13:23:18.65382700 >> 2192738742 SMSG:Check KERJA keyword. 
+2012-03-06 13:23:18.65387700 >> 2192738742 SMSG:KERJA keyword valid. Check Job category keyword. 
+2012-03-06 13:23:18.65566000 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-06 13:23:18.65717100 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-06 13:23:18.65880000 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 13:23:18.65885500 >> 2192738742 SMSG:Check user subscription on registered job category. 
+2012-03-06 13:23:18.66913700 >> 2192738742 SMSG:REG request rejected. Reason: Active subscription found. 
+2012-03-06 13:23:18.66920100 >> 2192738742 SMSG:MT: Saat ini Anda masih terdaftar pada lowongan pekerjaan KOKI.Utk info pekerjaan selengkapnya ketik KERJA INFO sms ke 818 
+2012-03-06 13:45:26.08932200 >> 2192738742 SMSG:MO: Test 
+2012-03-06 13:46:27.24855700 >> 2192738742 SMSG:MO: T 
+2012-03-06 16:07:17.72471600 >> 2192738742 SMSG:MO: kerja koki ya 
+2012-03-06 16:07:17.72536700 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-06 16:07:17.72546200 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-06 16:07:17.72728900 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-06 16:07:17.72739200 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-06 16:07:17.72904900 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 16:07:17.73093600 >> 2192738742 SMSG:Double Confirmation enabled. Check subscription REG-ed by user. 
+2012-03-06 16:07:17.73305400 >> 2192738742 SMSG:Subscription REG-ed by user existed. Check subscription OK-ed by user. 
+2012-03-06 16:07:17.73496900 >> 2192738742 SMSG:Subscription OK-ed by user existed. Check subscription OK-ed validity. 
+2012-03-06 16:07:17.73681400 >> 2192738742 SMSG:Subscription OK valid. Update subscription status to auto-renew. 
+2012-03-06 16:07:17.74143300 >> 2192738742 SMSG:KERJA YA request accepted. 
+2012-03-06 16:07:17.74154200 >> 2192738742 SMSG:MT: Terimakasih.Info lowongan pekerjaan KOKI akan diperpanjang otomatis setiap minggu.Rp3rb/mg.Utk berhenti ketik UNREG KERJA (pekerjaan) ke 818 
+2012-03-06 16:07:33.53640200 >> 2192738742 SMSG:MO: kerja guru ya 
+2012-03-06 16:07:33.53705700 >> 2192738742 SMSG:Check Job category not empty. 
+2012-03-06 16:07:33.53716700 >> 2192738742 SMSG:Job category not empty. Check Job category validity. 
+2012-03-06 16:07:33.53932300 >> 2192738742 SMSG:Job category keyword valid. 
+2012-03-06 16:07:33.53942300 >> 2192738742 SMSG:Check MDN Registration. 
+2012-03-06 16:07:33.54129500 >> 2192738742 SMSG:MDN existed. Get subscriber_id 
+2012-03-06 16:07:33.54337800 >> 2192738742 SMSG:Double Confirmation enabled. Check subscription REG-ed by user. 
+2012-03-06 16:07:33.54569400 >> 2192738742 SMSG:Subscription REG-ed by user existed. Check subscription OK-ed by user. 
+2012-03-06 16:07:33.54770700 >> 2192738742 SMSG:Subscription OK-ed by user existed. Check subscription OK-ed validity. 
+2012-03-06 16:07:33.55243800 >> 2192738742 SMSG:KERJA YA request rejected. Reason: subscription OK-ed by user expired. 
+2012-03-06 16:07:33.55254400 >> 2192738742 SMSG:MT: Maaf keyword yg Anda masukkan salah.Ketik KERJA INFO sms ke 818 utk pilihan pekerjaan.CS: 02160908000 
+2012-03-06 17:36:18.14255600 >> 2192738742 SMSG:MO: unreg kerja koki 
+2012-03-06 17:36:18.14305100 >> 2192738742 SMSG:Check UNREG KERJA keyword. 
+2012-03-06 17:36:18.14314800 >> 2192738742 SMSG:UNREG KERJA keyword valid. Check MDN Registration. 
+2012-03-06 17:36:18.14508000 >> 2192738742 SMSG:MDN existed. Get subscriber_id 

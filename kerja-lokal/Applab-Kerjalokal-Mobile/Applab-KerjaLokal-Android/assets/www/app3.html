@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="jquery.mobile-1.0.1.min.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="jquery-1.6.4.min.js">
+        </script>
+        <script src="jquery.mobile-1.0.1.min.js">
+        </script>
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+            </div>
+            <div data-theme="a" data-role="header">
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slide">
+                            Lowongan
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slide">
+                            Berlangganan
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slide">
+                            Profil Saya
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page2" data-transition="slide">
+                            Tips dan Kiat
+                        </a>
+                    </li>
+                </ul>
+                <a data-role="button" data-transition="fade" href="#page1" data-icon="refresh" data-iconpos="right">
+                    Refresh
+                </a>
+            </div>
+        </div>
+        <div data-role="page" id="page2">
+            <div data-theme="a" data-role="header">
+                <h2>
+                    Kerja Lokal
+                </h2>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Lowongan
+                    </li>
+                    <li data-theme="" id="pekerjapabrik">
+                        <a href="#page3" data-transition="none">
+                            Pekerja Pabrik
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="none">
+                            Supir
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="none">
+                            Staff Umum
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="none">
+                            Pelayan Restoran
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="none">
+                            Buruh Bangunan
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="none">
+                            Keamanan
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<script>
+$(document).ready(function(){
+
+	$("#pekerjapabrik").click(function() {
+	  alert("Handler for .click() called 2.");
+
+/*
+
+	$.getJSON('http://180.243.231.8:8085/infokerja_core/get_logsms_by_log_id.php?log_id=21751', function(data){
+	var myParseJson = jQuery.parseJSON(data); 
+	alert(myParseJson.subscriber_id);
+
+	$('#page3').append('<div class="tweet"><p>' + myParseJson.msg + '</p></div>');
+
+	});
+
+*/
+
+$.ajax({
+
+    dataType: 'text',
+    success: function(string) {
+        data = $.parseJSON(string);
+        // do something
+		$('#page3').append('<div class="tweet"><p>' + data.msg + '</p></div>');
+
+    },
+    url: 'http://180.243.231.8:8085/infokerja_core/get_logsms_by_log_id.php?log_id=21751'
+
+});
+
+/*
+
+var url='http://search.twitter.com/search.json?callback=?&q=lubis';
+var query;
+//		query=$("#query").val();
+		$.getJSON(url,function(json){
+			$.each(json.results,function(i,tweet){
+			   $("#page3").append('<p><img src="'+tweet.profile_image_url+'" widt="48" height="48" />'+tweet.text+'</p>');
+			});
+		});
+
+
+*/
+
+
+
+
+
+
+});
+
+
+});
+
+</script>
+
+
+        <div data-role="page" id="page3">
+            <div data-theme="a" data-role="header">
+                <h2>
+                    Kerja Lokal
+                </h2>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Pekerja Pabrik
+                    </li>
+                    <li data-theme="">
+                        <a href="#page1" data-transition="none">
+                            2012-03-02, Operator
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="none">
+                            2012-03-02, GSE Operator
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="none">
+                            2012-03-01, Operator Print
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="none">
+                            2012-02-27, Quality Control
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="none">
+                            YYYY-MM-DD, Job Title
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="none">
+                            YYYY-MM-DD, Job Title
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-theme="" data-role="footer" data-position="fixed">
+                <input type="submit" data-theme="f" data-icon="refresh" data-iconpos="left" value="Refresh" />
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>

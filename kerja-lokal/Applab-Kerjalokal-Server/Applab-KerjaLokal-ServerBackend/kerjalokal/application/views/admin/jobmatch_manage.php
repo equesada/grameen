@@ -1,0 +1,83 @@
+<?php
+/*
+	$list_percent = array();
+	for ($a = 0; $a <=100; $a++)
+	{ $list_percent[$a] = $a; }
+	
+	echo "<div class=\"table\">";
+	echo form_open(base_url()."admin/jobmatch/add");
+	echo "<div class=\"row\">\n";
+	echo "<div class=\"cell_key\">".form_label('Title', 'title')."</div>\n";
+	echo "<div class=\"cell_val\">".form_input("title", "" ,"size=40 maxlength=100")."</div>\n";
+	echo "</div>\n";
+	echo "<div class=\"row\">\n";
+	echo "<div class=\"cell_key\">".form_label('Description', 'desc')."</div>\n";
+	echo "<div class=\"cell_val\">".form_input("desc", "" ,"size=40 maxlength=100")."</div>\n";
+	echo "</div>\n";
+	echo "<div class=\"row\">\n";
+	echo "<div class=\"cell_key\">".form_label('Max distance', 'max_dis')."</div>\n";
+	echo "<div class=\"cell_val\">".form_input("max_dis", "" ,"size=4 maxlength=4")." km</div>\n";
+	echo "</div>\n";
+	echo "<div class=\"row\">\n";
+	echo "<div class=\"cell_key\">".form_label('Distance', 'dis')."</div>\n";
+	echo "<div class=\"cell_val\">".form_dropdown("dis", $list_percent, $dis).form_error("max_dis", "<div class='form_error'>", "</div>")." %</div>\n";
+	echo "</div>\n";
+	echo "<div class=\"row\">\n";
+	echo "<div class=\"cell_key\">".form_label('# send', 'nsend')."</div>\n";
+	echo "<div class=\"cell_val\">".form_dropdown("nsend", $list_percent, $nsend).form_error("nsend", "<div class='form_error'>", "</div>")." %</div>\n";
+	echo "</div>\n";
+	echo "<div class=\"row\">\n";
+	echo "<div class=\"cell_key\">".form_label('Days to expired', 'expired')."</div>\n";
+	echo "<div class=\"cell_val\">".form_dropdown("expired", $list_percent, $expired).form_error("expired", "<div class='form_error'>", "</div>")." %</div>\n";
+	echo "</div>\n";
+	echo form_hidden("country_id", "ID");
+	echo form_submit("submit", "Submit");
+	echo form_close();
+*/
+?>
+
+
+
+<h3>Manage Job Matching </h3>
+<?php echo form_open(base_url()."admin/jobmatch/manage/".$jobmatches["page"]); ?>
+<div class="table">
+<div class="row">
+	<div class="cell table_head">Active</div>
+	<div class="cell table_head" style="width:50px">ID</div>
+	<div class="cell table_head">Title</div>
+	<div class="cell table_head">Max Distance (km)</div>
+	<div class="cell table_head">Max # send (pcs)</div>
+	<div class="cell table_head">Distance (%)</div>
+	<div class="cell table_head"># send (%)</div>
+	<div class="cell table_head">Days to expired</div>
+</div>
+<?php
+	
+	foreach ($jobmatches["results"] as $jobmatch)
+	{
+		echo "<div class=\"row\">\n";
+		echo "<div class=\"cell table_cell\">".form_radio("activate",$jobmatch["jobmatch_id"], $jobmatch["is_current"] == "1" ? "TRUE" : "")."</div>\n";
+		echo "<div class=\"cell table_cell\">".$jobmatch["jobmatch_id"]."</div>\n";
+		echo "<div class=\"cell table_cell\"><a href=\"".base_url()."admin/jobmatch/edit/".$jobmatch["jobmatch_id"]."\">".$jobmatch["title"]."</a></div>\n";
+		echo "<div class=\"cell table_cell\">".$jobmatch["max_dis"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$jobmatch["max_nsend"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$jobmatch["dis"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$jobmatch["nsend"]."</div>\n";
+		echo "<div class=\"cell table_cell\">".$jobmatch["expired"]."</div>\n";
+		echo "</div>\n";
+	}
+	$paging = "";
+	
+	if ($jobmatches["npage"] > 1)
+		for ($a = 1; $a <=$jobmatches["npage"]; $a++) 
+			if ($a == $jobmatches["page"])
+				$paging .= "<b>$a</b> - ";
+			else
+				$paging .= "<a href=\"".base_url()."admin/jobmatch/manage/$a\">$a</a> - ";
+		
+	$paging = substr($paging,0,strlen($paging)-3);
+	echo $paging."<br><br>";
+	echo form_submit("submit", "Enabled selected job match");
+	echo form_close();
+?>
+</div>

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js">
+        </script>
+    </head>
+    <body>
+
+	<div id=”loadingDiv” style:visibility=”hidden”>Operation in progress…</div>
+
+        <div data-role="page" id="page_home">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+            </div>
+            <div data-theme="b" data-role="header">
+                <h3>
+                    Home
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="c" id="goto_page_job_category">
+                        <a data-transition="slide">
+                            My Job Info
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page_my_profile" data-transition="slide">
+                            My Profile
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page_home" data-transition="slide">
+                            Manage Subscriptions
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page_home" data-transition="slide">
+                            Tips and Testimonials
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="page_job_category">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+            </div>
+            <div data-theme="b" data-role="header">
+                <h1>
+                    My Job Info
+                </h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true" id="ul_page_job_category">
+                    <li data-role="list-divider" role="heading">
+                        Job Categories
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page_job_list" data-transition="slide">
+                            Factory Worker
+                        </a>
+                    </li>
+
+
+                </ul>
+                <a data-role="button" data-transition="fade" href="#page2" data-icon="arrow-l" data-iconpos="left">
+                    Back
+                </a>
+            </div>
+        </div>
+        <div data-role="page" id="page_job_list">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+            </div>
+            <div data-theme="b" data-role="header">
+                <h1>
+                    My Job Info
+                </h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Factory Worker
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page14" data-transition="slide">
+                            2012-03-02, Operator
+                        </a>
+                    </li>
+ 
+
+                </ul>
+                <a data-role="button" data-transition="fade" href="#page5" data-icon="refresh" data-iconpos="right">
+                    Refresh
+                </a>
+                <a data-role="button" data-transition="fade" href="#page3" data-icon="arrow-l" data-iconpos="left">
+                    Back
+                </a>
+            </div>
+        </div>
+        <div data-role="page" id="page1">
+            <div data-role="content">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a data-role="button" data-inline="true" data-transition="fade" href="#page7" data-icon="star" data-iconpos="top">
+                            Kerja Lokal
+                        </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a data-role="button" data-transition="fade" href="#page1" data-icon="arrow-r" data-iconpos="top">
+                            Jual Pulsa
+                        </a>
+                    </div>
+                    <div class="ui-block-a">
+                        <a data-role="button" data-transition="fade" href="#page1" data-icon="gear" data-iconpos="top">
+                            Settings
+                        </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a data-role="button" data-transition="fade" href="#page1" data-icon="check" data-iconpos="top">
+                            To Do
+                        </a>
+                    </div>
+                    <div class="ui-block-a">
+                        <a data-role="button" data-transition="fade" href="#page1">
+                            App A
+                        </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a data-role="button" data-transition="fade" href="#page1">
+                            App B
+                        </a>
+                    </div>
+                    <div class="ui-block-a">
+                        <a data-role="button" data-transition="fade" href="#page1">
+                            App C
+                        </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a data-role="button" data-transition="fade" href="#page1">
+                            App D
+                        </a>
+                    </div>
+                    <div class="ui-block-a">
+                        <a data-role="button" data-transition="fade" href="#page1">
+                            App E
+                        </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a data-role="button" data-transition="fade" href="#page1">
+                            App F
+                        </a>
+                    </div>
+                    <div class="ui-block-a">
+                        <a data-role="button" data-transition="fade" href="#page1">
+                            App G
+                        </a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a data-role="button" data-transition="fade" href="#page1">
+                            App H
+                        </a>
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                    <div class="ui-block-a">
+                    </div>
+                    <div class="ui-block-b">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page7">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+            </div>
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Login
+                </h3>
+            </div>
+            <div data-theme="a" data-role="header">
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput1">
+                        </label>
+                        <input id="textinput1" placeholder="Login name" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput2">
+                        </label>
+                        <input id="textinput2" placeholder="Password" value="" type="text" />
+                    </fieldset>
+                </div>
+                <input value="Submit" type="submit" />
+                <p>
+                </p>
+                <p>
+                    New User? Please register first.
+                </p>
+                <a data-role="button" data-transition="fade" href="#page8">
+                    Register
+                </a>
+            </div>
+        </div>
+        <div data-role="page" id="page8">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+                <div data-theme="b" data-role="header">
+                    <h3>
+                        Registration
+                    </h3>
+                </div>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput3">
+                            Full name
+                        </label>
+                        <input id="textinput3" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput12">
+                            Enter password
+                        </label>
+                        <input id="textinput12" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput7">
+                            Place of Birth
+                        </label>
+                        <input id="textinput7" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput4">
+                            Date of Birth
+                        </label>
+                        <input id="textinput4" placeholder="dd-mm-yyyy" value="" type="date" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput6">
+                            ID Number (KTP)
+                        </label>
+                        <input id="textinput6" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu1">
+                        Gender
+                    </label>
+                    <select name="selectmenu1" id="selectmenu1">
+                        <option value="option1">
+                            Male
+                        </option>
+                        <option value="option2">
+                            Female
+                        </option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu2">
+                        Education Level
+                    </label>
+                    <select name="selectmenu2" id="selectmenu2">
+                        <option value="option1">
+                            Junior High School
+                        </option>
+                        <option value="">
+                            High School Diploma
+                        </option>
+                        <option value="">
+                            Bachelor Degree
+                        </option>
+                        <option value="">
+                            Other
+                        </option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu7">
+                        Address
+                    </label>
+                    <select name="selectmenu7" id="selectmenu7">
+                        <option value="option1">
+                            Use current GPS location
+                        </option>
+                        <option value="">
+                            Enter street address
+                        </option>
+                        <option value="">
+                            Enter ZIP code
+                        </option>
+                    </select>
+                </div>
+                <input data-theme="b" data-icon="arrow-r" data-iconpos="right" value="Submit" type="submit" />
+            </div>
+        </div>
+        <div data-role="page" id="page9">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+                <div data-theme="b" data-role="header">
+                    <h3>
+                        Address
+                    </h3>
+                </div>
+            </div>
+            <div data-role="content">
+                <p>
+                    Current GPS location: Jalan Ciasem 1 no. 36 Jakarta 12110
+                </p>
+                <div>
+                    <img src="https://www.google.co.id/maps/vt/data=Ay5GWBeob_WIPLDYoIWcfVXxvZu9XwJ55OX7Ag,8mJXX18kF081JXo89-APpwFlLx9qVwz-NXYYWR-qoEs1TcozVpEWtLmZZJAZVtKWlvX7xoLyPXHDS_7A1MvoCT_1V4QURejCznktuePHpjCHlunSe-qnyPlqMuPxFk0GJZC-qicTGiV_Uau2R22dx_84Wp2cc0rfCI2akirxNoVEYza7MqOh7tJqJA_HUX4oU5d5rqrD4IbwvpM" />
+                </div>
+                <div>
+                    <img src="ttp://mt1.google.com/vt/lyrs=m@174000000&amp;hl=id&amp;src=app&amp;x=52211&amp;s=&amp;y=33905&amp;z=16&amp;s=Ga" />
+                </div>
+                <a data-role="button" data-transition="fade" href="#page9" data-icon="arrow-l" data-iconpos="left">
+                    Back to registration form
+                </a>
+            </div>
+        </div>
+        <div data-role="page" id="page10">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+                <div data-theme="b" data-role="header">
+                    <h3>
+                        Address
+                    </h3>
+                </div>
+            </div>
+            <div data-role="content">
+                <p>
+                    Enter street address:
+                </p>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput13">
+                        </label>
+                        <input id="textinput13" placeholder="Line 1" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput14">
+                        </label>
+                        <input id="textinput14" placeholder="Line 2" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput15">
+                        </label>
+                        <input id="textinput15" placeholder="City" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput16">
+                        </label>
+                        <input id="textinput16" placeholder="State" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput17">
+                        </label>
+                        <input id="textinput17" placeholder="Zip Code" value="" type="text" />
+                    </fieldset>
+                </div>
+                <input data-icon="arrow-l" data-iconpos="left" value="Back to registration form" type="submit" />
+            </div>
+        </div>
+        <div data-role="page" id="page12">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+                <div data-theme="b" data-role="header">
+                    <h3>
+                        Address
+                    </h3>
+                </div>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput18">
+                            Enter ZIP code:
+                        </label>
+                        <input id="textinput18" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <p>
+                    Enter street address:
+                </p>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput23">
+                        </label>
+                        <input id="textinput23" placeholder="Line 1" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput24">
+                        </label>
+                        <input id="textinput24" placeholder="Line 2" value="" type="text" />
+                    </fieldset>
+                </div>
+                <input data-icon="arrow-l" data-iconpos="left" value="Back to registration form" type="submit" />
+            </div>
+        </div>
+        <div data-role="page" id="page14">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+            </div>
+            <div data-theme="b" data-role="header">
+                <h1>
+                    Job Detail
+                </h1>
+            </div>
+            <div data-role="content">
+                <p>
+                    2012-03-02, Operator, PT Duta Indah Lestari, P. Min SMA, Max 30th Pnglmn,
+                    Dom Jkt, Hub Dedi.
+                    <a href="#">
+                        0215325441
+                    </a>
+                </p>
+                <div>
+                    <img src="https://codiqa.com/static/images/v2/image_component.jpg" />
+                </div>
+                <div>
+                    <img src="https://www.google.co.id/maps/vt/data=Ay5GWBeob_WIPLDYoIWcfVXxvZu9XwJ55OX7Ag,8mJXX18kF081JXo89-APpwFlLx9qVwz-NXYYWR-qoEs1TcozVpEWtLmZZJAZVtKWlvX7xoLyPXHDS_7A1MvoCT_1V4QURejCznktuePHpjCHlunSe-qnyPlqMuPxFk0GJZC-qicTGiV_Uau2R22dx_84Wp2cc0rfCI2akirxNoVEYza7MqOh7tJqJA_HUX4oU5d5rqrD4IbwvpM" />
+                </div>
+                <a data-role="button" data-transition="fade" href="#page5" data-icon="arrow-l" data-iconpos="left">
+                    Back
+                </a>
+            </div>
+        </div>
+        <div data-role="page" id="page15">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Kerja Lokal
+                </h3>
+                <div data-theme="b" data-role="header">
+                    <h3>
+                        My Profile
+                    </h3>
+                </div>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput25">
+                            Full name
+                        </label>
+                        <input id="textinput25" placeholder="Eko Handoko" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput26">
+                            Enter password
+                        </label>
+                        <input id="textinput26" placeholder="" value="************" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput27">
+                            Place of Birth
+                        </label>
+                        <input id="textinput27" placeholder="" value="Bogor" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput28">
+                            Date of Birth
+                        </label>
+                        <input id="textinput28" placeholder="" value="01-11-1975" type="date" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput29">
+                            ID Number (KTP)
+                        </label>
+                        <input id="textinput29" placeholder="" value="1234567890" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu8">
+                        Gender
+                    </label>
+                    <select name="selectmenu8" id="selectmenu8">
+                        <option value="option1">
+                            Male
+                        </option>
+                        <option value="option2">
+                            Female
+                        </option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu9">
+                        Education Level
+                    </label>
+                    <select name="selectmenu9" id="selectmenu9">
+                        <option value="option1">
+                            Junior High School
+                        </option>
+                        <option value="">
+                            High School Diploma
+                        </option>
+                        <option value="">
+                            Bachellor Degree
+                        </option>
+                        <option value="">
+                            Other
+                        </option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="selectmenu10">
+                        Address
+                    </label>
+                    <select name="selectmenu10" id="selectmenu10">
+                        <option value="option1">
+                            Use current GPS location
+                        </option>
+                        <option value="">
+                            Enter street address
+                        </option>
+                        <option value="">
+                            Enter ZIP code
+                        </option>
+                    </select>
+                </div>
+                <input data-theme="b" value="Save" type="submit" />
+            </div>
+        </div>
+        <div data-role="page" id="page17">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Header
+                </h3>
+            </div>
+            <div data-role="content">
+            </div>
+        </div>
+<script>
+
+
+
+
+$(document).ready(function(){
+
+ $("#loadingDiv").hide()  // hide it initially
+.ajaxStart(function() {
+   $(this).show();
+})
+.ajaxStop(function() {
+   $(this).hide();
+});
+
+
+
+$("#goto_page_job_category").click(function() {
+	  alert("Handler for goto_page_job_category called 2.");
+
+
+
+$.ajax({
+
+    dataType: 'json',
+    success: function(data) {
+	var items = [];
+			  $.each(data.results, function(key, val) {
+				items.push('<li data-theme="c" id="' + key + '"><a href="#page_job_list" data-transition="slide">' + val.jobcat_title + '</a></li>');
+				alert(val.jobcat_title);
+			  });
+			  $('#ul_page_job_category').html('<ul data-role="listview" data-divider-theme="b" data-inset="true" id="ul_page_job_category"><li data-role="list-divider" role="heading">Job Categories</li>' + items.join('') + "</ul>");
+
+    },
+    url: 'http://180.243.231.8:8085/infokerja_core/get_jobcat_group_by_subscriber_id.php?tx_id=20120337fa2527be744ff8823c42fa6071b50c_MY+JOB+INFO&id=912'
+
+});
+
+
+
+
+
+//end goto_page_job_category on click
+});
+
+
+
+ 
+
+
+
+
+$("#pekerjapabrik").click(function() {
+	  alert("Handler for .click() called 2.");
+
+
+$.ajax({
+
+    dataType: 'text',
+    success: function(string) {
+        data = $.parseJSON(string);
+        // do something
+		$('#page3').append('<div class="tweet"><p>' + data.msg + '</p></div>');
+
+    },
+    url: 'http://180.243.231.8:8085/infokerja_core/get_logsms_by_log_id.php?log_id=21751'
+
+});
+
+/*
+
+var url='http://search.twitter.com/search.json?callback=?&q=lubis';
+var query;
+//		query=$("#query").val();
+		$.getJSON(url,function(json){
+			$.each(json.results,function(i,tweet){
+			   $("#page3").append('<p><img src="'+tweet.profile_image_url+'" widt="48" height="48" />'+tweet.text+'</p>');
+			});
+		});
+
+
+*/
+
+
+
+
+
+
+});
+
+
+});
+
+</script>
+    </body>
+</html>

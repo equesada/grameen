@@ -1,0 +1,882 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Company extends CI_Controller {
+
+	function __construct()
+	{
+		parent::__construct();
+		session_start();
+		$this->load->model('Madmin');
+	}
+   
+	function add()
+	{
+		$useraccess = array("superadmin", "admin");
+		if ($this->Madmin->check_access($_SESSION["userlevel"], $useraccess) == "1")
+		{
+			$tx_id = $this->Madmin->get_uuid(current_url());
+			$data = $this->check_var();
+			//echo "<pre>"; print_r($data); echo "</pre>";
+			
+			if (sizeof($_POST) > 0)
+			{
+				$this->check_form($data["region"]);
+				$var = "";
+				if ($this->form_validation->run() == TRUE)
+				{
+					unset($data["region"]);
+					unset($data["province"]);
+					unset($data["kotamadya"]);
+					unset($data["kecamatan"]);
+					unset($data["kelurahan"]);
+					unset($data["zip"]);
+
+					foreach ($data as $key => $value)
+					{ 
+						if ($key == "pos_lat") $key = "lat";
+						if ($key == "pos_lng") $key = "lng";
+						$var .= "&".$key."=".urlencode($value); 
+					}
+					$var .= "&tx_id=$tx_id";
+					$var .= "&date_add=".urlencode(date("Y-m-d H:i:s"));
+					$var .= "&country_id=".$_SESSION["curr_country"];
+					$var = substr($var,1);
+					$json = CORE_URL."add_company.php?$var";
+					//echo $json;
+					
+					$json = $this->Madmin->get_data($json);
+					if ($json["status"] == "0")
+						$this->template->write("msg", "<div class=msg>".$json["msg"]."</div>");
+					else
+						$this->template->write("msg", "<div class=msg>1 Company has been added.</div>");
+					
+					$data["region"] = "";
+					$data["province"] = "";
+					$data["kotamadya"] = "";
+					$data["kecamatan"] = "";
+					$data["kelurahan"] = "";
+					$data["zip"] = "";
+					foreach ($data as $key => $value)
+					{ $data[$key] = ""; }
+				}	
+				/*
+				else
+				{ 
+					echo "<pre>"; print_r($_POST); echo "</pre>"; 
+					echo validation_errors(); 
+				}
+				*/
+			}
+			
+			foreach ($this->get_lists($tx_id) as $key => $value)
+			{ $data[$key] = $value; }
+			
+			if ($data["kelurahan"] != "0")
+			{
+				$json = $this->Madmin->get_data(CORE_URL."get_location_by_loc_id.php?tx_id=$tx_id&id=".$data['kelurahan']);
+				$data["kecamatan"] = $json["parent_id"];
+				$json = $this->Madmin->get_data(CORE_URL."get_location_by_loc_id.php?tx_id=$tx_id&id=".$data["kecamatan"]);
+				$data["kotamadya"] = $json["parent_id"];
+				$json = $this->Madmin->get_data(CORE_URL."get_location_by_loc_id.php?tx_id=$tx_id&id=".$data['kotamadya']);
+				$data["province"] = $json["parent_id"];
+				
+				$data["kotamadyas"] = $this->Madmin->get_data(CORE_URL."get_location_by_parent_id.php?tx_id=$tx_id&id=".$data["province"]);
+				$data["kecamatans"] = $this->Madmin->get_data(CORE_URL."get_location_by_parent_id.php?tx_id=$tx_id&id=".$data["kotamadya"]);
+				$data["kelurahans"] = $this->Madmin->get_data(CORE_URL."get_location_by_parent_id.php?tx_id=$tx_id&id=".$data["kecamatan"]);
+			}
+			
+			else
+			{
+				$data["region"] = 1;
+				$data["kelurahan"] = "";
+				$data["zip"] = 0;
+				$data["loc_id"] = 0;
+				$data["kecamatan"] = "";
+				$data["kotamadya"] = "";
+				$data["province"] = "";
+				$data["kotamadyas"] = "";
+				$data["kecamatans"] = "";
+				$data["kelurahans"] = "";
+			}
+			
+			$data["form_submit"] = base_url()."admin/company/add";
+			
+			$this->create_header($data["lat"],$data["lng"], $data["kelurahan"]);
+
+			$this->template->write("title", "Add Company");
+			$this->template->write_view("content", "admin/company_edit", $data);
+			$this->template->render();
+		}
+		else
+			$this->template->write("msg", $this->Madmin->check_access($_SESSION["userlevel"], $useraccess)); 
+		$this->template->render();
+	}
+	
+	
+	function manage($page = 1, $order="a_name", $status="", $name="", $industry_id="", $date_add="")
+	{
+		$useraccess = array("superadmin", "admin", "company", "jobposter");
+		if ($this->Madmin->check_access($_SESSION["userlevel"], $useraccess) == "1")
+		{
+			$tx_id = $this->Madmin->get_uuid(current_url());
+			if (sizeof($_POST) > 0)
+			{
+				
+				$search["status"] = $this->input->post("status") != "" ? $_POST["status"] : "_";
+				$search["name"] = $this->input->post("name") != "" ? $_POST["name"] : "_";
+				$search["industry_id"] = $this->input->post("industry_id") != "" ? $_POST["industry_id"] : "_";
+				$search["date_add"] = $this->input->post("date_add") != "" ? $_POST["date_add"] : "_";
+				
+				if (($search["status"] != "_") || ($search["name"] != "_") || ($search["industry_id"] != "_") || ($search["date_add"] != "_"))
+					redirect(base_url()."admin/company/manage/$page/$order/".urlencode($search["status"])."/".$search["name"]."/".urlencode($search["industry_id"])."/".urlencode($search["date_add"]));
+					
+			}
+			$ascdesc = substr($order,0,1) == "a" ? "ASC" : "DESC";
+			$orderby = substr($order,2);
+			$ndata = 20;
+			$search["status"] = $status;
+			$search["name"] = $name;
+			$search["industry_id"] = $industry_id;
+			$search["date_add"] = $date_add;
+			
+			if (($search["status"] != "_") || ($search["name"] != "_") || ($search["industry_id"] != "_") || ($search["date_add"] != "_")) 
+			{
+				$var = "";
+				foreach($search as $key => $val)
+				{ if ($search[$key] != "_") $var .= "&$key=".urlencode($val); }
+				if (($_SESSION["userlevel"] == "company") || ($_SESSION["userlevel"] == "jobposter"))
+					$json = CORE_URL."get_companies.php?tx_id=$tx_id"."$var&ndata=$ndata&page=$page&order=$orderby&ascdesc=$ascdesc&id=".$_SESSION["userid"];
+				else
+					$json = CORE_URL."get_companies.php?tx_id=$tx_id"."$var&ndata=$ndata&page=$page&order=$orderby&ascdesc=$ascdesc&id=0";
+			}
+			else
+			{
+				if (($_SESSION["userlevel"] == "company") || ($_SESSION["userlevel"] == "jobposter"))
+					$json = CORE_URL."get_companies.php?tx_id=$tx_id&ndata=$ndata&page=$page&order=$orderby&ascdesc=$ascdesc&id=".$_SESSION["userid"];
+				else
+					$json = CORE_URL."get_companies.php?tx_id=$tx_id&ndata=$ndata&page=$page&order=$orderby&ascdesc=$ascdesc&id=0";
+			}
+			$data = $this->Madmin->get_data($json);
+			//die($json);
+			$data["list_status"] = array(
+				"0" => "ALL",
+				"1" => "Active",
+				"2" => "Inactive"
+			);
+			$data["status"] = $status;
+			$data["form_submit"] = current_url();
+
+			$data["page"] = $page;
+			
+			$data["search"] = $search;
+			$data["order"] = $order;
+			$data["next_order"] = $ascdesc == "ASC" ? "d" : "a";
+			//echo "<pre>"; print_r($data); echo "</pre>";
+
+			$data["search_link"] = base_url()."admin/company/search_form/".$search["status"]."/";
+			$this->template->write("header", "
+			
+			<script src=\"".base_url()."js/jquery.js\"></script>
+			<script src=\"".base_url()."js/jquery.simpledialog.0.1.js\"></script>
+			<!-- <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"".base_url()."css/jquery.simpledialog.0.1.css\"> -->
+			
+			<style>
+			.sd_container{
+			 font-family: arial,helvetica,sans-serif; margin:0; padding: 0px; position: absolute; background-color: #fff; border: solid 5px #ccc; text-align:center;
+			}
+			.sd_header{
+			 font-size: 125%; font-weight:bold; margin-bottom: 10px;
+			}
+			.sd_content{}
+			.sd_footer{
+			 color: #a0a0a0; margin-top: 10px;
+			}
+			.sd_overlay{
+			 position: absolute; margin:0; padding: 0; top: 0; left: 0; background-color: #222;
+			}
+			.sd_loading{
+			 background: url('".base_url()."images/indicator.gif') center no-repeat; background-color: #fff; height: 60px; width: 60px;
+			}
+			.sd_closelabel{
+			 position:absolute; width:50px; height:22px; line-height:22px; top:0; left:0; padding:5px; text-align:center; background-color:#ccc;
+			}
+			.sd_closelabel a {
+			 text-decoration:none; color: #222; font-size: 12px;
+			 font-weight:bold;
+			}
+			</style>
+
+			<script>
+				$(document).ready(function(){
+
+					$('#search_form').simpleDialog({
+						height: 250,
+						width: 350,
+						showCloseLabel: false
+					});
+				});
+			</script>		
+			
+			");
+			$this->template->write("title", "Manage Company");
+			$this->template->write_view("content", "admin/company_manage", $data, TRUE);
+		}
+		else
+			$this->template->write("msg", $this->Madmin->check_access($_SESSION["userlevel"], $useraccess)); 
+		$this->template->render();
+	}
+	
+	function search_form($status=1)
+	{
+		$industry = CORE_URL."get_industries.php?order=industry_title";
+		$data["industry"] = $this->Madmin->get_data($industry);
+		$data["status"] = $status;
+		$this->load->view("admin/company_searchform", $data);
+	}
+
+	function save_csv($order="a_name", $filter_key="", $filter_value="")
+	{
+		$useraccess = array("superadmin", "admin", "company", "jobposter");
+		if ($this->Madmin->check_access($_SESSION["userlevel"], $useraccess) == "1")
+		{
+			$tx_id = $this->Madmin->get_uuid(current_url());
+			
+			header("Content-type: application/csv");
+			header("Content-Disposition: attachment; filename=company.csv");
+			header("Pragma: no-cache");
+			header("Expires: 0");
+
+			$ascdesc = substr($order,0,1) == "a" ? "ASC" : "DESC";
+			$orderby = substr($order,2);
+				
+			if (($filter_key != "") && ($filter_value != "")) 
+			{
+				if (($_SESSION["userlevel"] == "company") || ($_SESSION["userlevel"] == "jobposter"))
+					$json = CORE_URL."get_companies.php?tx_id=$tx_id&filter_key=$filter_key&filter_value=$filter_value&order=$orderby&ascdesc=$ascdesc&id=".$_SESSION["userid"];
+				else
+					$json = CORE_URL."get_companies.php?tx_id=$tx_id&filter_key=$filter_key&filter_value=$filter_value&order=$orderby&ascdesc=$ascdesc&id=0";
+			}
+			else
+			{
+				if (($_SESSION["userlevel"] == "company") || ($_SESSION["userlevel"] == "jobposter"))
+					$json = CORE_URL."get_companies.php?tx_id=$tx_id&filter_key=$filter_key&filter_value=$filter_value&order=$orderby&ascdesc=$ascdesc&id=".$_SESSION["userid"];
+				else
+					$json = CORE_URL."get_companies.php?tx_id=$tx_id&filter_key=$filter_key&filter_value=$filter_value&order=$orderby&ascdesc=$ascdesc&id=0";
+			}
+			$data = $this->Madmin->get_data($json);
+			echo "comp_id, industri_id, name, cp, description, address1, address2, loc_id, pos_lat, pos_lng, tel, fax, email, status, date_add, date_update, country_id \n";
+			foreach($data["results"] as $job)
+			{
+				echo $job["comp_id"].",".$job["industry_id"].",".$job["name"].",".$job["cp"].",".$job["description"].",".$job["address1"].",".$job["address2"].",".$job["loc_id"].",".$job["pos_lat"].",".$job["pos_lng"].",".$job["tel"].",".$job["fax"].",".$job["email"].",";
+				switch ($job["status"])
+				{
+					case 1 : echo "Active"; break;
+					case 2 : echo "Inactive"; break;
+					case 3 : echo "Draft"; break;
+					case 4 : echo "Waiting for Approval"; break;
+					default : echo " ";
+				}
+				echo ",".$job["date_add"].",".$job["date_update"].",".$job["country_id"]."\n";
+			}
+		}
+	}
+	
+	function edit($id=0)
+	{
+		$useraccess = array("superadmin", "admin", "company");
+		if ($this->Madmin->check_access($_SESSION["userlevel"], $useraccess) == "1")
+		{
+			$tx_id = $this->Madmin->get_uuid(current_url());
+			$data = $this->check_var();
+			$json = CORE_URL."get_company_by_comp_id.php?tx_id=$tx_id&id=$id";
+			$data["company"] = $this->Madmin->get_data($json);
+			if (sizeof($_POST) > 0)
+			{
+				$this->check_form($data["region"]);
+				if ($this->form_validation->run() == TRUE)
+				{
+					unset($data["region"]);
+					unset($data["province"]);
+					unset($data["kotamadya"]);
+					unset($data["kecamatan"]);
+					unset($data["kelurahan"]);
+					unset($data["zip"]);
+					unset($data["company"]);
+					unset($data["date_add"]);
+
+					$data["status"] = $data["status"] == "0" ? "4" : "3";
+					$data["date_update"] = date("Y-m-d H:i:s");
+					$data["country_id"] = $_SESSION["curr_country"];
+					$var = "";
+					//echo "<pre>"; print_r($data); echo "</pre>";
+					foreach ($data as $key => $value)
+					{ 
+						if ($key == "pos_lat") $key = "lat";
+						if ($key == "pos_lng") $key = "lng";
+						$var .= "&".$key."=".urlencode($value); 
+					}
+					$var .= "&tx_id=$tx_id";
+					$var = substr($var,1);
+					
+					$json = CORE_URL."update_company.php?$var";
+					//echo $json."<br>";
+					
+					$json = $this->Madmin->get_data($json);
+					if ($json["status"] == "0")
+						$this->template->write("msg", "<div class=msg>".$json["msg"]."</div>");
+					else
+						$this->template->write("msg", "<div class=msg>1 Company has been updated.</div>");
+					
+					$data["region"] = "";
+					$data["province"] = "";
+					$data["kotamadya"] = "";
+					$data["kecamatan"] = "";
+					$data["kelurahan"] = "";
+					$data["zip"] = "";
+					foreach ($data as $key => $value)
+					{ $data[$key] = ""; }
+				}
+			}
+			
+			if (isset($data["company"]))
+			{
+				foreach ($data["company"] as $key => $value)
+				{ 
+					if ($key == "pos_lat") $key = "lat";
+					if ($key == "pos_lng") $key = "lng";
+					$data[$key] = $value; 
+				}
+				unset($data["company"]);
+			}
+			$data["comp_id"] = $id;
+			
+			if ($data["loc_id"] != "0")
+			{
+				$data["kelurahan"] = $data["loc_id"];
+				$json = $this->Madmin->get_data(CORE_URL."get_location_by_loc_id.php?tx_id=$tx_id&id=".$data['kelurahan']);
+				if (($data["lat"] == "0") || ($data["lat"] == ""))
+				{
+					$data["lat"] = $json["loc_lat"];
+					$data["lng"] = $json["loc_lng"];
+				}
+				$data["kecamatan"] = $json["parent_id"];
+				$json = $this->Madmin->get_data(CORE_URL."get_location_by_loc_id.php?tx_id=$tx_id&id=".$data["kecamatan"]);
+				$data["kotamadya"] = $json["parent_id"];
+				$json = $this->Madmin->get_data(CORE_URL."get_location_by_loc_id.php?tx_id=$tx_id&id=".$data['kotamadya']);
+				$data["province"] = $json["parent_id"];
+				
+				$data["kotamadyas"] = $this->Madmin->get_data(CORE_URL."get_location_by_parent_id.php?tx_id=$tx_id&id=".$data["province"]);
+				$data["kecamatans"] = $this->Madmin->get_data(CORE_URL."get_location_by_parent_id.php?tx_id=$tx_id&id=".$data["kotamadya"]);
+				$data["kelurahans"] = $this->Madmin->get_data(CORE_URL."get_location_by_parent_id.php?tx_id=$tx_id&id=".$data["kecamatan"]);
+			}
+			else
+			{
+				$data["region"] = 1;
+				$data["kelurahan"] = "";
+				$data["zip"] = 0;
+				$data["loc_id"] = 0;
+				$data["kecamatan"] = "";
+				$data["kotamadya"] = "";
+				$data["province"] = "";
+				$data["kotamadyas"] = "";
+				$data["kecamatans"] = "";
+				$data["kelurahans"] = "";
+			}
+			
+			
+			foreach ($this->get_lists($tx_id) as $key => $value)
+			{ $data[$key] = $value; }
+			
+			$data["form_submit"] = base_url()."admin/company/edit/$id";
+			
+			$this->create_header($data["lat"],$data["lng"], $data["loc_id"]);
+
+			$this->template->write_view("content", "admin/company_edit", $data);
+			$this->template->render();
+		}
+		else
+			$this->template->write("msg", $this->Madmin->check_access($_SESSION["userlevel"], $useraccess));
+			
+		$this->template->render();
+	}
+	
+	
+	function get_lists($tx_id)
+	{
+		$industries = CORE_URL."get_industries.php?tx_id=$tx_id&order=industry_title";
+		$industries = $this->Madmin->get_data($industries);
+		$provinces = CORE_URL."get_location_by_parent_id.php?tx_id=$tx_id&id=0";
+		$provinces = $this->Madmin->get_data($provinces);
+		$zips = CORE_URL."get_location_by_kelurahan.php?tx_id=$tx_id";
+		$zips = $this->Madmin->get_data($zips);
+		
+		return array(
+			"industries" => $industries["results"],
+			"provinces" => $provinces,
+			"zips" => $zips["results"]
+		);
+	}
+	
+
+	function check_form($region=1)
+	{
+		$this->form_validation->set_rules('name', 'Company', 'required');
+		$this->form_validation->set_rules('industry_id', 'Industry', 'callback_custom_err_msg');
+		$this->form_validation->set_rules('address1', 'Address', 'required');
+		$this->form_validation->set_rules('tel', 'Telephone', 'required');
+		$this->form_validation->set_rules('gender', 'Gender', 'callback_custom_err_msg');
+		$this->form_validation->set_rules('email', 'E-mail', 'required');
+		
+		if ($_POST["region"] == "1") 
+		{
+			$this->form_validation->set_rules('province','Province','callback_custom_err_msg');
+			$this->form_validation->set_rules('kotamadya','Kotamadya','callback_custom_err_msg');
+			$this->form_validation->set_rules('kecamatan','Kecamatan','callback_custom_err_msg');
+			$this->form_validation->set_rules('kelurahan', 'Kelurahan', 'callback_custom_err_msg');
+		}
+		else if ($_POST["region"] == "2") $this->form_validation->set_rules('zip', 'Zip code', 'callback_custom_err_msg');
+	}
+
+
+	function check_var()
+	{
+		$comp_id 		= ($this->input->post("comp_id")!="") ? ($this->input->post("comp_id")) : "0";
+		$industry_id	= ($this->input->post("industry_id")!="") ? ($this->input->post("industry_id")) : "";
+		$name 			= ($this->input->post("name")!="") ? ($this->input->post("name")) : "";
+		$cp 			= ($this->input->post("cp")!="") ? ($this->input->post("cp")) : "";
+		$description	= ($this->input->post("description")!="") ? ($this->input->post("description")) : "";
+		$address1 		= ($this->input->post("address1")!="") ? ($this->input->post("address1")) : "";
+		$address2 		= ($this->input->post("address2")!="") ? ($this->input->post("address2")) : "";
+		$region 		= ($this->input->post("region")!="") ? ($this->input->post("region")) : 1;
+		if ($region == "1")
+			$loc_id 	= ($this->input->post("kelurahan")!="") ? ($this->input->post("kelurahan")) : "";
+		else if ($region == "2")
+			$loc_id 	= ($this->input->post("zip")!="") ? ($this->input->post("zip")) : "";
+		$province 		= ($this->input->post("province") != "") ? ($this->input->post("province")) : 0;
+		$kotamadya 		= ($this->input->post("kotamadya")!="") ? ($this->input->post("kotamadya")) : 0;
+		$kecamatan 		= ($this->input->post("kecamatan")!="") ? ($this->input->post("kecamatan")) : 0;
+		$kelurahan 		= ($this->input->post("kelurahan")!="") ? ($this->input->post("kelurahan")) : 0;
+		$lat			= ($this->input->post("lat")!="") ? ($this->input->post("lat")) : "";
+		$lng			= ($this->input->post("lng")!="") ? ($this->input->post("lng")) : "";
+		$zip	 		= ($this->input->post("zip")!="") ? ($this->input->post("zip")) : 0;
+		$tel			= ($this->input->post("tel")!="") ? ($this->input->post("tel")) : "";
+		$fax			= ($this->input->post("fax")!="") ? ($this->input->post("fax")) : "";
+		$email 			= ($this->input->post("email")!="") ? ($this->input->post("email")) : "";
+		$status			= ($this->input->post("status")!="") ? ($this->input->post("status")) : "";
+		$date_add		= ($this->input->post("date_add")!="") ? ($this->input->post("date_add")) : "";
+		$date_update 	= ($this->input->post("date_update")!="") ? ($this->input->post("date_update")) : "";
+		$country_id 	= ($this->input->post("country_id")!="") ? ($this->input->post("country_id")) : "";
+		
+		return array(
+			"comp_id" => $comp_id,
+			"industry_id" => $industry_id,
+			"name" => $name,
+			"cp" =>  $cp,
+			"description" => $description,
+			"address1" => $address1,
+			"address2" =>  $address2,
+			"region" => $region,
+			"loc_id" => $loc_id,
+			"province" => $province,
+			"kotamadya" => $kotamadya,
+			"kecamatan" => $kecamatan,
+			"kelurahan" => $kelurahan,
+			"lat" =>  $lat,
+			"lng" =>  $lng,
+			"zip" =>  $zip,
+			"tel" => $tel,
+			"fax" => $fax,
+			"email" => $email,
+			"status" => $status,
+			"date_add" => $date_add,
+			"date_update" => $date_update,
+			"country_id" => $country_id
+		);
+	}
+	
+	
+	function create_header($lat="", $lng="", $kelurahan=0)
+	{
+		$header = "
+			<script src=\"".base_url()."js/jquery.js\"></script>
+			<script src=\"http://maps.google.com/maps/api/js?sensor=true\"></script>
+			<script src=\"http://code.google.com/apis/gears/gears_init.js\"></script>";
+		if ($lat != "")
+			$header .= "<script src=\"".base_url()."js/gmap_nogeolocation.js\"></script>";
+		else
+			$header .= "<script src=\"".base_url()."js/geolocation2.js\"></script>";
+		
+		$header .= "
+			<script src=\"".base_url()."js/jquery.chainedSelects.js\"></script>
+			<script>
+				$(document).ready(function(){
+
+					$('#province').chainSelect('#kotamadya','".base_url()."func/get_location_by_parent_id.php');
+					$('#kotamadya').chainSelect('#kecamatan','".base_url()."func/get_location_by_parent_id.php');
+					$('#kecamatan').chainSelect('#kelurahan','".base_url()."func/get_location_by_parent_id.php','".$kelurahan."');
+					
+					$('#lng').val('$lng');
+					$('#lat').val('$lat');";
+					if ($lat == "")
+						$header .= "initialize(); ";
+					else
+						$header .= "initialize($lat, $lng); ";
+					$header .= "
+					
+					if ($('#region').val() == '2')
+					{
+						$('.by').css('display','none');
+						$('#byZip').css('display','block');
+					}
+
+					$('#region').change(function(){
+						if($(this).val() == '1')
+						{
+							$('.by').css('display','none');
+							$('#byRegion').css('display','block');
+						}
+						if($(this).val() == '2')
+						{
+							$('.by').css('display','none');
+							$('#byZip').css('display','block');
+						}
+					});
+					
+					$('#zip').change(function()
+					{
+						$('#hdnZip').val($('#zip :selected').text());
+					});
+				});
+			</script>		
+		";
+		$this->template->write("header", $header);
+	}
+
+
+	function update()
+	{
+		$tx_id = $this->Madmin->get_uuid(current_url());
+		$id = $this->input->post('id');
+		$comp = $this->input->post('name');
+		$cp = $this->input->post('cp');
+		$tel = $this->input->post('tel');
+		$fax = $this->input->post('fax');
+		$email = $this->input->post('email');
+		$address1 = $this->input->post('address1');
+		$address2 = $this->input->post('address2');
+		$city = $this->input->post('city');
+		$kotamadya = $this->input->post('kotamadya');
+		$kecamatan = $this->input->post('kecamatan');
+		$kelurahan = $this->input->post('kelurahan');
+		$industry_id = $this->input->post('industry_id');
+		$lat = $this->input->post('lat');
+		$lng = $this->input->post('lng');
+		$loc_id_by_zip = $this->input->post('zip');
+		$hdnZip = $this->input->post('hdnZip');
+		$desc = "";
+		
+		$arr = array(
+			"comp_id" => $id,
+			"industry_id" => $industry_id,
+			"name" => $comp,
+			"cp" =>  $cp,
+			"description" => "",
+			"address1" => $address1,
+			"address2" =>  $address2,
+			"pos_lat" =>  $lat,
+			"pos_lng" =>  $lng,
+			"tel" => $tel,
+			"fax" => $fax,
+			"email" => $email,
+			"status" => "",
+			"date_add" => "",
+			"date_update" => "",
+			"country_id" => ""
+		);
+		
+		$arr['form_action'] = base_url()."admin/company/update";
+		if($kelurahan != '0')
+		{
+			$arr["loc_id"] = $kelurahan;
+			$this->form_validation->set_rules('kelurahan', 'Kelurahan','required');
+		}
+		elseif($loc_id_by_zip != '-')
+		{
+			$arr["loc_id"] = $loc_id_by_zip;
+			$this->form_validation->set_rules('zip','Zip','required');
+		}
+		else
+		{
+			$arr["loc_id"] = "";
+			$this->form_validation->set_rules('lat',"Lat",'required');
+			$this->form_validation->set_rules('lng','Long','required');
+		}
+		if(!empty($arr['loc_id']) || $arr['loc_id'] != "")
+			{
+				$loc1 = file_get_contents(CORE_URL."get_location_by_loc_id.php?id=".$arr['loc_id']);
+				$loc1 = json_decode($loc1, true);
+				$arr['id_kelurahan'] = $arr['loc_id'];
+				$loc2 = file_get_contents(CORE_URL."get_location_by_loc_id.php?id=".$loc1['parent_id']);
+				$loc2 = json_decode($loc2, true);
+				$arr['id_kecamatan'] = $loc2['loc_id'];
+				$loc3 = file_get_contents(CORE_URL."get_location_by_loc_id.php?id=".$loc2['parent_id']);
+				$loc3 = json_decode($loc3, true);
+				$arr['id_kotamadya'] = $loc3['loc_id'];
+				$loc4 = file_get_contents(CORE_URL."get_location_by_loc_id.php?id=".$loc3['parent_id']);
+				$loc4 = json_decode($loc4, true);
+				$arr['id_city'] = $loc4['loc_id'];
+			}
+		
+		
+		if ($this->form_validation->run() == FALSE)
+		{	
+			$this->form_validation->set_rules('name', 'Company', 'required');
+			$this->form_validation->set_rules('cp', 'Contact Person', 'required');
+			$this->form_validation->set_rules('tel', 'Phone', 'required|numeric');
+			$this->form_validation->set_rules('fax', 'Fax', 'numeric');
+			$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+			$this->form_validation->set_rules('address1', 'Address', 'required');
+			
+			$this->template->write("header", "
+			<script src=\"".base_url()."js/jquery.js\"></script>
+			<script src=\"".base_url()."js/jquery.chainedSelects.js\"></script>
+			<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=true\"></script>
+			<script type=\"text/javascript\" src=\"http://code.google.com/apis/gears/gears_init.js\"></script>
+			<script src=\"".base_url()."js/geolocation2.js\"></script>
+			<script>
+				$(function()
+				{
+					$('#city').chainSelect('#kotamadya','".base_url()."func/get_location_by_parent_id.php');
+					$('#kotamadya').chainSelect('#kecamatan','".base_url()."func/get_location_by_parent_id.php');
+					$('#kecamatan').chainSelect('#kelurahan','".base_url()."func/get_location_by_parent_id.php');
+					
+				});
+			</script>");
+
+			$this->template->write("title", "Edit Company");
+			$this->template->write_view("content", "admin/company_edit", $arr, TRUE);
+		}
+		else
+		{
+			//$status = file_get_contents(CORE_URL."add_company.php?name=".urlencode($comp)."&industry=".urlencode($industry_id)."&c_person=".urlencode($cp)."&desc=".urlencode($desc)."&addr=".urlencode($address1)."&addr2=".urlencode($address2)."&telp=".urlencode($tel)."&fax=".urlencode($fax)."&email=".urlencode($email)."&loc_id=".urlencode($kelurahan));
+			//$loc_id = "";
+			$url = CORE_URL."update_company.php?tx_id=$tx_id&comp_id=".urldecode($id)."&name=".urlencode($comp)."&industry_id=".urlencode($industry_id)."&cp=".urlencode($cp)."&description=".urlencode($desc)."&address1=".urlencode($address1)."&address2=".urlencode($address2)."&tel=".urlencode($tel)."&fax=".urlencode($fax)."&email=".urlencode($email)."&loc_id=".urlencode($kelurahan);
+			//die($url);
+			$loc_id=$kelurahan;
+			if($kelurahan == "0" && $loc_id_by_zip == "-")
+			{
+				$url = CORE_URL."update_company.php?tx_id=$tx_id&comp_id=".urlencode($id)."&name=".urlencode($comp)."&lat=".urlencode($lat)."&lng=".urlencode($lng)."&industry_id=".urlencode($industry_id)."&cp=".urlencode($cp)."&description=".urlencode($desc)."&address1=".urlencode($address1)."&address2=".urlencode($address2)."&tel=".urlencode($tel)."&fax=".urlencode($fax)."&email=".urlencode($email);
+			}
+			elseif($kelurahan == "0" && $loc_id_by_zip != "-")
+			{
+				$url = CORE_URL."update_company.php?tx_id=$tx_id&comp_id=".urlencode($id)."&name=".urlencode($comp)."&industry_id=".urlencode($industry_id)."&cp=".urlencode($cp)."&description=".urlencode($desc)."&address1=".urlencode($address1)."&address2=".urlencode($address2)."&tel=".urlencode($tel)."&fax=".urlencode($fax)."&email=".urlencode($email)."&loc_id=".urlencode($loc_id_by_zip);
+				$loc_id=$loc_id_by_zip;
+			}
+			if(!empty($loc_id) || $loc_id != "")
+			{
+				$loc1 = file_get_contents(CORE_URL."get_location_by_loc_id.php?id=".$loc_id);
+				$loc1 = json_decode($loc1, true);
+				$arr['id_kelurahan'] = $loc_id;
+				$loc2 = file_get_contents(CORE_URL."get_location_by_loc_id.php?id=".$loc1['parent_id']);
+				$loc2 = json_decode($loc2, true);
+				$arr['id_kecamatan'] = $loc2['loc_id'];
+				$loc3 = file_get_contents(CORE_URL."get_location_by_loc_id.php?id=".$loc2['parent_id']);
+				$loc3 = json_decode($loc3, true);
+				$arr['id_kotamadya'] = $loc3['loc_id'];
+				$loc4 = file_get_contents(CORE_URL."get_location_by_loc_id.php?id=".$loc3['parent_id']);
+				$loc4 = json_decode($loc4, true);
+				$arr['id_city'] = $loc4['loc_id'];
+			}
+			$status = file_get_contents($url);
+
+			$status = json_decode($status, true);
+			$arr['status'] = $status['status'];
+			$arr['msg'] = $status['msg'];
+			$this->template->write("header", "
+			<script src=\"".base_url()."js/jquery.js\"></script>
+			<script src=\"".base_url()."js/jquery.chainedSelects.js\"></script>
+			<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=true\"></script>
+			<script type=\"text/javascript\" src=\"http://code.google.com/apis/gears/gears_init.js\"></script>
+			<script src=\"".base_url()."js/geolocation2.js\"></script>
+			<script>
+				$(function()
+				{
+					$('#city').chainSelect('#kotamadya','".base_url()."func/get_location_by_parent_id.php');
+					$('#kotamadya').chainSelect('#kecamatan','".base_url()."func/get_location_by_parent_id.php');
+					$('#kecamatan').chainSelect('#kelurahan','".base_url()."func/get_location_by_parent_id.php');
+					
+				});
+			</script>");
+
+			if ($arr["status"] == "0")
+				$this->template->write("msg", "<div class=msg>".$arr["msg"]."</div>");
+			else
+				$this->template->write("msg", "<div class=msg>1 Company has been registered.</div>");
+				
+			$this->template->write("title", "Edit Company");
+			$this->template->write_view("content", "admin/company_edit", $arr, TRUE);
+		}
+		$this->template->render();
+	}
+	
+	
+	function insertInto()
+	{
+		$tx_id = $this->Madmin->get_uuid(current_url());
+		$comp = $this->input->post('name');
+		$cp = $this->input->post('cp');
+		$tel = $this->input->post('tel');
+		$fax = $this->input->post('fax');
+		$email = $this->input->post('email');
+		$address1 = $this->input->post('address1');
+		$address2 = $this->input->post('address2');
+		$city = $this->input->post('city');
+		$kotamadya = $this->input->post('kotamadya');
+		$kecamatan = $this->input->post('kecamatan');
+		$kelurahan = $this->input->post('kelurahan');
+		$industry_id = $this->input->post('industry_id');
+		$lat = $this->input->post('lat');
+		$lng = $this->input->post('lng');
+		$loc_id_by_zip = $this->input->post('zip');
+		$hdnZip = $this->input->post('hdnZip');
+		$desc = "";
+		$region = (int)$this->input->post('region');
+		$arr = array(
+			"comp_id" => "",
+			"industry_id" => "",
+			"name" => "",
+			"cp" =>  "",
+			"description" => "",
+			"address1" => "",
+			"address2" =>  "",
+			"loc_id" => "",
+			"pos_lat" =>  "",
+			"pos_lng" =>  "",
+			"tel" => "",
+			"fax" => "",
+			"email" => "",
+			"status" => "",
+			"date_add" => "",
+			"date_update" => "",
+			"country_id" => ""
+		);
+		if($region == 1)
+		{
+			$this->form_validation->set_rules('kelurahan','Kelurahan','callback_custom_err_msg');
+		}
+		elseif($region == 2)
+		{
+			$this->form_validation->set_rules('zip','Zip','callback_custom_err_msg');
+		}
+		else
+		{
+			$this->form_validation->set_rules('lat','Latitude','required');
+			$this->form_validation->set_rules('lng','Longitude','required');
+		}
+		$arr['form_action'] = base_url()."admin/company/insertInto";
+		$this->form_validation->set_rules('name', 'Company', 'required');
+		$this->form_validation->set_rules('cp', 'Contact Person', 'required');
+		$this->form_validation->set_rules('tel', 'Phone', 'required');
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+		$this->form_validation->set_rules('address1', 'Address', 'required');
+		$this->form_validation->set_rules('industry_id', 'Industry', 'callback_custom_err_msg');
+		if ($this->form_validation->run() == FALSE)
+		{
+			$arr = array(
+				"comp_id" => "",
+				"industry_id" => "",
+				"name" => $comp,
+				"cp" =>  $cp,
+				"description" => "",
+				"address1" => $address1,
+				"address2" =>  $address2,
+				"loc_id" => "",
+				"pos_lat" =>  $lat,
+				"pos_lng" =>  $lng,
+				"tel" => $tel,
+				"fax" => $fax,
+				"email" => $email,
+				"status" => "",
+				"date_add" => "",
+				"date_update" => "",
+				"form_action" => base_url()."admin/company/insertInto",
+				"country_id" => ""
+			);
+			$this->template->write("header", "
+			<script src=\"".base_url()."js/jquery.js\"></script>
+			<script src=\"".base_url()."js/jquery.chainedSelects.js\"></script>
+			<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=true\"></script>
+			<script type=\"text/javascript\" src=\"http://code.google.com/apis/gears/gears_init.js\"></script>
+			<script src=\"".base_url()."js/geolocation2.js\"></script>
+			<script>
+				$(function()
+				{
+					$('#city').chainSelect('#kotamadya','".base_url()."func/get_location_by_parent_id.php');
+					$('#kotamadya').chainSelect('#kecamatan','".base_url()."func/get_location_by_parent_id.php');
+					$('#kecamatan').chainSelect('#kelurahan','".base_url()."func/get_location_by_parent_id.php');
+					
+				});
+			</script>");
+
+			$this->template->write("title", "Add Company");
+			$this->template->write_view("content", "admin/company_edit", $arr, TRUE);
+		}
+		else
+		{
+			//$status = file_get_contents(CORE_URL."add_company.php?name=".urlencode($comp)."&industry=".urlencode($industry_id)."&c_person=".urlencode($cp)."&desc=".urlencode($desc)."&addr=".urlencode($address1)."&addr2=".urlencode($address2)."&telp=".urlencode($tel)."&fax=".urlencode($fax)."&email=".urlencode($email)."&loc_id=".urlencode($kelurahan));
+			$url = CORE_URL."add_company.php?tx_id=$tx_id&name=".urlencode($comp)."&industry=".urlencode($industry_id)."&c_person=".urlencode($cp)."&desc=".urlencode($desc)."&addr=".urlencode($address1)."&addr2=".urlencode($address2)."&telp=".urlencode($tel)."&fax=".urlencode($fax)."&email=".urlencode($email)."&loc_id=".urlencode($kelurahan);
+			if($kelurahan == "0" && $loc_id_by_zip == "-")
+			{
+				$url = CORE_URL."add_company.php?tx_id=$tx_id&name=".urlencode($comp)."&lat=".urlencode($lat)."&lng=".urlencode($lng)."&industry=".urlencode($industry_id)."&c_person=".urlencode($cp)."&desc=".urlencode($desc)."&addr=".urlencode($address1)."&addr2=".urlencode($address2)."&tlp=".urlencode($tel)."&fax=".urlencode($fax)."&email=".urlencode($email);
+			}
+			elseif($kelurahan == "0" && $loc_id_by_zip != "-")
+			{
+				$url = CORE_URL."add_company.php?tx_id=$tx_id&name=".urlencode($comp)."&industry=".urlencode($industry_id)."&c_person=".urlencode($cp)."&desc=".urlencode($desc)."&addr=".urlencode($address1)."&addr2=".urlencode($address2)."&tlp=".urlencode($tel)."&fax=".urlencode($fax)."&email=".urlencode($email)."&loc_id=".urlencode($loc_id_by_zip);
+			}
+			//echo $url;
+			$status = file_get_contents($url);
+
+			$status = json_decode($status, true);
+			$arr['status'] = $status['status'];
+			$arr['msg'] = $status['msg'];
+			$this->template->write("header", "
+			<script src=\"".base_url()."js/jquery.js\"></script>
+			<script src=\"".base_url()."js/jquery.chainedSelects.js\"></script>
+			<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js?sensor=true\"></script>
+			<script type=\"text/javascript\" src=\"http://code.google.com/apis/gears/gears_init.js\"></script>
+			<script src=\"".base_url()."js/geolocation2.js\"></script>
+			<script>
+				$(function()
+				{
+					$('#city').chainSelect('#kotamadya','".base_url()."func/get_location_by_parent_id.php');
+					$('#kotamadya').chainSelect('#kecamatan','".base_url()."func/get_location_by_parent_id.php');
+					$('#kecamatan').chainSelect('#kelurahan','".base_url()."func/get_location_by_parent_id.php');
+					
+				});
+			</script>");
+
+			if ($arr["status"] == "0")
+				$this->template->write("msg", "<div class=msg>".$arr["msg"]."</div>");
+			else
+				$this->template->write("msg", "<div class=msg>1 Company has been registered.</div>");
+				
+			$this->template->write("title", "Add Company");
+			$this->template->write_view("content", "admin/company_edit", $arr, TRUE);
+		}
+		$this->template->render();
+	}
+	
+	
+	function custom_err_msg($str)
+	{
+		if ($str == '0')
+		{ $this->form_validation->set_message('custom_err_msg', 'Please choose a valid %s.'); return FALSE; }
+		else
+			return TRUE;
+	}
+	
+
+
+
+}
+?>

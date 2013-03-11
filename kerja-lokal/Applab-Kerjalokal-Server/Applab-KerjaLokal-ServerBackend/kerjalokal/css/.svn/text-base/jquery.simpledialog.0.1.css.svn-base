@@ -1,0 +1,37 @@
+
+/**
+ * jQuery Simple Dialog 
+ */
+.sd_container{
+ font-family: arial,helvetica,sans-serif;
+ margin:0;
+ padding: 0px;
+ position: absolute;
+ background-color: #fff;
+ border: solid 5px #ccc;
+ text-align:center;
+}
+.sd_header{
+ font-size: 125%;
+ font-weight:bold;
+ margin-bottom: 10px;
+}
+.sd_content{}
+.sd_footer{
+ color: #a0a0a0;
+ margin-top: 10px;
+}
+.sd_overlay{
+ position: absolute;
+ margin:0;
+ padding: 0;
+ top: 0;
+ left: 0;
+ background-color: #222;
+}
+.sd_loading{
+ background: url('http://www.altermyth.com/infokerja/images/indicator.gif') center no-repeat;
+ background-color: #fff;
+ height: 60px;
+ width: 60px;
+}

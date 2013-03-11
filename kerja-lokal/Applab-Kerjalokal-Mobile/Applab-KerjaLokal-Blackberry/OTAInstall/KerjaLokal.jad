@@ -1,0 +1,57 @@
+RIM-COD-SHA1-4: 99 96 aa 4e 68 b9 28 ce 25 9f 76 9b 3e 0c a2 f0 b6 81 d8 4c
+RIM-COD-SHA1-3: 2c cc 67 4c 8c 3c 05 50 f9 a4 5d e8 98 61 b1 84 11 b5 7f f8
+RIM-COD-URL-12: KerjaLokal-12.cod
+RIM-COD-SHA1-2: 33 a3 6c 49 aa 20 69 db 01 45 d1 d1 4f 91 49 88 99 99 ee a4
+RIM-COD-URL-11: KerjaLokal-11.cod
+RIM-COD-SHA1-1: 2c 8c a1 cb b6 04 b9 97 33 ee f4 28 bb f9 d9 57 7d bc fd cd
+RIM-COD-URL-10: KerjaLokal-10.cod
+RIM-MIDlet-Flags-1: 0
+MIDlet-Jar-Size: 1137443
+MIDlet-Name: KerjaLokal
+MIDlet-Jar-URL: KerjaLokal.jar
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Description: Job Marketplace for Blackberry
+RIM-COD-URL-9: KerjaLokal-9.cod
+RIM-COD-URL-8: KerjaLokal-8.cod
+RIM-COD-URL-7: KerjaLokal-7.cod
+RIM-COD-URL-6: KerjaLokal-6.cod
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bb_web_jse_api,net_rim_xml_org,net_rim_bb_browser_field2_api,net_rim_os,net_rim_bbapi_phone,net_rim_bbapi_mailv2,net_rim_bbapi_push,net_rim_bbapi_messagelist,net_rim_pdap,net_rim_bbapi_invoke,net_rim_networkapi,net_rim_bb_browser_field_api,net_rim_xml,net_rim_bbapi_browser,net_rim_locationapi
+RIM-COD-URL-5: KerjaLokal-5.cod
+RIM-COD-URL-4: KerjaLokal-4.cod
+RIM-COD-URL-3: KerjaLokal-3.cod
+RIM-COD-URL-2: KerjaLokal-2.cod
+RIM-COD-URL-1: KerjaLokal-1.cod
+RIM-COD-Size-9: 49996
+RIM-COD-Size-8: 49996
+RIM-COD-Size-7: 52848
+RIM-COD-Size-6: 65864
+RIM-COD-Size-5: 67808
+RIM-COD-Size-4: 49672
+RIM-COD-Size-3: 63996
+RIM-COD-Module-Name: KerjaLokal
+RIM-COD-Size-2: 70496
+RIM-MIDlet-Icon-Count-2: 1
+RIM-MIDlet-Icon-2-1: ____HOVER_ICON_resources/icon_hover.png,focused
+RIM-COD-Size-1: 67124
+RIM-MIDlet-Icon-Count-1: 1
+RIM-COD-SHA1: 74 c3 34 b7 ae 45 e1 5b f3 a5 1c 32 54 26 18 43 a9 79 eb 3c
+RIM-COD-Size: 70540
+MicroEdition-Profile: MIDP-2.0
+RIM-COD-Size-12: 72788
+RIM-COD-Size-11: 55248
+RIM-MIDlet-Icon-1-1: resources\____HOVER_ICON_icon_hover.png,focused
+RIM-COD-Size-10: 49996
+MIDlet-Vendor: Applab Indonesia - Grameen Foundation
+MIDlet-1: KerjaLokal,resources/icon.png,rim:foreground;WIDGET;
+RIM-COD-URL: KerjaLokal.cod
+RIM-COD-SHA1-12: a8 dd 3e 05 25 5c 17 ea 0b d0 a7 db 1d 3c f1 da 83 1d 6b 24
+RIM-COD-SHA1-11: 02 8f 76 6f a8 93 4a 16 7f 34 c5 fc 1d ae 65 f1 ad 49 f1 4b
+RIM-COD-SHA1-10: 7e c5 f3 a4 0b af c1 ed 68 78 a3 cd dd f5 0f 84 d4 ad 3c 30
+Manifest-Version: 1.0
+MIDlet-Version: 1.0.0.0
+RIM-COD-SHA1-9: dd 9a e4 b3 53 9f 4d 1c 27 18 c1 e0 2b 80 a1 d4 32 47 c5 5d
+RIM-COD-SHA1-8: cc a9 a6 c8 c2 b5 4f 94 ea d5 97 de 78 96 e0 0c 73 8f 00 e6
+RIM-COD-SHA1-7: 22 72 69 59 5b 0c 41 b4 de be bf 48 f3 0b db d5 a0 62 95 3d
+RIM-COD-SHA1-6: 25 43 99 20 90 c1 1c b9 8f 1f 4d a6 f4 96 68 79 82 22 3e 15
+RIM-COD-Creation-Time: 1335777652
+RIM-COD-SHA1-5: a0 f2 87 f1 c5 72 96 c0 28 2f 8b ad 3f 16 bc 1c ae 84 77 fe
